@@ -1,0 +1,11 @@
+.DS_Store
+*.swp
+*~.nib
+*.xcuserstate
+build/
+xcuserdata/
+project.xcworkspace
+!QDsharitapp.xcodeproj
+QDsharitapp.xcodeproj/*
+!QDsharitapp.xcodeproj/project.pbxproj
+!QDsharitapp.xcodeproj/project.xcworkspace

@@ -33,6 +33,8 @@
 @end
 
 @interface BBGMultiAccountManager : NSObject <BBGMultiAccountManager>
+
+//! A shared instance of the account manager
 + (BBGMultiAccountManager *)instance;
 
 //!	Mandatory! Set the Google Parameters necessary 
