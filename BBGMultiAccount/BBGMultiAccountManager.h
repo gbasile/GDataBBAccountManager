@@ -35,6 +35,13 @@
 @interface BBGMultiAccountManager : NSObject <BBGMultiAccountManager>
 + (BBGMultiAccountManager *)instance;
 
+//!	Mandatory! Set the Google Parameters necessary 
+//!	to login against your application. 
+//!	@param clientID		Your unique Google API identificator
+//!	@param clientSecret Your secret Google API code
+//!	@param scope		The scope of the service you want to authorize
+//!	@see https://code.google.com/apis/console for Google API Console
+//!	@see https://developers.google.com/google-apps/documents-list/?hl=es-ES#authorizing_requests_with_oauth_20 for scope description
 + (void)registerWithClientId:(NSString *)clientID
                 clientSecret:(NSString *)clientSecret
                        scope:(NSString *)scope;
@@ -44,6 +51,7 @@
 //!	@param clientID		Your unique Google API identificator
 //!	@param clientSecret Your secret Google API code
 //!	@param scope		The scope of the service you want to authorize
+//! @param dataManager  The Manager will store/restore the accounts data.
 //!	@see https://code.google.com/apis/console for Google API Console
 //!	@see https://developers.google.com/google-apps/documents-list/?hl=es-ES#authorizing_requests_with_oauth_20 for scope description
 + (void)registerWithClientId:(NSString *)clientID
