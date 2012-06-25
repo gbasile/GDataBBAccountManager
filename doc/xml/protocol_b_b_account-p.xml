@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="protocol_b_b_account-p" kind="protocol" prot="public">
+    <compoundname>BBAccount-p</compoundname>
+    <derivedcompoundref refid="interface_b_b_account" prot="public" virt="non-virtual">BBAccount</derivedcompoundref>
+    <includes refid="_b_b_account_8h" local="no">BBAccount.h</includes>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="protocol_b_b_account-p_1a603659d1a3e1bdbe55c4ab17747ed65f" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type><ref refid="interface_g_t_m_o_auth2_authentication" kindref="compound">GTMOAuth2Authentication</ref> *</type>
+        <definition>GTMOAuth2Authentication* BBAccount-p::authToken</definition>
+        <argsstring></argsstring>
+        <name>authToken</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+<para>The valid <ref refid="interface_g_t_m_o_auth2_authentication" kindref="compound">GTMOAuth2Authentication</ref> token. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/Manager/BBAccount.h" line="22" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/Manager/BBAccount.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="protocol_b_b_account-p_1a89a01acd723c80d2e1dbb9a805b0eaae" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="copy">
+        <type>NSString *</type>
+        <definition>NSString* BBAccount-p::username</definition>
+        <argsstring></argsstring>
+        <name>username</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+<para>The username of the authenticated user, equivalent to the mail address. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/Manager/BBAccount.h" line="27" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/Manager/BBAccount.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="protocol_b_b_account-p_1a299b5409c8bafc61e9b0192c208197d2" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="assign">
+        <type>BOOL</type>
+        <definition>BOOL BBAccount-p::principal</definition>
+        <argsstring></argsstring>
+        <name>principal</name>
+        <read>isPrincipal</read>
+        <write></write>
+        <briefdescription>
+<para>Define whenever the account is principal. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/Manager/BBAccount.h" line="33" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/Manager/BBAccount.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="interface_b_b_account" kindref="compound">BBAccount</ref> Protocol. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="5">
+        <label>BBAccount</label>
+        <link refid="interface_b_b_account"/>
+        <childnode refid="4" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>&lt;BBAccount&gt;</label>
+        <link refid="protocol_b_b_account-p"/>
+      </node>
+    </inheritancegraph>
+    <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/Manager/BBAccount.h" line="17" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/Manager/BBAccount.h" bodystart="16" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="protocol_b_b_account-p_1a603659d1a3e1bdbe55c4ab17747ed65f" prot="public" virt="non-virtual"><scope>BBAccount-p</scope><name>authToken</name></member>
+      <member refid="protocol_b_b_account-p_1a299b5409c8bafc61e9b0192c208197d2" prot="public" virt="non-virtual"><scope>BBAccount-p</scope><name>principal</name></member>
+      <member refid="protocol_b_b_account-p_1a89a01acd723c80d2e1dbb9a805b0eaae" prot="public" virt="non-virtual"><scope>BBAccount-p</scope><name>username</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

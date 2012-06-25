@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="protocol_g_t_m_h_t_t_p_fetch_history_protocol-p" kind="protocol" prot="public">
+    <compoundname>GTMHTTPFetchHistoryProtocol-p</compoundname>
+    <includes refid="_g_t_m_h_t_t_p_fetcher_8h" local="no">GTMHTTPFetcher.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="protocol_g_t_m_h_t_t_p_fetch_history_protocol-p_1a66dfff02e8a764954d2972212c77466e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void GTMHTTPFetchHistoryProtocol-p::updateRequest:isHTTPGet:</definition>
+        <argsstring>(NSMutableURLRequest *request,[isHTTPGet] BOOL isHTTPGet)</argsstring>
+        <name>updateRequest:isHTTPGet:</name>
+        <param>
+          <type>NSMutableURLRequest *</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <attributes>[isHTTPGet]</attributes>
+          <type>BOOL</type>
+          <declname>isHTTPGet</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="325"/>
+      </memberdef>
+      <memberdef kind="function" id="protocol_g_t_m_h_t_t_p_fetch_history_protocol-p_1a3eeed3a621d5b2fe679b8cae24ac6a79" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL GTMHTTPFetchHistoryProtocol-p::shouldCacheETaggedData</definition>
+        <argsstring>()</argsstring>
+        <name>shouldCacheETaggedData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="326"/>
+      </memberdef>
+      <memberdef kind="function" id="protocol_g_t_m_h_t_t_p_fetch_history_protocol-p_1a5008e0748431db453ede7edf12e1b149" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSData *</type>
+        <definition>NSData * GTMHTTPFetchHistoryProtocol-p::cachedDataForRequest:</definition>
+        <argsstring>(NSURLRequest *request)</argsstring>
+        <name>cachedDataForRequest:</name>
+        <param>
+          <type>NSURLRequest *</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="327"/>
+      </memberdef>
+      <memberdef kind="function" id="protocol_g_t_m_h_t_t_p_fetch_history_protocol-p_1a1ee60e3017d6b7cb9f9909390fc36331" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>id&lt; <ref refid="protocol_g_t_m_cookie_storage_protocol-p" kindref="compound">GTMCookieStorageProtocol</ref> &gt;</type>
+        <definition>id &lt;GTMCookieStorageProtocol&gt; GTMHTTPFetchHistoryProtocol-p::cookieStorage</definition>
+        <argsstring>()</argsstring>
+        <name>cookieStorage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="328"/>
+      </memberdef>
+      <memberdef kind="function" id="protocol_g_t_m_h_t_t_p_fetch_history_protocol-p_1a2675be86c5b705cd2695c43526578b3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void GTMHTTPFetchHistoryProtocol-p::updateFetchHistoryWithRequest:response:downloadedData:</definition>
+        <argsstring>(NSURLRequest *request,[response] NSURLResponse *response,[downloadedData] NSData *downloadedData)</argsstring>
+        <name>updateFetchHistoryWithRequest:response:downloadedData:</name>
+        <param>
+          <type>NSURLRequest *</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <attributes>[response]</attributes>
+          <type>NSURLResponse *</type>
+          <declname>response</declname>
+        </param>
+        <param>
+          <attributes>[downloadedData]</attributes>
+          <type>NSData *</type>
+          <declname>downloadedData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="331"/>
+      </memberdef>
+      <memberdef kind="function" id="protocol_g_t_m_h_t_t_p_fetch_history_protocol-p_1af3850cda3a5649517db07a37a1c5bd3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void GTMHTTPFetchHistoryProtocol-p::removeCachedDataForRequest:</definition>
+        <argsstring>(NSURLRequest *request)</argsstring>
+        <name>removeCachedDataForRequest:</name>
+        <param>
+          <type>NSURLRequest *</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="332"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="322" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="322" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="protocol_g_t_m_h_t_t_p_fetch_history_protocol-p_1a5008e0748431db453ede7edf12e1b149" prot="public" virt="virtual"><scope>GTMHTTPFetchHistoryProtocol-p</scope><name>cachedDataForRequest:</name></member>
+      <member refid="protocol_g_t_m_h_t_t_p_fetch_history_protocol-p_1a1ee60e3017d6b7cb9f9909390fc36331" prot="public" virt="virtual"><scope>GTMHTTPFetchHistoryProtocol-p</scope><name>cookieStorage</name></member>
+      <member refid="protocol_g_t_m_h_t_t_p_fetch_history_protocol-p_1af3850cda3a5649517db07a37a1c5bd3d" prot="public" virt="virtual"><scope>GTMHTTPFetchHistoryProtocol-p</scope><name>removeCachedDataForRequest:</name></member>
+      <member refid="protocol_g_t_m_h_t_t_p_fetch_history_protocol-p_1a3eeed3a621d5b2fe679b8cae24ac6a79" prot="public" virt="virtual"><scope>GTMHTTPFetchHistoryProtocol-p</scope><name>shouldCacheETaggedData</name></member>
+      <member refid="protocol_g_t_m_h_t_t_p_fetch_history_protocol-p_1a2675be86c5b705cd2695c43526578b3e" prot="public" virt="virtual"><scope>GTMHTTPFetchHistoryProtocol-p</scope><name>updateFetchHistoryWithRequest:response:downloadedData:</name></member>
+      <member refid="protocol_g_t_m_h_t_t_p_fetch_history_protocol-p_1a66dfff02e8a764954d2972212c77466e" prot="public" virt="virtual"><scope>GTMHTTPFetchHistoryProtocol-p</scope><name>updateRequest:isHTTPGet:</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="interface_g_t_m_n_s_j_s_o_n_serialization" kind="class" prot="public">
+    <compoundname>GTMNSJSONSerialization</compoundname>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="interface_g_t_m_n_s_j_s_o_n_serialization_1a6f0e7c5dd350d63c27bf5c1bad8123ba" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>id</type>
+        <definition>id GTMNSJSONSerialization::JSONObjectWithData:options:error:</definition>
+        <argsstring>(NSData *data,[options] NSUInteger opt,[error] NSError **error)</argsstring>
+        <name>JSONObjectWithData:options:error:</name>
+        <param>
+          <type>NSData *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <attributes>[options]</attributes>
+          <type>NSUInteger</type>
+          <declname>opt</declname>
+        </param>
+        <param>
+          <attributes>[error]</attributes>
+          <type>NSError **</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.m" line="48"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.m" line="48" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.m" bodystart="47" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="interface_g_t_m_n_s_j_s_o_n_serialization_1a6f0e7c5dd350d63c27bf5c1bad8123ba" prot="public" virt="virtual"><scope>GTMNSJSONSerialization</scope><name>JSONObjectWithData:options:error:</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

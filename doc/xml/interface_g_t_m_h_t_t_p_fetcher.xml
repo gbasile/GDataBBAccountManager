@@ -1,0 +1,1516 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="interface_g_t_m_h_t_t_p_fetcher" kind="class" prot="public">
+    <compoundname>GTMHTTPFetcher</compoundname>
+    <includes refid="_g_t_m_h_t_t_p_fetcher_8h" local="no">GTMHTTPFetcher.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="interface_g_t_m_h_t_t_p_fetcher_1a5287e7be7ebcbe08404c3c565a7e027b" prot="protected" static="no" mutable="no">
+        <type>NSMutableURLRequest *</type>
+        <definition>NSMutableURLRequest* GTMHTTPFetcher::request_</definition>
+        <argsstring></argsstring>
+        <name>request_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="372" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="372" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_g_t_m_h_t_t_p_fetcher_1a1f6804a8493520e3566a1c05a529604e" prot="protected" static="no" mutable="no">
+        <type>NSURLConnection *</type>
+        <definition>NSURLConnection* GTMHTTPFetcher::connection_</definition>
+        <argsstring></argsstring>
+        <name>connection_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="373" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="373" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_g_t_m_h_t_t_p_fetcher_1a0183f16478d78ec131fe2a3fd4569c79" prot="protected" static="no" mutable="no">
+        <type>NSMutableData *</type>
+        <definition>NSMutableData* GTMHTTPFetcher::downloadedData_</definition>
+        <argsstring></argsstring>
+        <name>downloadedData_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="374" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="374" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_g_t_m_h_t_t_p_fetcher_1affce14c5784f25b9f2df8a22175e43d3" prot="protected" static="no" mutable="no">
+        <type>NSString *</type>
+        <definition>NSString* GTMHTTPFetcher::downloadPath_</definition>
+        <argsstring></argsstring>
+        <name>downloadPath_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="375" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="375" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_g_t_m_h_t_t_p_fetcher_1ac081e4de7a9399df76c480566c30165f" prot="protected" static="no" mutable="no">
+        <type>NSString *</type>
+        <definition>NSString* GTMHTTPFetcher::temporaryDownloadPath_</definition>
+        <argsstring></argsstring>
+        <name>temporaryDownloadPath_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="376" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="376" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_g_t_m_h_t_t_p_fetcher_1a1b33b8b6184c49191e334ce21a6599c9" prot="protected" static="no" mutable="no">
+        <type>NSFileHandle *</type>
+        <definition>NSFileHandle* GTMHTTPFetcher::downloadFileHandle_</definition>
+        <argsstring></argsstring>
+        <name>downloadFileHandle_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="377" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="377" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_g_t_m_h_t_t_p_fetcher_1a0cd60015d658b5832225ab63713d89ff" prot="protected" static="no" mutable="no">
+        <type>unsigned long long</type>
+        <definition>unsigned long long GTMHTTPFetcher::downloadedLength_</definition>
+        <argsstring></argsstring>
+        <name>downloadedLength_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="378" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="378" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_g_t_m_h_t_t_p_fetcher_1a2f181986ab6438272bd1269f54100820" prot="protected" static="no" mutable="no">
+        <type>NSURLCredential *</type>
+        <definition>NSURLCredential* GTMHTTPFetcher::credential_</definition>
+        <argsstring></argsstring>
+        <name>credential_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="379" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="379" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_g_t_m_h_t_t_p_fetcher_1aa83eab9615e7f2d48b908957919346d5" prot="protected" static="no" mutable="no">
+        <type>NSURLCredential *</type>
+        <definition>NSURLCredential* GTMHTTPFetcher::proxyCredential_</definition>
+        <argsstring></argsstring>
+        <name>proxyCredential_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="380" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="380" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_g_t_m_h_t_t_p_fetcher_1a290d03c57dd5d42b0e96b8376c7711da" prot="protected" static="no" mutable="no">
+        <type>NSData *</type>
+        <definition>NSData* GTMHTTPFetcher::postData_</definition>
+        <argsstring></argsstring>
+        <name>postData_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="381" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="381" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_g_t_m_h_t_t_p_fetcher_1a5d3cf2087245c80020b6af06af846cf3" prot="protected" static="no" mutable="no">
+        <type>NSInputStream *</type>
+        <definition>NSInputStream* GTMHTTPFetcher::postStream_</definition>
+        <argsstring></argsstring>
+        <name>postStream_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="382" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="382" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_g_t_m_h_t_t_p_fetcher_1a9f0629604869ddabc5aab64dade68395" prot="protected" static="no" mutable="no">
+        <type>NSMutableData *</type>
+        <definition>NSMutableData* GTMHTTPFetcher::loggedStreamData_</definition>
+        <argsstring></argsstring>
+        <name>loggedStreamData_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="383" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="383" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_g_t_m_h_t_t_p_fetcher_1a25ace3fbff531beb515c8f3c3b0bc3dc" prot="protected" static="no" mutable="no">
+        <type>NSURLResponse *</type>
+        <definition>NSURLResponse* GTMHTTPFetcher::response_</definition>
+        <argsstring></argsstring>
+        <name>response_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="384" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="384" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_g_t_m_h_t_t_p_fetcher_1aa9beb0e51063255faf09ee3d647ab626" prot="protected" static="no" mutable="no">
+        <type>id</type>
+        <definition>id GTMHTTPFetcher::delegate_</definition>
+        <argsstring></argsstring>
+        <name>delegate_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="385" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="385" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_g_t_m_h_t_t_p_fetcher_1a0f266221ef834f866c56f60c1ea029fb" prot="protected" static="no" mutable="no">
+        <type>SEL</type>
+        <definition>SEL GTMHTTPFetcher::finishedSel_</definition>
+        <argsstring></argsstring>
+        <name>finishedSel_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="386" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="386" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_g_t_m_h_t_t_p_fetcher_1a04412dd743de9e3a90d74e261a029316" prot="protected" static="no" mutable="no">
+        <type>SEL</type>
+        <definition>SEL GTMHTTPFetcher::sentDataSel_</definition>
+        <argsstring></argsstring>
+        <name>sentDataSel_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="387" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="387" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_g_t_m_h_t_t_p_fetcher_1a4aacbb0ffc5c302b3ec91871be0cef53" prot="protected" static="no" mutable="no">
+        <type>SEL</type>
+        <definition>SEL GTMHTTPFetcher::receivedDataSel_</definition>
+        <argsstring></argsstring>
+        <name>receivedDataSel_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="388" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="388" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_g_t_m_h_t_t_p_fetcher_1a286ebf4455ebd7c41b5be5256b40007f" prot="protected" static="no" mutable="no">
+        <type>id</type>
+        <definition>id GTMHTTPFetcher::completionPlaceholder_</definition>
+        <argsstring></argsstring>
+        <name>completionPlaceholder_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="397" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="397" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_g_t_m_h_t_t_p_fetcher_1acd5cb2c30f37df4b7fedbd609545ef42" prot="protected" static="no" mutable="no">
+        <type>id</type>
+        <definition>id GTMHTTPFetcher::receivedDataPlaceholder_</definition>
+        <argsstring></argsstring>
+        <name>receivedDataPlaceholder_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="398" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="398" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_g_t_m_h_t_t_p_fetcher_1acebf1b3bdee180f3a73d15afe953eb6d" prot="protected" static="no" mutable="no">
+        <type>id</type>
+        <definition>id GTMHTTPFetcher::sentDataPlaceholder_</definition>
+        <argsstring></argsstring>
+        <name>sentDataPlaceholder_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="399" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="399" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_g_t_m_h_t_t_p_fetcher_1a7d273c35227261b992a555320d9f3779" prot="protected" static="no" mutable="no">
+        <type>id</type>
+        <definition>id GTMHTTPFetcher::retryPlaceholder_</definition>
+        <argsstring></argsstring>
+        <name>retryPlaceholder_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="400" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="400" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_g_t_m_h_t_t_p_fetcher_1add47822a89da79ff947495f0d4c5dc60" prot="protected" static="no" mutable="no">
+        <type>BOOL</type>
+        <definition>BOOL GTMHTTPFetcher::hasConnectionEnded_</definition>
+        <argsstring></argsstring>
+        <name>hasConnectionEnded_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="402" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="402" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_g_t_m_h_t_t_p_fetcher_1a96694c5b87a85dd0805a95896743d5fd" prot="protected" static="no" mutable="no">
+        <type>BOOL</type>
+        <definition>BOOL GTMHTTPFetcher::isCancellingChallenge_</definition>
+        <argsstring></argsstring>
+        <name>isCancellingChallenge_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="403" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="403" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_g_t_m_h_t_t_p_fetcher_1a0614bb2667de63ebe5ef8188fa42c29b" prot="protected" static="no" mutable="no">
+        <type>BOOL</type>
+        <definition>BOOL GTMHTTPFetcher::isStopNotificationNeeded_</definition>
+        <argsstring></argsstring>
+        <name>isStopNotificationNeeded_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="404" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="404" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_g_t_m_h_t_t_p_fetcher_1aa078891df6edc2b0e3489fe176600d41" prot="protected" static="no" mutable="no">
+        <type>BOOL</type>
+        <definition>BOOL GTMHTTPFetcher::shouldFetchInBackground_</definition>
+        <argsstring></argsstring>
+        <name>shouldFetchInBackground_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="405" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="405" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_g_t_m_h_t_t_p_fetcher_1abb0c023c53372042df9c46255a31c423" prot="protected" static="no" mutable="no">
+        <type>id</type>
+        <definition>id GTMHTTPFetcher::userData_</definition>
+        <argsstring></argsstring>
+        <name>userData_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="409" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="409" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_g_t_m_h_t_t_p_fetcher_1aeb8d8e7e03931662a799993d469d5b3a" prot="protected" static="no" mutable="no">
+        <type>NSMutableDictionary *</type>
+        <definition>NSMutableDictionary* GTMHTTPFetcher::properties_</definition>
+        <argsstring></argsstring>
+        <name>properties_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="410" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="410" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_g_t_m_h_t_t_p_fetcher_1ae7f56cd46f4a75a59a87f867652c7d5b" prot="protected" static="no" mutable="no">
+        <type>NSArray *</type>
+        <definition>NSArray* GTMHTTPFetcher::runLoopModes_</definition>
+        <argsstring></argsstring>
+        <name>runLoopModes_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="411" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="411" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_g_t_m_h_t_t_p_fetcher_1afd78138ef7ed6a9ed9aab8e710b789f2" prot="protected" static="no" mutable="no">
+        <type>id&lt; <ref refid="protocol_g_t_m_h_t_t_p_fetch_history_protocol-p" kindref="compound">GTMHTTPFetchHistoryProtocol</ref> &gt;</type>
+        <definition>id&lt;GTMHTTPFetchHistoryProtocol&gt; GTMHTTPFetcher::fetchHistory_</definition>
+        <argsstring></argsstring>
+        <name>fetchHistory_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="412" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="412" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_g_t_m_h_t_t_p_fetcher_1a819ae7b2b589384cd1382ea15b1c9ade" prot="protected" static="no" mutable="no">
+        <type>NSInteger</type>
+        <definition>NSInteger GTMHTTPFetcher::cookieStorageMethod_</definition>
+        <argsstring></argsstring>
+        <name>cookieStorageMethod_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="413" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="413" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_g_t_m_h_t_t_p_fetcher_1af938813732d035f6f9da47378799057d" prot="protected" static="no" mutable="no">
+        <type>id&lt; <ref refid="protocol_g_t_m_cookie_storage_protocol-p" kindref="compound">GTMCookieStorageProtocol</ref> &gt;</type>
+        <definition>id&lt;GTMCookieStorageProtocol&gt; GTMHTTPFetcher::cookieStorage_</definition>
+        <argsstring></argsstring>
+        <name>cookieStorage_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="414" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="414" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_g_t_m_h_t_t_p_fetcher_1a55f0badb61451d79cba2b02b1bce0edd" prot="protected" static="no" mutable="no">
+        <type>id&lt; <ref refid="protocol_g_t_m_fetcher_authorization_protocol-p" kindref="compound">GTMFetcherAuthorizationProtocol</ref> &gt;</type>
+        <definition>id&lt;GTMFetcherAuthorizationProtocol&gt; GTMHTTPFetcher::authorizer_</definition>
+        <argsstring></argsstring>
+        <name>authorizer_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="416" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="416" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_g_t_m_h_t_t_p_fetcher_1a43b4c7b9942b271d440e18a468b96a71" prot="protected" static="no" mutable="no">
+        <type>id&lt; <ref refid="protocol_g_t_m_h_t_t_p_fetcher_service_protocol-p" kindref="compound">GTMHTTPFetcherServiceProtocol</ref> &gt;</type>
+        <definition>id&lt;GTMHTTPFetcherServiceProtocol&gt; GTMHTTPFetcher::service_</definition>
+        <argsstring></argsstring>
+        <name>service_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="419" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="419" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_g_t_m_h_t_t_p_fetcher_1a8ed191fd0eaf945b90b6cc82213e5fd4" prot="protected" static="no" mutable="no">
+        <type>NSString *</type>
+        <definition>NSString* GTMHTTPFetcher::serviceHost_</definition>
+        <argsstring></argsstring>
+        <name>serviceHost_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="420" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="420" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_g_t_m_h_t_t_p_fetcher_1a0b47d12b7fa3648fb1e7aa2973635534" prot="protected" static="no" mutable="no">
+        <type>NSInteger</type>
+        <definition>NSInteger GTMHTTPFetcher::servicePriority_</definition>
+        <argsstring></argsstring>
+        <name>servicePriority_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="421" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="421" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_g_t_m_h_t_t_p_fetcher_1a75357543993459f62a12ec86f642a25d" prot="protected" static="no" mutable="no">
+        <type>NSThread *</type>
+        <definition>NSThread* GTMHTTPFetcher::thread_</definition>
+        <argsstring></argsstring>
+        <name>thread_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="422" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="422" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_g_t_m_h_t_t_p_fetcher_1a535bccb2c6783c1a1397db011ac87131" prot="protected" static="no" mutable="no">
+        <type>BOOL</type>
+        <definition>BOOL GTMHTTPFetcher::isRetryEnabled_</definition>
+        <argsstring></argsstring>
+        <name>isRetryEnabled_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="424" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="424" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_g_t_m_h_t_t_p_fetcher_1a8d601adee4af8f8eb9e3dd5d5d8bfb82" prot="protected" static="no" mutable="no">
+        <type>SEL</type>
+        <definition>SEL GTMHTTPFetcher::retrySel_</definition>
+        <argsstring></argsstring>
+        <name>retrySel_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="425" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="425" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_g_t_m_h_t_t_p_fetcher_1a8836020eb4f3248a7c16dd5a1cf90d59" prot="protected" static="no" mutable="no">
+        <type>NSTimer *</type>
+        <definition>NSTimer* GTMHTTPFetcher::retryTimer_</definition>
+        <argsstring></argsstring>
+        <name>retryTimer_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="426" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="426" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_g_t_m_h_t_t_p_fetcher_1ab2da1622e126bdee5051e5200fc2b3a1" prot="protected" static="no" mutable="no">
+        <type>NSUInteger</type>
+        <definition>NSUInteger GTMHTTPFetcher::retryCount_</definition>
+        <argsstring></argsstring>
+        <name>retryCount_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="427" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="427" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_g_t_m_h_t_t_p_fetcher_1a7dcf3819b88215ba79b42a90210bb12b" prot="protected" static="no" mutable="no">
+        <type>NSTimeInterval</type>
+        <definition>NSTimeInterval GTMHTTPFetcher::maxRetryInterval_</definition>
+        <argsstring></argsstring>
+        <name>maxRetryInterval_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="428" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="428" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_g_t_m_h_t_t_p_fetcher_1a9f71da5eb3660074aa275fa0c170f6a2" prot="protected" static="no" mutable="no">
+        <type>NSTimeInterval</type>
+        <definition>NSTimeInterval GTMHTTPFetcher::minRetryInterval_</definition>
+        <argsstring></argsstring>
+        <name>minRetryInterval_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="429" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="429" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_g_t_m_h_t_t_p_fetcher_1a810d0f420a53bfb285aee4e86cf78bb3" prot="protected" static="no" mutable="no">
+        <type>NSTimeInterval</type>
+        <definition>NSTimeInterval GTMHTTPFetcher::retryFactor_</definition>
+        <argsstring></argsstring>
+        <name>retryFactor_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="430" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="430" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_g_t_m_h_t_t_p_fetcher_1a8bb1cef4732e259b65fee21402c2c793" prot="protected" static="no" mutable="no">
+        <type>NSTimeInterval</type>
+        <definition>NSTimeInterval GTMHTTPFetcher::lastRetryInterval_</definition>
+        <argsstring></argsstring>
+        <name>lastRetryInterval_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="431" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="431" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_g_t_m_h_t_t_p_fetcher_1ae229ab83b030b4ae93af1cffb65bae6f" prot="protected" static="no" mutable="no">
+        <type>BOOL</type>
+        <definition>BOOL GTMHTTPFetcher::hasAttemptedAuthRefresh_</definition>
+        <argsstring></argsstring>
+        <name>hasAttemptedAuthRefresh_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="432" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="432" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_g_t_m_h_t_t_p_fetcher_1a6b84d472dffab3bb1c850f5788deb649" prot="protected" static="no" mutable="no">
+        <type>NSString *</type>
+        <definition>NSString* GTMHTTPFetcher::comment_</definition>
+        <argsstring></argsstring>
+        <name>comment_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="434" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="434" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="interface_g_t_m_h_t_t_p_fetcher_1a13a5520f4a9e63b2b878484b81500f6a" prot="protected" static="no" mutable="no">
+        <type>NSString *</type>
+        <definition>NSString* GTMHTTPFetcher::log_</definition>
+        <argsstring></argsstring>
+        <name>log_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="435" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="435" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="interface_g_t_m_h_t_t_p_fetcher_1ae97d901f997fad5452aef368e37baead" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>NSMutableURLRequest *</type>
+        <definition>NSMutableURLRequest* GTMHTTPFetcher::mutableRequest</definition>
+        <argsstring></argsstring>
+        <name>mutableRequest</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="456" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="456" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_g_t_m_h_t_t_p_fetcher_1a66b0a7450ee810626e6a319d24c9f265" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>NSURLCredential *</type>
+        <definition>NSURLCredential* GTMHTTPFetcher::credential</definition>
+        <argsstring></argsstring>
+        <name>credential</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="460" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="460" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_g_t_m_h_t_t_p_fetcher_1a501a10c723ab1cd01056bf9c261caa0a" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>NSURLCredential *</type>
+        <definition>NSURLCredential* GTMHTTPFetcher::proxyCredential</definition>
+        <argsstring></argsstring>
+        <name>proxyCredential</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="464" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="464" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_g_t_m_h_t_t_p_fetcher_1a264bfaa7d62468f88bce6e8c015b17f6" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>NSData *</type>
+        <definition>NSData* GTMHTTPFetcher::postData</definition>
+        <argsstring></argsstring>
+        <name>postData</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="467" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="467" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_g_t_m_h_t_t_p_fetcher_1ae4e2349e24677cf5a46d872217e78af3" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>NSInputStream *</type>
+        <definition>NSInputStream* GTMHTTPFetcher::postStream</definition>
+        <argsstring></argsstring>
+        <name>postStream</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="468" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="468" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_g_t_m_h_t_t_p_fetcher_1aee68706cb6617e6a04a8bde1f62e2363" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="assign">
+        <type>NSInteger</type>
+        <definition>NSInteger GTMHTTPFetcher::cookieStorageMethod</definition>
+        <argsstring></argsstring>
+        <name>cookieStorageMethod</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="477" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="477" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_g_t_m_h_t_t_p_fetcher_1a1704ee2832617090e8ed436f7088a8d4" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>id&lt; <ref refid="protocol_g_t_m_fetcher_authorization_protocol-p" kindref="compound">GTMFetcherAuthorizationProtocol</ref> &gt;</type>
+        <definition>id&lt;GTMFetcherAuthorizationProtocol&gt; GTMHTTPFetcher::authorizer</definition>
+        <argsstring></argsstring>
+        <name>authorizer</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="482" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="482" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_g_t_m_h_t_t_p_fetcher_1a1dfc9d5a7e33ba1fe35cb3867c99ca4f" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>id&lt; <ref refid="protocol_g_t_m_h_t_t_p_fetcher_service_protocol-p" kindref="compound">GTMHTTPFetcherServiceProtocol</ref> &gt;</type>
+        <definition>id&lt;GTMHTTPFetcherServiceProtocol&gt; GTMHTTPFetcher::service</definition>
+        <argsstring></argsstring>
+        <name>service</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="485" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="485" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_g_t_m_h_t_t_p_fetcher_1aeb3ef44e5aa756c805325b95cc214e22" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="copy">
+        <type>NSString *</type>
+        <definition>NSString* GTMHTTPFetcher::serviceHost</definition>
+        <argsstring></argsstring>
+        <name>serviceHost</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="488" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="488" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_g_t_m_h_t_t_p_fetcher_1a0a63a68cb27bcdb48455d1c34c7638b3" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="assign">
+        <type>NSInteger</type>
+        <definition>NSInteger GTMHTTPFetcher::servicePriority</definition>
+        <argsstring></argsstring>
+        <name>servicePriority</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="495" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="495" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_g_t_m_h_t_t_p_fetcher_1a4883ca32fba2b4d5c931526672919c27" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>NSThread *</type>
+        <definition>NSThread* GTMHTTPFetcher::thread</definition>
+        <argsstring></argsstring>
+        <name>thread</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="498" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="498" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_g_t_m_h_t_t_p_fetcher_1a106c07d770140bb37af6c2a174069dde" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>id</type>
+        <definition>id GTMHTTPFetcher::delegate</definition>
+        <argsstring></argsstring>
+        <name>delegate</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="501" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="501" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_g_t_m_h_t_t_p_fetcher_1a2ba87eb5b9d17f81d34556094e3d7a94" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="assign">
+        <type>BOOL</type>
+        <definition>BOOL GTMHTTPFetcher::shouldFetchInBackground</definition>
+        <argsstring></argsstring>
+        <name>shouldFetchInBackground</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="510" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="510" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_g_t_m_h_t_t_p_fetcher_1aebf303c554492dffb641a3223635fb01" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="assign">
+        <type>SEL</type>
+        <definition>SEL GTMHTTPFetcher::sentDataSelector</definition>
+        <argsstring></argsstring>
+        <name>sentDataSelector</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="522" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="522" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_g_t_m_h_t_t_p_fetcher_1a7b1922b57cba55d88b2267fc45baf239" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="assign">
+        <type>SEL</type>
+        <definition>SEL GTMHTTPFetcher::receivedDataSelector</definition>
+        <argsstring></argsstring>
+        <name>receivedDataSelector</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="535" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="535" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_g_t_m_h_t_t_p_fetcher_1a6752b94fcc98ece286bbbde6ef88d23d" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="assign">
+        <type>BOOL</type>
+        <definition>BOOL GTMHTTPFetcher::retryEnabled</definition>
+        <argsstring></argsstring>
+        <name>retryEnabled</name>
+        <read>isRetryEnabled</read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="550" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="550" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_g_t_m_h_t_t_p_fetcher_1a7bb5837da528b71e74d7503c1573319e" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="assign">
+        <type>SEL</type>
+        <definition>SEL GTMHTTPFetcher::retrySelector</definition>
+        <argsstring></argsstring>
+        <name>retrySelector</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="557" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="557" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_g_t_m_h_t_t_p_fetcher_1a873565ff4eabf60606a625f66313c6a1" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="assign">
+        <type>NSTimeInterval</type>
+        <definition>NSTimeInterval GTMHTTPFetcher::maxRetryInterval</definition>
+        <argsstring></argsstring>
+        <name>maxRetryInterval</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="568" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="568" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_g_t_m_h_t_t_p_fetcher_1a8c02b9b785cd3efa447e270ea3abbbcb" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="assign">
+        <type>NSTimeInterval</type>
+        <definition>double GTMHTTPFetcher::minRetryInterval</definition>
+        <argsstring></argsstring>
+        <name>minRetryInterval</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="573" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="573" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_g_t_m_h_t_t_p_fetcher_1a9a9b12618c5008c858e9dd75b77b7823" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="assign">
+        <type>double</type>
+        <definition>double GTMHTTPFetcher::retryFactor</definition>
+        <argsstring></argsstring>
+        <name>retryFactor</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="577" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="577" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_g_t_m_h_t_t_p_fetcher_1ab80891ac8a1bd4aa88218587a1c8a8c5" prot="public" static="no" readable="yes" writable="no" gettable="no" settable="no" accessor="assign">
+        <type>NSUInteger</type>
+        <definition>NSUInteger GTMHTTPFetcher::retryCount</definition>
+        <argsstring></argsstring>
+        <name>retryCount</name>
+        <read></read>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="580" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="580" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_g_t_m_h_t_t_p_fetcher_1a64023a0ca7078a2c53c9b87b990b2bb6" prot="public" static="no" readable="yes" writable="no" gettable="no" settable="no" accessor="assign">
+        <type>NSTimeInterval</type>
+        <definition>NSTimeInterval GTMHTTPFetcher::nextRetryInterval</definition>
+        <argsstring></argsstring>
+        <name>nextRetryInterval</name>
+        <read></read>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="583" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="583" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_g_t_m_h_t_t_p_fetcher_1a70ff0f9c11476c260f8a8875727a2c9d" prot="public" static="no" readable="yes" writable="no" gettable="no" settable="no" accessor="assign">
+        <type>NSInteger</type>
+        <definition>NSInteger GTMHTTPFetcher::statusCode</definition>
+        <argsstring></argsstring>
+        <name>statusCode</name>
+        <read></read>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="617" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="617" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_g_t_m_h_t_t_p_fetcher_1a2de9e8cf04e9fa464a6c79c2332bd773" prot="public" static="no" readable="yes" writable="no" gettable="no" settable="no" accessor="retain">
+        <type>NSDictionary *</type>
+        <definition>NSDictionary * GTMHTTPFetcher::responseHeaders</definition>
+        <argsstring></argsstring>
+        <name>responseHeaders</name>
+        <read></read>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="620" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="620" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_g_t_m_h_t_t_p_fetcher_1a25a0bf1a59f3b08d47e8ed84980847f9" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>NSURLResponse *</type>
+        <definition>NSURLResponse* GTMHTTPFetcher::response</definition>
+        <argsstring></argsstring>
+        <name>response</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="623" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="623" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_g_t_m_h_t_t_p_fetcher_1a31f5f639f1115b2e6f2de54204f21184" prot="public" static="no" readable="yes" writable="no" gettable="no" settable="no" accessor="assign">
+        <type>unsigned long long</type>
+        <definition>unsigned long long GTMHTTPFetcher::downloadedLength</definition>
+        <argsstring></argsstring>
+        <name>downloadedLength</name>
+        <read></read>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="626" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="626" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_g_t_m_h_t_t_p_fetcher_1a785a6dee890a0301d62ff25bdb6dd2c4" prot="public" static="no" readable="yes" writable="no" gettable="no" settable="no" accessor="retain">
+        <type>NSData *</type>
+        <definition>NSData* GTMHTTPFetcher::downloadedData</definition>
+        <argsstring></argsstring>
+        <name>downloadedData</name>
+        <read></read>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="629" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="629" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_g_t_m_h_t_t_p_fetcher_1a12f999f0783fc83db9d4b2aff59bfc44" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="copy">
+        <type>NSString *</type>
+        <definition>NSString* GTMHTTPFetcher::downloadPath</definition>
+        <argsstring></argsstring>
+        <name>downloadPath</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="636" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="636" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_g_t_m_h_t_t_p_fetcher_1ad92ce92502529416414510007667e58b" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>NSFileHandle *</type>
+        <definition>NSFileHandle* GTMHTTPFetcher::downloadFileHandle</definition>
+        <argsstring></argsstring>
+        <name>downloadFileHandle</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="644" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="644" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_g_t_m_h_t_t_p_fetcher_1ad786774fdc194095cca9752cb60fd159" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>id&lt; <ref refid="protocol_g_t_m_h_t_t_p_fetch_history_protocol-p" kindref="compound">GTMHTTPFetchHistoryProtocol</ref> &gt;</type>
+        <definition>id&lt; GTMHTTPFetchHistoryProtocol &gt; GTMHTTPFetcher::fetchHistory</definition>
+        <argsstring></argsstring>
+        <name>fetchHistory</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="651" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="651" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_g_t_m_h_t_t_p_fetcher_1afb281ada00a0d65c84e44936284ba3e7" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>id</type>
+        <definition>id GTMHTTPFetcher::userData</definition>
+        <argsstring></argsstring>
+        <name>userData</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="654" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="654" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_g_t_m_h_t_t_p_fetcher_1ab5e0ebb438382ba3727c99b528d4e9a5" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="copy">
+        <type>NSMutableDictionary *</type>
+        <definition>NSMutableDictionary * GTMHTTPFetcher::properties</definition>
+        <argsstring></argsstring>
+        <name>properties</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="657" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="657" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_g_t_m_h_t_t_p_fetcher_1afde9a29c6086de77aaa5ee5fdcb2dd5d" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="copy">
+        <type>NSString *</type>
+        <definition>NSString* GTMHTTPFetcher::comment</definition>
+        <argsstring></argsstring>
+        <name>comment</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="665" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="665" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_g_t_m_h_t_t_p_fetcher_1a6d8615ab7574745d6dbd5c421ba5e9ce" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="copy">
+        <type>NSString *</type>
+        <definition>NSString* GTMHTTPFetcher::log</definition>
+        <argsstring></argsstring>
+        <name>log</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="670" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="670" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_g_t_m_h_t_t_p_fetcher_1a550b0a5cdd6d9aa1e6423692f9224305" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>NSArray *</type>
+        <definition>NSArray* GTMHTTPFetcher::runLoopModes</definition>
+        <argsstring></argsstring>
+        <name>runLoopModes</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="674" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="674" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="interface_g_t_m_h_t_t_p_fetcher_1a47f2579a7e143d40660cda6498143662" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="interface_g_t_m_h_t_t_p_fetcher" kindref="compound">GTMHTTPFetcher</ref> *</type>
+        <definition>GTMHTTPFetcher * GTMHTTPFetcher::fetcherWithRequest:</definition>
+        <argsstring>(NSURLRequest *request)</argsstring>
+        <name>fetcherWithRequest:</name>
+        <param>
+          <type>NSURLRequest *</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="444" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.m" bodystart="100" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_g_t_m_h_t_t_p_fetcher_1ab7c4d640abebfd7c1aae278a4b249352" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="interface_g_t_m_h_t_t_p_fetcher" kindref="compound">GTMHTTPFetcher</ref> *</type>
+        <definition>GTMHTTPFetcher * GTMHTTPFetcher::fetcherWithURL:</definition>
+        <argsstring>(NSURL *requestURL)</argsstring>
+        <name>fetcherWithURL:</name>
+        <param>
+          <type>NSURL *</type>
+          <declname>requestURL</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="447" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.m" bodystart="104" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_g_t_m_h_t_t_p_fetcher_1acb449f03bed57ac49da496322ab2ad03" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="interface_g_t_m_h_t_t_p_fetcher" kindref="compound">GTMHTTPFetcher</ref> *</type>
+        <definition>GTMHTTPFetcher * GTMHTTPFetcher::fetcherWithURLString:</definition>
+        <argsstring>(NSString *requestURLString)</argsstring>
+        <name>fetcherWithURLString:</name>
+        <param>
+          <type>NSString *</type>
+          <declname>requestURLString</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="448" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.m" bodystart="108" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_g_t_m_h_t_t_p_fetcher_1a2b157947cf8ff45d30f0b62ef825e985" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>id&lt; <ref refid="protocol_g_t_m_cookie_storage_protocol-p" kindref="compound">GTMCookieStorageProtocol</ref> &gt;</type>
+        <definition>id&lt; GTMCookieStorageProtocol &gt; GTMHTTPFetcher::staticCookieStorage</definition>
+        <argsstring>()</argsstring>
+        <name>staticCookieStorage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="479" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.m" bodystart="1454" bodyend="1456"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_g_t_m_h_t_t_p_fetcher_1ac2a18992ddc109e368ee6e6a57838174" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL GTMHTTPFetcher::doesSupportSentDataCallback</definition>
+        <argsstring>()</argsstring>
+        <name>doesSupportSentDataCallback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="520" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.m" bodystart="1458" bodyend="1470"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_g_t_m_h_t_t_p_fetcher_1a75615f06dd537776966c8dbc168294d7" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>Class</type>
+        <definition>Class GTMHTTPFetcher::connectionClass</definition>
+        <argsstring>()</argsstring>
+        <name>connectionClass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="679" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.m" bodystart="1547" bodyend="1552"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_g_t_m_h_t_t_p_fetcher_1a58b64b45567844c04dc41b3d1748da8b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void GTMHTTPFetcher::setConnectionClass:</definition>
+        <argsstring>(Class theClass)</argsstring>
+        <name>setConnectionClass:</name>
+        <param>
+          <type>Class</type>
+          <declname>theClass</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="680" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.m" bodystart="1554" bodyend="1556"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_g_t_m_h_t_t_p_fetcher_1a4b8a9fb9aa6bf786130c38091e9b9193" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>id</type>
+        <definition>id GTMHTTPFetcher::initWithRequest:</definition>
+        <argsstring>(NSURLRequest *request)</argsstring>
+        <name>initWithRequest:</name>
+        <param>
+          <type>NSURLRequest *</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="451" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.m" bodystart="127" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_g_t_m_h_t_t_p_fetcher_1a1a2dcb36c06c5c3a83f1d0c6b4994886" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL GTMHTTPFetcher::beginFetchWithDelegate:didFinishSelector:</definition>
+        <argsstring>(id delegate,[didFinishSelector] SEL finishedSEL)</argsstring>
+        <name>beginFetchWithDelegate:didFinishSelector:</name>
+        <param>
+          <type>id</type>
+          <declname>delegate</declname>
+        </param>
+        <param>
+          <attributes>[didFinishSelector]</attributes>
+          <type>SEL</type>
+          <declname>finishedSEL</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="603" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.m" bodystart="211" bodyend="226"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_g_t_m_h_t_t_p_fetcher_1a6f83c4b496226cf248ff8aeacfae030f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL GTMHTTPFetcher::isFetching</definition>
+        <argsstring>()</argsstring>
+        <name>isFetching</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="611" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.m" bodystart="554" bodyend="562"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_g_t_m_h_t_t_p_fetcher_1a9f816fe4b482ebe6cdccb619431c2fb8" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void GTMHTTPFetcher::stopFetching</definition>
+        <argsstring>()</argsstring>
+        <name>stopFetching</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="614" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.m" bodystart="652" bodyend="654"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_g_t_m_h_t_t_p_fetcher_1a20651a98f68a645e57342212d2531c39" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void GTMHTTPFetcher::setProperty:forKey:</definition>
+        <argsstring>(id obj,[forKey] NSString *key)</argsstring>
+        <name>setProperty:forKey:</name>
+        <param>
+          <type>id</type>
+          <declname>obj</declname>
+        </param>
+        <param>
+          <attributes>[forKey]</attributes>
+          <type>NSString *</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="659" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.m" bodystart="1514" bodyend="1519"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_g_t_m_h_t_t_p_fetcher_1a3aeb3db77a819b74ebd1c37ea421961a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>id</type>
+        <definition>id GTMHTTPFetcher::propertyForKey:</definition>
+        <argsstring>(NSString *key)</argsstring>
+        <name>propertyForKey:</name>
+        <param>
+          <type>NSString *</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="660" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.m" bodystart="1521" bodyend="1523"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_g_t_m_h_t_t_p_fetcher_1ae63bc1b4996e03b54f79c9cc4aabd810" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void GTMHTTPFetcher::addPropertiesFromDictionary:</definition>
+        <argsstring>(NSDictionary *dict)</argsstring>
+        <name>addPropertiesFromDictionary:</name>
+        <param>
+          <type>NSDictionary *</type>
+          <declname>dict</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="662" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.m" bodystart="1525" bodyend="1531"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_g_t_m_h_t_t_p_fetcher_1aa92a5c0d5a35e735ff1bccce6b681c22" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void GTMHTTPFetcher::setCommentWithFormat:</definition>
+        <argsstring>(id format,[,]...)</argsstring>
+        <name>setCommentWithFormat:</name>
+        <param>
+          <type>id</type>
+          <declname>format</declname>
+        </param>
+        <param>
+          <attributes>[,]</attributes>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="667" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.m" bodystart="1533" bodyend="1545"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_g_t_m_h_t_t_p_fetcher_1a8b98121181c0e7ac3c04e112d4bdb4cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void GTMHTTPFetcher::waitForCompletionWithTimeout:</definition>
+        <argsstring>(NSTimeInterval timeoutInSeconds)</argsstring>
+        <name>waitForCompletionWithTimeout:</name>
+        <param>
+          <type>NSTimeInterval</type>
+          <declname>timeoutInSeconds</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="688" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.m" bodystart="674" bodyend="691"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="370" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="370" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1ae63bc1b4996e03b54f79c9cc4aabd810" prot="public" virt="virtual"><scope>GTMHTTPFetcher</scope><name>addPropertiesFromDictionary:</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a1704ee2832617090e8ed436f7088a8d4" prot="public" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>authorizer</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a55f0badb61451d79cba2b02b1bce0edd" prot="protected" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>authorizer_</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a1a2dcb36c06c5c3a83f1d0c6b4994886" prot="public" virt="virtual"><scope>GTMHTTPFetcher</scope><name>beginFetchWithDelegate:didFinishSelector:</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1afde9a29c6086de77aaa5ee5fdcb2dd5d" prot="public" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>comment</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a6b84d472dffab3bb1c850f5788deb649" prot="protected" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>comment_</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a286ebf4455ebd7c41b5be5256b40007f" prot="protected" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>completionPlaceholder_</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a1f6804a8493520e3566a1c05a529604e" prot="protected" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>connection_</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a75615f06dd537776966c8dbc168294d7" prot="public" virt="virtual"><scope>GTMHTTPFetcher</scope><name>connectionClass</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1af938813732d035f6f9da47378799057d" prot="protected" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>cookieStorage_</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1aee68706cb6617e6a04a8bde1f62e2363" prot="public" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>cookieStorageMethod</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a819ae7b2b589384cd1382ea15b1c9ade" prot="protected" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>cookieStorageMethod_</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a66b0a7450ee810626e6a319d24c9f265" prot="public" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>credential</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a2f181986ab6438272bd1269f54100820" prot="protected" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>credential_</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a106c07d770140bb37af6c2a174069dde" prot="public" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>delegate</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1aa9beb0e51063255faf09ee3d647ab626" prot="protected" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>delegate_</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1ac2a18992ddc109e368ee6e6a57838174" prot="public" virt="virtual"><scope>GTMHTTPFetcher</scope><name>doesSupportSentDataCallback</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a785a6dee890a0301d62ff25bdb6dd2c4" prot="public" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>downloadedData</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a0183f16478d78ec131fe2a3fd4569c79" prot="protected" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>downloadedData_</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a31f5f639f1115b2e6f2de54204f21184" prot="public" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>downloadedLength</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a0cd60015d658b5832225ab63713d89ff" prot="protected" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>downloadedLength_</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1ad92ce92502529416414510007667e58b" prot="public" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>downloadFileHandle</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a1b33b8b6184c49191e334ce21a6599c9" prot="protected" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>downloadFileHandle_</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a12f999f0783fc83db9d4b2aff59bfc44" prot="public" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>downloadPath</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1affce14c5784f25b9f2df8a22175e43d3" prot="protected" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>downloadPath_</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a47f2579a7e143d40660cda6498143662" prot="public" virt="virtual"><scope>GTMHTTPFetcher</scope><name>fetcherWithRequest:</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1ab7c4d640abebfd7c1aae278a4b249352" prot="public" virt="virtual"><scope>GTMHTTPFetcher</scope><name>fetcherWithURL:</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1acb449f03bed57ac49da496322ab2ad03" prot="public" virt="virtual"><scope>GTMHTTPFetcher</scope><name>fetcherWithURLString:</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1ad786774fdc194095cca9752cb60fd159" prot="public" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>fetchHistory</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1afd78138ef7ed6a9ed9aab8e710b789f2" prot="protected" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>fetchHistory_</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a0f266221ef834f866c56f60c1ea029fb" prot="protected" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>finishedSel_</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1ae229ab83b030b4ae93af1cffb65bae6f" prot="protected" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>hasAttemptedAuthRefresh_</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1add47822a89da79ff947495f0d4c5dc60" prot="protected" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>hasConnectionEnded_</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a4b8a9fb9aa6bf786130c38091e9b9193" prot="public" virt="virtual"><scope>GTMHTTPFetcher</scope><name>initWithRequest:</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a96694c5b87a85dd0805a95896743d5fd" prot="protected" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>isCancellingChallenge_</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a6f83c4b496226cf248ff8aeacfae030f" prot="public" virt="virtual"><scope>GTMHTTPFetcher</scope><name>isFetching</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a535bccb2c6783c1a1397db011ac87131" prot="protected" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>isRetryEnabled_</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a0614bb2667de63ebe5ef8188fa42c29b" prot="protected" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>isStopNotificationNeeded_</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a8bb1cef4732e259b65fee21402c2c793" prot="protected" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>lastRetryInterval_</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a6d8615ab7574745d6dbd5c421ba5e9ce" prot="public" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>log</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a13a5520f4a9e63b2b878484b81500f6a" prot="protected" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>log_</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a9f0629604869ddabc5aab64dade68395" prot="protected" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>loggedStreamData_</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a873565ff4eabf60606a625f66313c6a1" prot="public" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>maxRetryInterval</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a7dcf3819b88215ba79b42a90210bb12b" prot="protected" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>maxRetryInterval_</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a8c02b9b785cd3efa447e270ea3abbbcb" prot="public" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>minRetryInterval</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a9f71da5eb3660074aa275fa0c170f6a2" prot="protected" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>minRetryInterval_</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1ae97d901f997fad5452aef368e37baead" prot="public" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>mutableRequest</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a64023a0ca7078a2c53c9b87b990b2bb6" prot="public" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>nextRetryInterval</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a264bfaa7d62468f88bce6e8c015b17f6" prot="public" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>postData</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a290d03c57dd5d42b0e96b8376c7711da" prot="protected" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>postData_</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1ae4e2349e24677cf5a46d872217e78af3" prot="public" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>postStream</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a5d3cf2087245c80020b6af06af846cf3" prot="protected" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>postStream_</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1ab5e0ebb438382ba3727c99b528d4e9a5" prot="public" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>properties</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1aeb8d8e7e03931662a799993d469d5b3a" prot="protected" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>properties_</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a3aeb3db77a819b74ebd1c37ea421961a" prot="public" virt="virtual"><scope>GTMHTTPFetcher</scope><name>propertyForKey:</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a501a10c723ab1cd01056bf9c261caa0a" prot="public" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>proxyCredential</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1aa83eab9615e7f2d48b908957919346d5" prot="protected" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>proxyCredential_</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1acd5cb2c30f37df4b7fedbd609545ef42" prot="protected" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>receivedDataPlaceholder_</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a4aacbb0ffc5c302b3ec91871be0cef53" prot="protected" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>receivedDataSel_</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a7b1922b57cba55d88b2267fc45baf239" prot="public" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>receivedDataSelector</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a5287e7be7ebcbe08404c3c565a7e027b" prot="protected" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>request_</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a25a0bf1a59f3b08d47e8ed84980847f9" prot="public" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>response</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a25ace3fbff531beb515c8f3c3b0bc3dc" prot="protected" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>response_</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a2de9e8cf04e9fa464a6c79c2332bd773" prot="public" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>responseHeaders</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1ab80891ac8a1bd4aa88218587a1c8a8c5" prot="public" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>retryCount</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1ab2da1622e126bdee5051e5200fc2b3a1" prot="protected" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>retryCount_</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a6752b94fcc98ece286bbbde6ef88d23d" prot="public" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>retryEnabled</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a9a9b12618c5008c858e9dd75b77b7823" prot="public" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>retryFactor</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a810d0f420a53bfb285aee4e86cf78bb3" prot="protected" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>retryFactor_</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a7d273c35227261b992a555320d9f3779" prot="protected" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>retryPlaceholder_</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a8d601adee4af8f8eb9e3dd5d5d8bfb82" prot="protected" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>retrySel_</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a7bb5837da528b71e74d7503c1573319e" prot="public" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>retrySelector</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a8836020eb4f3248a7c16dd5a1cf90d59" prot="protected" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>retryTimer_</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a550b0a5cdd6d9aa1e6423692f9224305" prot="public" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>runLoopModes</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1ae7f56cd46f4a75a59a87f867652c7d5b" prot="protected" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>runLoopModes_</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1acebf1b3bdee180f3a73d15afe953eb6d" prot="protected" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>sentDataPlaceholder_</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a04412dd743de9e3a90d74e261a029316" prot="protected" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>sentDataSel_</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1aebf303c554492dffb641a3223635fb01" prot="public" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>sentDataSelector</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a1dfc9d5a7e33ba1fe35cb3867c99ca4f" prot="public" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>service</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a43b4c7b9942b271d440e18a468b96a71" prot="protected" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>service_</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1aeb3ef44e5aa756c805325b95cc214e22" prot="public" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>serviceHost</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a8ed191fd0eaf945b90b6cc82213e5fd4" prot="protected" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>serviceHost_</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a0a63a68cb27bcdb48455d1c34c7638b3" prot="public" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>servicePriority</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a0b47d12b7fa3648fb1e7aa2973635534" prot="protected" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>servicePriority_</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1aa92a5c0d5a35e735ff1bccce6b681c22" prot="public" virt="virtual"><scope>GTMHTTPFetcher</scope><name>setCommentWithFormat:</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a58b64b45567844c04dc41b3d1748da8b" prot="public" virt="virtual"><scope>GTMHTTPFetcher</scope><name>setConnectionClass:</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a20651a98f68a645e57342212d2531c39" prot="public" virt="virtual"><scope>GTMHTTPFetcher</scope><name>setProperty:forKey:</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a2ba87eb5b9d17f81d34556094e3d7a94" prot="public" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>shouldFetchInBackground</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1aa078891df6edc2b0e3489fe176600d41" prot="protected" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>shouldFetchInBackground_</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a2b157947cf8ff45d30f0b62ef825e985" prot="public" virt="virtual"><scope>GTMHTTPFetcher</scope><name>staticCookieStorage</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a70ff0f9c11476c260f8a8875727a2c9d" prot="public" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>statusCode</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a9f816fe4b482ebe6cdccb619431c2fb8" prot="public" virt="virtual"><scope>GTMHTTPFetcher</scope><name>stopFetching</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1ac081e4de7a9399df76c480566c30165f" prot="protected" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>temporaryDownloadPath_</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a4883ca32fba2b4d5c931526672919c27" prot="public" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>thread</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a75357543993459f62a12ec86f642a25d" prot="protected" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>thread_</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1afb281ada00a0d65c84e44936284ba3e7" prot="public" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>userData</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1abb0c023c53372042df9c46255a31c423" prot="protected" virt="non-virtual"><scope>GTMHTTPFetcher</scope><name>userData_</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_1a8b98121181c0e7ac3c04e112d4bdb4cf" prot="public" virt="virtual"><scope>GTMHTTPFetcher</scope><name>waitForCompletionWithTimeout:</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

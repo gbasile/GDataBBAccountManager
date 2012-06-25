@@ -1,0 +1,985 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="_g_t_m_o_auth2_authentication_8h" kind="file">
+    <compoundname>GTMOAuth2Authentication.h</compoundname>
+    <includes local="no">Foundation/Foundation.h</includes>
+    <includes refid="_g_t_m_h_t_t_p_fetcher_8h" local="yes">GTMHTTPFetcher.h</includes>
+    <includedby refid="_g_t_m_o_auth2_authentication_8m" local="yes">GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.m</includedby>
+    <includedby refid="_g_t_m_o_auth2_sign_in_8h" local="yes">GMultiAccountManager/GMultiAccountManager/GTMOAuth2SignIn.h</includedby>
+    <includedby refid="_g_t_m_o_auth2_window_controller_8h" local="yes">GMultiAccountManager/GMultiAccountManager/GTMOAuth2WindowController.h</includedby>
+    <incdepgraph>
+      <node id="32">
+        <label>GTMHTTPFetcher.h</label>
+        <link refid="_g_t_m_h_t_t_p_fetcher_8h"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.h</label>
+        <link refid="GTMOAuth2Authentication.h"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>Foundation/Foundation.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="37">
+        <label>GMultiAccountManager/GMultiAccountManager/GTMOAuth2WindowController.h</label>
+        <link refid="_g_t_m_o_auth2_window_controller_8h"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>GMultiAccountManager/GMultiAccountManager/GTMOAuth2WindowController.m</label>
+        <link refid="_g_t_m_o_auth2_window_controller_8m"/>
+      </node>
+      <node id="33">
+        <label>GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.h</label>
+        <link refid="GTMOAuth2Authentication.h"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.m</label>
+        <link refid="_g_t_m_o_auth2_authentication_8m"/>
+      </node>
+      <node id="35">
+        <label>GMultiAccountManager/GMultiAccountManager/GTMOAuth2SignIn.h</label>
+        <link refid="_g_t_m_o_auth2_sign_in_8h"/>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>GMultiAccountManager/GMultiAccountManager/GTMOAuth2SignIn.m</label>
+        <link refid="_g_t_m_o_auth2_sign_in_8m"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="interface_g_t_m_o_auth2_authentication" prot="public">GTMOAuth2Authentication</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" prot="public" static="no">
+        <name>_EXTERN</name>
+        <initializer>extern</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.h" line="35" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_g_t_m_o_auth2_authentication_8h_1aa9bf4a8049cd7a87d81d88525d98d5d6" prot="public" static="no">
+        <name>_INITIALIZE_AS</name>
+        <param><defname>x</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.h" line="37" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_g_t_m_o_auth2_authentication_8h_1a7f683f746f4f99d489b106fac87b3806" prot="public" static="no">
+        <name>GTM_OAUTH2_BEARER</name>
+        <initializer>&quot;Bearer&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.h" line="43" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="_g_t_m_o_auth2_authentication_8h_1a99fb83031ce9923c84392b4e92f956b5" prot="public" static="no">
+        <name>@2</name>
+        <enumvalue id="_g_t_m_o_auth2_authentication_8h_1a99fb83031ce9923c84392b4e92f956b5a3171b21b911ce4ddcf32a43f114b6be7" prot="public">
+          <name>kGTMOAuth2ErrorWindowClosed</name>
+          <initializer> -1000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_t_m_o_auth2_authentication_8h_1a99fb83031ce9923c84392b4e92f956b5ac88c330ea5cc61f373fc991b422bce73" prot="public">
+          <name>kGTMOAuth2ErrorAuthorizationFailed</name>
+          <initializer> -1001</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_t_m_o_auth2_authentication_8h_1a99fb83031ce9923c84392b4e92f956b5a568f3df9f92af8b39b6e9181636e3467" prot="public">
+          <name>kGTMOAuth2ErrorTokenExpired</name>
+          <initializer> -1002</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_t_m_o_auth2_authentication_8h_1a99fb83031ce9923c84392b4e92f956b5ac617f6f06e64b27ffccb760b5f6ea0e7" prot="public">
+          <name>kGTMOAuth2ErrorTokenUnavailable</name>
+          <initializer> -1003</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_g_t_m_o_auth2_authentication_8h_1a99fb83031ce9923c84392b4e92f956b5ac9afdd12af268d874cd91445f95f7cc4" prot="public">
+          <name>kGTMOAuth2ErrorUnauthorizableRequest</name>
+          <initializer> -1004</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.h" line="60" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.h" bodystart="60" bodyend="67"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_g_t_m_o_auth2_authentication_8h_1ab6fc2ee5dc9a9f66defeaa95c20c414a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref> NSString *const kGTMOAuth2ServiceProviderGoogle</type>
+        <definition>_EXTERN NSString* const kGTMOAuth2ServiceProviderGoogle _INITIALIZE_AS</definition>
+        <argsstring>(@&quot;Google&quot;)</argsstring>
+        <name>_INITIALIZE_AS</name>
+        <param>
+          <type>@&quot;Google&quot;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.h" line="48"/>
+      </memberdef>
+      <memberdef kind="function" id="_g_t_m_o_auth2_authentication_8h_1ae10227d5692bdf9a3b137f940adb26ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref> NSString *const kGTMOAuth2ErrorDomain</type>
+        <definition>_EXTERN NSString* const kGTMOAuth2ErrorDomain _INITIALIZE_AS</definition>
+        <argsstring>(@&quot;com.google.GTMOAuth2&quot;)</argsstring>
+        <name>_INITIALIZE_AS</name>
+        <param>
+          <type>@&quot;com.google.GTMOAuth2&quot;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.h" line="53"/>
+      </memberdef>
+      <memberdef kind="function" id="_g_t_m_o_auth2_authentication_8h_1a54e6adb900e2a13d61eb2050ad013602" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref> NSString *const kGTMOAuth2ErrorMessageKey</type>
+        <definition>_EXTERN NSString *const kGTMOAuth2ErrorKey _INITIALIZE_AS</definition>
+        <argsstring>(@&quot;error&quot;)</argsstring>
+        <name>_INITIALIZE_AS</name>
+        <param>
+          <type>@&quot;error&quot;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.h" line="56"/>
+      </memberdef>
+      <memberdef kind="function" id="_g_t_m_o_auth2_authentication_8h_1a61ec2f36d407371c86fa471c9df0b0b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref> NSString *const kGTMOAuth2ErrorRequestKey</type>
+        <definition>_EXTERN NSString* const kGTMOAuth2ErrorRequestKey _INITIALIZE_AS</definition>
+        <argsstring>(@&quot;request&quot;)</argsstring>
+        <name>_INITIALIZE_AS</name>
+        <param>
+          <type>@&quot;request&quot;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.h" line="57"/>
+      </memberdef>
+      <memberdef kind="function" id="_g_t_m_o_auth2_authentication_8h_1ad0eedcde483d288d0c6087547050c179" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref> NSString *const kGTMOAuth2ErrorJSONKey</type>
+        <definition>_EXTERN NSString* const kGTMOAuth2ErrorJSONKey _INITIALIZE_AS</definition>
+        <argsstring>(@&quot;json&quot;)</argsstring>
+        <name>_INITIALIZE_AS</name>
+        <param>
+          <type>@&quot;json&quot;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.h" line="58"/>
+      </memberdef>
+      <memberdef kind="function" id="_g_t_m_o_auth2_authentication_8h_1aee9aee7b002d63772659df6d78dd8ea1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref> NSString *const kGTMOAuth2FetchStarted</type>
+        <definition>_EXTERN NSString* const kGTMOAuth2FetchStarted _INITIALIZE_AS</definition>
+        <argsstring>(@&quot;kGTMOAuth2FetchStarted&quot;)</argsstring>
+        <name>_INITIALIZE_AS</name>
+        <param>
+          <type>@&quot;kGTMOAuth2FetchStarted&quot;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.h" line="71"/>
+      </memberdef>
+      <memberdef kind="function" id="_g_t_m_o_auth2_authentication_8h_1a46079103eb4e8051fb21a6879410fa9f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref> NSString *const kGTMOAuth2FetchStopped</type>
+        <definition>_EXTERN NSString* const kGTMOAuth2FetchStopped _INITIALIZE_AS</definition>
+        <argsstring>(@&quot;kGTMOAuth2FetchStopped&quot;)</argsstring>
+        <name>_INITIALIZE_AS</name>
+        <param>
+          <type>@&quot;kGTMOAuth2FetchStopped&quot;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.h" line="72"/>
+      </memberdef>
+      <memberdef kind="function" id="_g_t_m_o_auth2_authentication_8h_1a0c31e93f7ee17bab70a78d03e305efd1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref> NSString *const kGTMOAuth2FetcherKey</type>
+        <definition>_EXTERN NSString* const kGTMOAuth2FetcherKey _INITIALIZE_AS</definition>
+        <argsstring>(@&quot;fetcher&quot;)</argsstring>
+        <name>_INITIALIZE_AS</name>
+        <param>
+          <type>@&quot;fetcher&quot;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.h" line="74"/>
+      </memberdef>
+      <memberdef kind="function" id="_g_t_m_o_auth2_authentication_8h_1afc8b6fd357c87e79bf19073985018f28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref> NSString *const kGTMOAuth2FetchTypeKey</type>
+        <definition>_EXTERN NSString* const kGTMOAuth2FetchTypeKey _INITIALIZE_AS</definition>
+        <argsstring>(@&quot;FetchType&quot;)</argsstring>
+        <name>_INITIALIZE_AS</name>
+        <param>
+          <type>@&quot;FetchType&quot;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.h" line="75"/>
+      </memberdef>
+      <memberdef kind="function" id="_g_t_m_o_auth2_authentication_8h_1afeba896a232599b4f2b5cd4378f41e15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref> NSString *const kGTMOAuth2FetchTypeToken</type>
+        <definition>_EXTERN NSString* const kGTMOAuth2FetchTypeToken _INITIALIZE_AS</definition>
+        <argsstring>(@&quot;token&quot;)</argsstring>
+        <name>_INITIALIZE_AS</name>
+        <param>
+          <type>@&quot;token&quot;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.h" line="76"/>
+      </memberdef>
+      <memberdef kind="function" id="_g_t_m_o_auth2_authentication_8h_1a39ead0e575e4f6339b4d3898aafe35a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref> NSString *const kGTMOAuth2FetchTypeRefresh</type>
+        <definition>_EXTERN NSString* const kGTMOAuth2FetchTypeRefresh _INITIALIZE_AS</definition>
+        <argsstring>(@&quot;refresh&quot;)</argsstring>
+        <name>_INITIALIZE_AS</name>
+        <param>
+          <type>@&quot;refresh&quot;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.h" line="77"/>
+      </memberdef>
+      <memberdef kind="function" id="_g_t_m_o_auth2_authentication_8h_1a041f673c88c79995e4d93090b685c96b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref> NSString *const kGTMOAuth2FetchTypeAssertion</type>
+        <definition>_EXTERN NSString* const kGTMOAuth2FetchTypeAssertion _INITIALIZE_AS</definition>
+        <argsstring>(@&quot;assertion&quot;)</argsstring>
+        <name>_INITIALIZE_AS</name>
+        <param>
+          <type>@&quot;assertion&quot;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.h" line="78"/>
+      </memberdef>
+      <memberdef kind="function" id="_g_t_m_o_auth2_authentication_8h_1ae00dbcabb109e865c93ec39e1323d7f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref> NSString *const kGTMOAuth2FetchTypeUserInfo</type>
+        <definition>_EXTERN NSString* const kGTMOAuth2FetchTypeUserInfo _INITIALIZE_AS</definition>
+        <argsstring>(@&quot;userInfo&quot;)</argsstring>
+        <name>_INITIALIZE_AS</name>
+        <param>
+          <type>@&quot;userInfo&quot;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.h" line="79"/>
+      </memberdef>
+      <memberdef kind="function" id="_g_t_m_o_auth2_authentication_8h_1aa3bfea8f5edef860223d7ed01c53ff4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref> NSString *const kGTMOAuth2ErrorInvalidRequest</type>
+        <definition>_EXTERN NSString* const kGTMOAuth2ErrorInvalidRequest _INITIALIZE_AS</definition>
+        <argsstring>(@&quot;invalid_request&quot;)</argsstring>
+        <name>_INITIALIZE_AS</name>
+        <param>
+          <type>@&quot;invalid_request&quot;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.h" line="84"/>
+      </memberdef>
+      <memberdef kind="function" id="_g_t_m_o_auth2_authentication_8h_1a53a239a4224ed695951d700eb541e75a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref> NSString *const kGTMOAuth2ErrorInvalidClient</type>
+        <definition>_EXTERN NSString* const kGTMOAuth2ErrorInvalidClient _INITIALIZE_AS</definition>
+        <argsstring>(@&quot;invalid_client&quot;)</argsstring>
+        <name>_INITIALIZE_AS</name>
+        <param>
+          <type>@&quot;invalid_client&quot;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.h" line="85"/>
+      </memberdef>
+      <memberdef kind="function" id="_g_t_m_o_auth2_authentication_8h_1ade4cd64de592baded00ef2850801b98f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref> NSString *const kGTMOAuth2ErrorInvalidGrant</type>
+        <definition>_EXTERN NSString* const kGTMOAuth2ErrorInvalidGrant _INITIALIZE_AS</definition>
+        <argsstring>(@&quot;invalid_grant&quot;)</argsstring>
+        <name>_INITIALIZE_AS</name>
+        <param>
+          <type>@&quot;invalid_grant&quot;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.h" line="86"/>
+      </memberdef>
+      <memberdef kind="function" id="_g_t_m_o_auth2_authentication_8h_1a516795dff40a39b4c54cc352e9987720" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref> NSString *const kGTMOAuth2ErrorUnauthorizedClient</type>
+        <definition>_EXTERN NSString* const kGTMOAuth2ErrorUnauthorizedClient _INITIALIZE_AS</definition>
+        <argsstring>(@&quot;unauthorized_client&quot;)</argsstring>
+        <name>_INITIALIZE_AS</name>
+        <param>
+          <type>@&quot;unauthorized_client&quot;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.h" line="87"/>
+      </memberdef>
+      <memberdef kind="function" id="_g_t_m_o_auth2_authentication_8h_1a9326d6be824c878aa149e23b4820d7b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref> NSString *const kGTMOAuth2ErrorUnsupportedGrantType</type>
+        <definition>_EXTERN NSString* const kGTMOAuth2ErrorUnsupportedGrantType _INITIALIZE_AS</definition>
+        <argsstring>(@&quot;unsupported_grant_type&quot;)</argsstring>
+        <name>_INITIALIZE_AS</name>
+        <param>
+          <type>@&quot;unsupported_grant_type&quot;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.h" line="88"/>
+      </memberdef>
+      <memberdef kind="function" id="_g_t_m_o_auth2_authentication_8h_1aef58fea4fdc608ba8cc7790ee0d3cabc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref> NSString *const kGTMOAuth2ErrorInvalidScope</type>
+        <definition>_EXTERN NSString* const kGTMOAuth2ErrorInvalidScope _INITIALIZE_AS</definition>
+        <argsstring>(@&quot;invalid_scope&quot;)</argsstring>
+        <name>_INITIALIZE_AS</name>
+        <param>
+          <type>@&quot;invalid_scope&quot;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.h" line="89"/>
+      </memberdef>
+      <memberdef kind="function" id="_g_t_m_o_auth2_authentication_8h_1ae740d0aef37b7b3498ac6a01422cd302" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref> NSString *const kGTMOAuth2UserSignedIn</type>
+        <definition>_EXTERN NSString* const kGTMOAuth2UserSignedIn _INITIALIZE_AS</definition>
+        <argsstring>(@&quot;kGTMOAuth2UserSignedIn&quot;)</argsstring>
+        <name>_INITIALIZE_AS</name>
+        <param>
+          <type>@&quot;kGTMOAuth2UserSignedIn&quot;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.h" line="93"/>
+      </memberdef>
+      <memberdef kind="function" id="_g_t_m_o_auth2_authentication_8h_1a9883cf05e4c3d29fe858a6f53e7b273c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref> NSString *const kGTMOAuth2AccessTokenRefreshed</type>
+        <definition>_EXTERN NSString* const kGTMOAuth2AccessTokenRefreshed _INITIALIZE_AS</definition>
+        <argsstring>(@&quot;kGTMOAuth2AccessTokenRefreshed&quot;)</argsstring>
+        <name>_INITIALIZE_AS</name>
+        <param>
+          <type>@&quot;kGTMOAuth2AccessTokenRefreshed&quot;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.h" line="96"/>
+      </memberdef>
+      <memberdef kind="function" id="_g_t_m_o_auth2_authentication_8h_1a2f1ba88caae406e298ffd48df51ec221" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref> NSString *const kGTMOAuth2RefreshTokenChanged</type>
+        <definition>_EXTERN NSString* const kGTMOAuth2RefreshTokenChanged _INITIALIZE_AS</definition>
+        <argsstring>(@&quot;kGTMOAuth2RefreshTokenChanged&quot;)</argsstring>
+        <name>_INITIALIZE_AS</name>
+        <param>
+          <type>@&quot;kGTMOAuth2RefreshTokenChanged&quot;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.h" line="97"/>
+      </memberdef>
+      <memberdef kind="function" id="_g_t_m_o_auth2_authentication_8h_1a9d4aceee9693b0ab1e53d02dbf24239e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref> NSString *const kGTMOAuth2WebViewStartedLoading</type>
+        <definition>_EXTERN NSString* const kGTMOAuth2WebViewStartedLoading _INITIALIZE_AS</definition>
+        <argsstring>(@&quot;kGTMOAuth2WebViewStartedLoading&quot;)</argsstring>
+        <name>_INITIALIZE_AS</name>
+        <param>
+          <type>@&quot;kGTMOAuth2WebViewStartedLoading&quot;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.h" line="100"/>
+      </memberdef>
+      <memberdef kind="function" id="_g_t_m_o_auth2_authentication_8h_1ae5fa57235689c2c8a0be5c4b4729635f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref> NSString *const kGTMOAuth2WebViewStoppedLoading</type>
+        <definition>_EXTERN NSString* const kGTMOAuth2WebViewStoppedLoading _INITIALIZE_AS</definition>
+        <argsstring>(@&quot;kGTMOAuth2WebViewStoppedLoading&quot;)</argsstring>
+        <name>_INITIALIZE_AS</name>
+        <param>
+          <type>@&quot;kGTMOAuth2WebViewStoppedLoading&quot;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.h" line="101"/>
+      </memberdef>
+      <memberdef kind="function" id="_g_t_m_o_auth2_authentication_8h_1a5195b1514d405eae25061c354ae67e4d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref> NSString *const kGTMOAuth2WebViewKey</type>
+        <definition>_EXTERN NSString* const kGTMOAuth2WebViewKey _INITIALIZE_AS</definition>
+        <argsstring>(@&quot;kGTMOAuth2WebViewKey&quot;)</argsstring>
+        <name>_INITIALIZE_AS</name>
+        <param>
+          <type>@&quot;kGTMOAuth2WebViewKey&quot;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.h" line="102"/>
+      </memberdef>
+      <memberdef kind="function" id="_g_t_m_o_auth2_authentication_8h_1af3f772ce6925c73f69ce0d0f99d501db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref> NSString *const kGTMOAuth2WebViewStopKindKey</type>
+        <definition>_EXTERN NSString* const kGTMOAuth2WebViewStopKindKey _INITIALIZE_AS</definition>
+        <argsstring>(@&quot;kGTMOAuth2WebViewStopKindKey&quot;)</argsstring>
+        <name>_INITIALIZE_AS</name>
+        <param>
+          <type>@&quot;kGTMOAuth2WebViewStopKindKey&quot;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.h" line="103"/>
+      </memberdef>
+      <memberdef kind="function" id="_g_t_m_o_auth2_authentication_8h_1a67e3f8051744eec63b0b5c6c77b4d0cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref> NSString *const kGTMOAuth2WebViewFinished</type>
+        <definition>_EXTERN NSString* const kGTMOAuth2WebViewFinished _INITIALIZE_AS</definition>
+        <argsstring>(@&quot;finished&quot;)</argsstring>
+        <name>_INITIALIZE_AS</name>
+        <param>
+          <type>@&quot;finished&quot;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.h" line="104"/>
+      </memberdef>
+      <memberdef kind="function" id="_g_t_m_o_auth2_authentication_8h_1ae4fc89d9e35bf6460cb451f4049f7b75" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref> NSString *const kGTMOAuth2WebViewFailed</type>
+        <definition>_EXTERN NSString* const kGTMOAuth2WebViewFailed _INITIALIZE_AS</definition>
+        <argsstring>(@&quot;failed&quot;)</argsstring>
+        <name>_INITIALIZE_AS</name>
+        <param>
+          <type>@&quot;failed&quot;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.h" line="105"/>
+      </memberdef>
+      <memberdef kind="function" id="_g_t_m_o_auth2_authentication_8h_1a0d97eee7523c4202c8add8487e7afc91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref> NSString *const kGTMOAuth2WebViewCancelled</type>
+        <definition>_EXTERN NSString* const kGTMOAuth2WebViewCancelled _INITIALIZE_AS</definition>
+        <argsstring>(@&quot;cancelled&quot;)</argsstring>
+        <name>_INITIALIZE_AS</name>
+        <param>
+          <type>@&quot;cancelled&quot;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.h" line="106"/>
+      </memberdef>
+      <memberdef kind="function" id="_g_t_m_o_auth2_authentication_8h_1a2fe88c93bdf903f1ed8762bd6a323a22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref> NSString *const kGTMOAuth2NetworkLost</type>
+        <definition>_EXTERN NSString* const kGTMOAuth2NetworkLost _INITIALIZE_AS</definition>
+        <argsstring>(@&quot;kGTMOAuthNetworkLost&quot;)</argsstring>
+        <name>_INITIALIZE_AS</name>
+        <param>
+          <type>@&quot;kGTMOAuthNetworkLost&quot;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.h" line="109"/>
+      </memberdef>
+      <memberdef kind="function" id="_g_t_m_o_auth2_authentication_8h_1a2e03bc110fdada0672b40b9ec077e640" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref> NSString *const kGTMOAuth2NetworkFound</type>
+        <definition>_EXTERN NSString* const kGTMOAuth2NetworkFound _INITIALIZE_AS</definition>
+        <argsstring>(@&quot;kGTMOAuthNetworkFound&quot;)</argsstring>
+        <name>_INITIALIZE_AS</name>
+        <param>
+          <type>@&quot;kGTMOAuthNetworkFound&quot;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.h" line="110"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>Copyright<sp/>(c)<sp/>2011<sp/>Google<sp/>Inc.</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Licensed<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the<sp/>&quot;License&quot;);</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance<sp/>with<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,<sp/>software</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>See<sp/>the<sp/>License<sp/>for<sp/>the<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>limitations<sp/>under<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>GTM_INCLUDE_OAUTH2<sp/>||<sp/>!GDATA_REQUIRE_SERVICE_INCLUDES</highlight></codeline>
+<codeline lineno="17"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>class<sp/>implements<sp/>the<sp/>OAuth<sp/>2<sp/>protocol<sp/>for<sp/>authorizing<sp/>requests.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>http://tools.ietf.org/html/draft-ietf-oauth-v2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&lt;Foundation/Foundation.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//<sp/>GTMHTTPFetcher.h<sp/>brings<sp/>in<sp/>GTLDefines/GDataDefines</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&quot;<ref refid="_g_t_m_h_t_t_p_fetcher_8h" kindref="compound">GTMHTTPFetcher.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>_EXTERN</highlight></codeline>
+<codeline lineno="27"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#undef<sp/>_INITIALIZE_AS</highlight></codeline>
+<codeline lineno="28"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#ifdef<sp/>GTMOAUTH2AUTHENTICATION_DEFINE_GLOBALS</highlight></codeline>
+<codeline lineno="29"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>_EXTERN</highlight></codeline>
+<codeline lineno="30"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>_INITIALIZE_AS(x)<sp/>=x</highlight></codeline>
+<codeline lineno="31"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#else</highlight></codeline>
+<codeline lineno="32"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#if<sp/>defined(__cplusplus)</highlight></codeline>
+<codeline lineno="33"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>_EXTERN<sp/>extern<sp/>&quot;C&quot;</highlight></codeline>
+<codeline lineno="34"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#else</highlight></codeline>
+<codeline lineno="35" refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>_EXTERN<sp/>extern</highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight></codeline>
+<codeline lineno="37" refid="_g_t_m_o_auth2_authentication_8h_1aa9bf4a8049cd7a87d81d88525d98d5d6" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>_INITIALIZE_AS(x)</highlight></codeline>
+<codeline lineno="38"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="39"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Until<sp/>all<sp/>OAuth<sp/>2<sp/>providers<sp/>are<sp/>up<sp/>to<sp/>the<sp/>same<sp/>spec,<sp/>we&apos;ll<sp/>provide<sp/>a<sp/>crude</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">//<sp/>way<sp/>here<sp/>to<sp/>override<sp/>the<sp/>&quot;Bearer&quot;<sp/>string<sp/>in<sp/>the<sp/>Authorization<sp/>header</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>GTM_OAUTH2_BEARER</highlight></codeline>
+<codeline lineno="43" refid="_g_t_m_o_auth2_authentication_8h_1a7f683f746f4f99d489b106fac87b3806" refkind="member"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#define<sp/>GTM_OAUTH2_BEARER<sp/>&quot;Bearer&quot;</highlight></codeline>
+<codeline lineno="44"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="45"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Service<sp/>provider<sp/>name<sp/>allows<sp/>stored<sp/>authorization<sp/>to<sp/>be<sp/>associated<sp/>with</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">//<sp/>the<sp/>authorizing<sp/>service</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref><sp/>NSString*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>kGTMOAuth2ServiceProviderGoogle<sp/><ref refid="_g_t_m_h_t_t_p_fetcher_8h_1aa9bf4a8049cd7a87d81d88525d98d5d6" kindref="member">_INITIALIZE_AS</ref>(</highlight><highlight class="stringliteral">@&quot;Google&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment">//<sp/>GTMOAuth2SignIn<sp/>constants,<sp/>included<sp/>here<sp/>for<sp/>use<sp/>by<sp/>clients</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref><sp/>NSString*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>kGTMOAuth2ErrorDomain<sp/><sp/><ref refid="_g_t_m_h_t_t_p_fetcher_8h_1aa9bf4a8049cd7a87d81d88525d98d5d6" kindref="member">_INITIALIZE_AS</ref>(</highlight><highlight class="stringliteral">@&quot;com.google.GTMOAuth2&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Error<sp/>userInfo<sp/>keys</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref><sp/>NSString*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>kGTMOAuth2ErrorMessageKey<sp/><ref refid="_g_t_m_h_t_t_p_fetcher_8h_1aa9bf4a8049cd7a87d81d88525d98d5d6" kindref="member">_INITIALIZE_AS</ref>(</highlight><highlight class="stringliteral">@&quot;error&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref><sp/>NSString*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>kGTMOAuth2ErrorRequestKey<sp/><ref refid="_g_t_m_h_t_t_p_fetcher_8h_1aa9bf4a8049cd7a87d81d88525d98d5d6" kindref="member">_INITIALIZE_AS</ref>(</highlight><highlight class="stringliteral">@&quot;request&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref><sp/>NSString*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>kGTMOAuth2ErrorJSONKey<sp/><sp/><sp/><sp/><ref refid="_g_t_m_h_t_t_p_fetcher_8h_1aa9bf4a8049cd7a87d81d88525d98d5d6" kindref="member">_INITIALIZE_AS</ref>(</highlight><highlight class="stringliteral">@&quot;json&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Error<sp/>code<sp/>indicating<sp/>that<sp/>the<sp/>window<sp/>was<sp/>prematurely<sp/>closed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="_g_t_m_o_auth2_authentication_8h_1a99fb83031ce9923c84392b4e92f956b5a3171b21b911ce4ddcf32a43f114b6be7" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_g_t_m_o_auth2_authentication_8h_1a99fb83031ce9923c84392b4e92f956b5a3171b21b911ce4ddcf32a43f114b6be7" kindref="member">kGTMOAuth2ErrorWindowClosed</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>-1000,</highlight></codeline>
+<codeline lineno="63" refid="_g_t_m_o_auth2_authentication_8h_1a99fb83031ce9923c84392b4e92f956b5ac88c330ea5cc61f373fc991b422bce73" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_g_t_m_o_auth2_authentication_8h_1a99fb83031ce9923c84392b4e92f956b5ac88c330ea5cc61f373fc991b422bce73" kindref="member">kGTMOAuth2ErrorAuthorizationFailed</ref><sp/><sp/><sp/>=<sp/>-1001,</highlight></codeline>
+<codeline lineno="64" refid="_g_t_m_o_auth2_authentication_8h_1a99fb83031ce9923c84392b4e92f956b5a568f3df9f92af8b39b6e9181636e3467" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_g_t_m_o_auth2_authentication_8h_1a99fb83031ce9923c84392b4e92f956b5a568f3df9f92af8b39b6e9181636e3467" kindref="member">kGTMOAuth2ErrorTokenExpired</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>-1002,</highlight></codeline>
+<codeline lineno="65" refid="_g_t_m_o_auth2_authentication_8h_1a99fb83031ce9923c84392b4e92f956b5ac617f6f06e64b27ffccb760b5f6ea0e7" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_g_t_m_o_auth2_authentication_8h_1a99fb83031ce9923c84392b4e92f956b5ac617f6f06e64b27ffccb760b5f6ea0e7" kindref="member">kGTMOAuth2ErrorTokenUnavailable</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>-1003,</highlight></codeline>
+<codeline lineno="66" refid="_g_t_m_o_auth2_authentication_8h_1a99fb83031ce9923c84392b4e92f956b5ac9afdd12af268d874cd91445f95f7cc4" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_g_t_m_o_auth2_authentication_8h_1a99fb83031ce9923c84392b4e92f956b5ac9afdd12af268d874cd91445f95f7cc4" kindref="member">kGTMOAuth2ErrorUnauthorizableRequest</ref><sp/>=<sp/>-1004</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Notifications<sp/>for<sp/>token<sp/>fetches</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref><sp/>NSString*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>kGTMOAuth2FetchStarted<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_g_t_m_h_t_t_p_fetcher_8h_1aa9bf4a8049cd7a87d81d88525d98d5d6" kindref="member">_INITIALIZE_AS</ref>(</highlight><highlight class="stringliteral">@&quot;kGTMOAuth2FetchStarted&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref><sp/>NSString*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>kGTMOAuth2FetchStopped<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_g_t_m_h_t_t_p_fetcher_8h_1aa9bf4a8049cd7a87d81d88525d98d5d6" kindref="member">_INITIALIZE_AS</ref>(</highlight><highlight class="stringliteral">@&quot;kGTMOAuth2FetchStopped&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref><sp/>NSString*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>kGTMOAuth2FetcherKey<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_g_t_m_h_t_t_p_fetcher_8h_1aa9bf4a8049cd7a87d81d88525d98d5d6" kindref="member">_INITIALIZE_AS</ref>(</highlight><highlight class="stringliteral">@&quot;fetcher&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref><sp/>NSString*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>kGTMOAuth2FetchTypeKey<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_g_t_m_h_t_t_p_fetcher_8h_1aa9bf4a8049cd7a87d81d88525d98d5d6" kindref="member">_INITIALIZE_AS</ref>(</highlight><highlight class="stringliteral">@&quot;FetchType&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref><sp/>NSString*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>kGTMOAuth2FetchTypeToken<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_g_t_m_h_t_t_p_fetcher_8h_1aa9bf4a8049cd7a87d81d88525d98d5d6" kindref="member">_INITIALIZE_AS</ref>(</highlight><highlight class="stringliteral">@&quot;token&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref><sp/>NSString*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>kGTMOAuth2FetchTypeRefresh<sp/><sp/><sp/><sp/><ref refid="_g_t_m_h_t_t_p_fetcher_8h_1aa9bf4a8049cd7a87d81d88525d98d5d6" kindref="member">_INITIALIZE_AS</ref>(</highlight><highlight class="stringliteral">@&quot;refresh&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref><sp/>NSString*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>kGTMOAuth2FetchTypeAssertion<sp/><sp/><ref refid="_g_t_m_h_t_t_p_fetcher_8h_1aa9bf4a8049cd7a87d81d88525d98d5d6" kindref="member">_INITIALIZE_AS</ref>(</highlight><highlight class="stringliteral">@&quot;assertion&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref><sp/>NSString*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>kGTMOAuth2FetchTypeUserInfo<sp/><sp/><sp/><ref refid="_g_t_m_h_t_t_p_fetcher_8h_1aa9bf4a8049cd7a87d81d88525d98d5d6" kindref="member">_INITIALIZE_AS</ref>(</highlight><highlight class="stringliteral">@&quot;userInfo&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Token-issuance<sp/>errors</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref><sp/>NSString*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>kGTMOAuth2ErrorKey<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_g_t_m_h_t_t_p_fetcher_8h_1aa9bf4a8049cd7a87d81d88525d98d5d6" kindref="member">_INITIALIZE_AS</ref>(</highlight><highlight class="stringliteral">@&quot;error&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref><sp/>NSString*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>kGTMOAuth2ErrorInvalidRequest<sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_g_t_m_h_t_t_p_fetcher_8h_1aa9bf4a8049cd7a87d81d88525d98d5d6" kindref="member">_INITIALIZE_AS</ref>(</highlight><highlight class="stringliteral">@&quot;invalid_request&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref><sp/>NSString*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>kGTMOAuth2ErrorInvalidClient<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_g_t_m_h_t_t_p_fetcher_8h_1aa9bf4a8049cd7a87d81d88525d98d5d6" kindref="member">_INITIALIZE_AS</ref>(</highlight><highlight class="stringliteral">@&quot;invalid_client&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref><sp/>NSString*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>kGTMOAuth2ErrorInvalidGrant<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_g_t_m_h_t_t_p_fetcher_8h_1aa9bf4a8049cd7a87d81d88525d98d5d6" kindref="member">_INITIALIZE_AS</ref>(</highlight><highlight class="stringliteral">@&quot;invalid_grant&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref><sp/>NSString*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>kGTMOAuth2ErrorUnauthorizedClient<sp/><sp/><sp/><ref refid="_g_t_m_h_t_t_p_fetcher_8h_1aa9bf4a8049cd7a87d81d88525d98d5d6" kindref="member">_INITIALIZE_AS</ref>(</highlight><highlight class="stringliteral">@&quot;unauthorized_client&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref><sp/>NSString*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>kGTMOAuth2ErrorUnsupportedGrantType<sp/><ref refid="_g_t_m_h_t_t_p_fetcher_8h_1aa9bf4a8049cd7a87d81d88525d98d5d6" kindref="member">_INITIALIZE_AS</ref>(</highlight><highlight class="stringliteral">@&quot;unsupported_grant_type&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref><sp/>NSString*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>kGTMOAuth2ErrorInvalidScope<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_g_t_m_h_t_t_p_fetcher_8h_1aa9bf4a8049cd7a87d81d88525d98d5d6" kindref="member">_INITIALIZE_AS</ref>(</highlight><highlight class="stringliteral">@&quot;invalid_scope&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Notification<sp/>that<sp/>sign-in<sp/>has<sp/>completed,<sp/>and<sp/>token<sp/>fetches<sp/>will<sp/>begin<sp/>(useful</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="comment">//<sp/>for<sp/>displaying<sp/>interstitial<sp/>messages<sp/>after<sp/>the<sp/>window<sp/>has<sp/>closed)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref><sp/>NSString*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>kGTMOAuth2UserSignedIn<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_g_t_m_h_t_t_p_fetcher_8h_1aa9bf4a8049cd7a87d81d88525d98d5d6" kindref="member">_INITIALIZE_AS</ref>(</highlight><highlight class="stringliteral">@&quot;kGTMOAuth2UserSignedIn&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Notification<sp/>for<sp/>token<sp/>changes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref><sp/>NSString*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>kGTMOAuth2AccessTokenRefreshed<sp/><ref refid="_g_t_m_h_t_t_p_fetcher_8h_1aa9bf4a8049cd7a87d81d88525d98d5d6" kindref="member">_INITIALIZE_AS</ref>(</highlight><highlight class="stringliteral">@&quot;kGTMOAuth2AccessTokenRefreshed&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref><sp/>NSString*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>kGTMOAuth2RefreshTokenChanged<sp/><sp/><ref refid="_g_t_m_h_t_t_p_fetcher_8h_1aa9bf4a8049cd7a87d81d88525d98d5d6" kindref="member">_INITIALIZE_AS</ref>(</highlight><highlight class="stringliteral">@&quot;kGTMOAuth2RefreshTokenChanged&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Notification<sp/>for<sp/>WebView<sp/>loading</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref><sp/>NSString*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>kGTMOAuth2WebViewStartedLoading<sp/><ref refid="_g_t_m_h_t_t_p_fetcher_8h_1aa9bf4a8049cd7a87d81d88525d98d5d6" kindref="member">_INITIALIZE_AS</ref>(</highlight><highlight class="stringliteral">@&quot;kGTMOAuth2WebViewStartedLoading&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref><sp/>NSString*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>kGTMOAuth2WebViewStoppedLoading<sp/><ref refid="_g_t_m_h_t_t_p_fetcher_8h_1aa9bf4a8049cd7a87d81d88525d98d5d6" kindref="member">_INITIALIZE_AS</ref>(</highlight><highlight class="stringliteral">@&quot;kGTMOAuth2WebViewStoppedLoading&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref><sp/>NSString*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>kGTMOAuth2WebViewKey<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_g_t_m_h_t_t_p_fetcher_8h_1aa9bf4a8049cd7a87d81d88525d98d5d6" kindref="member">_INITIALIZE_AS</ref>(</highlight><highlight class="stringliteral">@&quot;kGTMOAuth2WebViewKey&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref><sp/>NSString*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>kGTMOAuth2WebViewStopKindKey<sp/><sp/><sp/><sp/><ref refid="_g_t_m_h_t_t_p_fetcher_8h_1aa9bf4a8049cd7a87d81d88525d98d5d6" kindref="member">_INITIALIZE_AS</ref>(</highlight><highlight class="stringliteral">@&quot;kGTMOAuth2WebViewStopKindKey&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref><sp/>NSString*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>kGTMOAuth2WebViewFinished<sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_g_t_m_h_t_t_p_fetcher_8h_1aa9bf4a8049cd7a87d81d88525d98d5d6" kindref="member">_INITIALIZE_AS</ref>(</highlight><highlight class="stringliteral">@&quot;finished&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref><sp/>NSString*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>kGTMOAuth2WebViewFailed<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_g_t_m_h_t_t_p_fetcher_8h_1aa9bf4a8049cd7a87d81d88525d98d5d6" kindref="member">_INITIALIZE_AS</ref>(</highlight><highlight class="stringliteral">@&quot;failed&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref><sp/>NSString*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>kGTMOAuth2WebViewCancelled<sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_g_t_m_h_t_t_p_fetcher_8h_1aa9bf4a8049cd7a87d81d88525d98d5d6" kindref="member">_INITIALIZE_AS</ref>(</highlight><highlight class="stringliteral">@&quot;cancelled&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Notification<sp/>for<sp/>network<sp/>loss<sp/>during<sp/>html<sp/>sign-in<sp/>display</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref><sp/>NSString*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>kGTMOAuth2NetworkLost<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_g_t_m_h_t_t_p_fetcher_8h_1aa9bf4a8049cd7a87d81d88525d98d5d6" kindref="member">_INITIALIZE_AS</ref>(</highlight><highlight class="stringliteral">@&quot;kGTMOAuthNetworkLost&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><ref refid="_g_t_m_o_auth2_authentication_8h_1ab7d1de9a28b370a2ed9d5426d225abbe" kindref="member">_EXTERN</ref><sp/>NSString*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>kGTMOAuth2NetworkFound<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_g_t_m_h_t_t_p_fetcher_8h_1aa9bf4a8049cd7a87d81d88525d98d5d6" kindref="member">_INITIALIZE_AS</ref>(</highlight><highlight class="stringliteral">@&quot;kGTMOAuthNetworkFound&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="interface_g_t_m_o_auth2_authentication" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">@interface<sp/></highlight><highlight class="normal"><ref refid="interface_g_t_m_o_auth2_authentication" kindref="compound">GTMOAuth2Authentication</ref><sp/>:<sp/>NSObject<sp/>&lt;<ref refid="protocol_g_t_m_fetcher_authorization_protocol-p" kindref="compound">GTMFetcherAuthorizationProtocol</ref>&gt;<sp/><sp/>{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/></highlight><highlight class="keyword">@private</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/>NSString<sp/>*clientID_;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/>NSString<sp/>*clientSecret_;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/>NSString<sp/>*redirectURI_;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/>NSMutableDictionary<sp/>*parameters_;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>authorization<sp/>parameters</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/>NSURL<sp/>*tokenURL_;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/>NSDate<sp/>*expirationDate_;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/>NSDictionary<sp/>*additionalTokenRequestParameters_;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>queue<sp/>of<sp/>requests<sp/>for<sp/>authorization<sp/>waiting<sp/>for<sp/>a<sp/>valid<sp/>access<sp/>token</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><ref refid="interface_g_t_m_h_t_t_p_fetcher" kindref="compound">GTMHTTPFetcher</ref><sp/>*refreshFetcher_;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/>NSMutableArray<sp/>*authorizationQueue_;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/>id<sp/>&lt;GTMHTTPFetcherServiceProtocol&gt;<sp/>fetcherService_;<sp/></highlight><highlight class="comment">//<sp/>WEAK</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/>Class<sp/>parserClass_;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/>BOOL<sp/>shouldAuthorizeAllRequests_;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>arbitrary<sp/>data<sp/>retained<sp/>for<sp/>the<sp/>user</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>userData_;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/>NSMutableDictionary<sp/>*properties_;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="comment">//<sp/>OAuth2<sp/>standard<sp/>protocol<sp/>parameters</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="comment">//<sp/>These<sp/>should<sp/>be<sp/>the<sp/>plain<sp/>strings;<sp/>any<sp/>needed<sp/>escaping<sp/>will<sp/>be<sp/>provided<sp/>by</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="comment">//<sp/>the<sp/>library.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Request<sp/>properties</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146" refid="interface_g_t_m_o_auth2_authentication_1ac7c27d0c715ee04b08721da35c8c1638" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(copy)<sp/>NSString<sp/>*clientID;</highlight></codeline>
+<codeline lineno="147" refid="interface_g_t_m_o_auth2_authentication_1a407228bc689d511bcc5ed792193e1f4b" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(copy)<sp/>NSString<sp/>*clientSecret;</highlight></codeline>
+<codeline lineno="148" refid="interface_g_t_m_o_auth2_authentication_1ad1d42b340fdc1061b9eb4602007f4b52" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(copy)<sp/>NSString<sp/>*redirectURI;</highlight></codeline>
+<codeline lineno="149" refid="interface_g_t_m_o_auth2_authentication_1a5aa6db8df34496f1bfc3500fe1eb30de" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(retain)<sp/>NSString<sp/>*scope;</highlight></codeline>
+<codeline lineno="150" refid="interface_g_t_m_o_auth2_authentication_1af035f53d1c3977b1091b90a3a9e9036f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(retain)<sp/>NSString<sp/>*tokenType;</highlight></codeline>
+<codeline lineno="151" refid="interface_g_t_m_o_auth2_authentication_1a13cda2827eb38122e0ca8b72f1fcea96" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(retain)<sp/>NSString<sp/>*assertion;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Apps<sp/>may<sp/>optionally<sp/>add<sp/>parameters<sp/>here<sp/>to<sp/>be<sp/>provided<sp/>to<sp/>the<sp/>token</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="comment">//<sp/>endpoint<sp/>on<sp/>token<sp/>requests<sp/>and<sp/>refreshes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155" refid="interface_g_t_m_o_auth2_authentication_1a650ee2cf75ba5e80ff2f52fb7b6d0ba3" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(retain)<sp/>NSDictionary<sp/>*additionalTokenRequestParameters;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Response<sp/>properties</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158" refid="interface_g_t_m_o_auth2_authentication_1a18462b4c123429b3479a30be7ae18d13" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(retain)<sp/>NSMutableDictionary<sp/>*parameters;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160" refid="interface_g_t_m_o_auth2_authentication_1a423684adb803db3900f1bef1537e5ab2" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(retain)<sp/>NSString<sp/>*accessToken;</highlight></codeline>
+<codeline lineno="161" refid="interface_g_t_m_o_auth2_authentication_1aef7b07fd1252c1cc4d520b2f8c9fa3d7" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(retain)<sp/>NSString<sp/>*refreshToken;</highlight></codeline>
+<codeline lineno="162" refid="interface_g_t_m_o_auth2_authentication_1a95644535d0d4b82327375f6e30a64b8a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(retain)<sp/>NSNumber<sp/>*expiresIn;</highlight></codeline>
+<codeline lineno="163" refid="interface_g_t_m_o_auth2_authentication_1ae1a121b671052db7ab0860492dedbf39" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(retain)<sp/>NSString<sp/>*code;</highlight></codeline>
+<codeline lineno="164" refid="interface_g_t_m_o_auth2_authentication_1a2dbbda616fc4634c3c4779798c6a9071" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(retain)<sp/>NSString<sp/>*errorString;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="comment">//<sp/>URL<sp/>for<sp/>obtaining<sp/>access<sp/>tokens</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167" refid="interface_g_t_m_o_auth2_authentication_1af295221c17ccbb47a7211952e410ab33" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(copy)<sp/>NSURL<sp/>*tokenURL;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Calculated<sp/>expiration<sp/>date<sp/>(expiresIn<sp/>seconds<sp/>added<sp/>to<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight><highlight class="comment">//<sp/>time<sp/>the<sp/>access<sp/>token<sp/>was<sp/>received.)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171" refid="interface_g_t_m_o_auth2_authentication_1a7fdfae66f1135f3a9019bdfc54f9dcca" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(copy)<sp/>NSDate<sp/>*expirationDate;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Service<sp/>identifier,<sp/>like<sp/>&quot;Google&quot;;<sp/>not<sp/>used<sp/>for<sp/>authentication</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>provider<sp/>name<sp/>is<sp/>just<sp/>for<sp/>allowing<sp/>stored<sp/>authorization<sp/>to<sp/>be<sp/>associated</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight><highlight class="comment">//<sp/>with<sp/>the<sp/>authorizing<sp/>service.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177" refid="interface_g_t_m_o_auth2_authentication_1ad6a8e6c9be107cff51b3a97681c58bb6" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(copy)<sp/>NSString<sp/>*serviceProvider;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight><highlight class="comment">//<sp/>User<sp/>email<sp/>and<sp/>verified<sp/>status;<sp/>not<sp/>used<sp/>for<sp/>authentication</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>verified<sp/>string<sp/>can<sp/>be<sp/>checked<sp/>with<sp/>-boolValue.<sp/>If<sp/>the<sp/>result<sp/>is<sp/>false,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight><highlight class="comment">//<sp/>then<sp/>the<sp/>email<sp/>address<sp/>is<sp/>listed<sp/>with<sp/>the<sp/>account<sp/>on<sp/>the<sp/>server,<sp/>but<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight><highlight class="comment">//<sp/>address<sp/>has<sp/>not<sp/>been<sp/>confirmed<sp/>as<sp/>belonging<sp/>to<sp/>the<sp/>owner<sp/>of<sp/>the<sp/>account.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184" refid="interface_g_t_m_o_auth2_authentication_1ab0c0fa81755611109c3a602dfe734f07" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(retain)<sp/>NSString<sp/>*userEmail;</highlight></codeline>
+<codeline lineno="185" refid="interface_g_t_m_o_auth2_authentication_1a9ccf9f199fc96e41d063edc3c1474ae2" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(retain)<sp/>NSString<sp/>*userEmailIsVerified;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Property<sp/>indicating<sp/>if<sp/>this<sp/>auth<sp/>has<sp/>a<sp/>refresh<sp/>token<sp/>so<sp/>is<sp/>suitable<sp/>for</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight><highlight class="comment">//<sp/>authorizing<sp/>a<sp/>request.<sp/>This<sp/>does<sp/>not<sp/>guarantee<sp/>that<sp/>the<sp/>token<sp/>is<sp/>valid.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189" refid="interface_g_t_m_o_auth2_authentication_1add93abdd0cbe304d0594fefb40bb5d82" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(readonly)<sp/>BOOL<sp/>canAuthorize;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Property<sp/>indicating<sp/>if<sp/>this<sp/>object<sp/>will<sp/>authorize<sp/>plain<sp/>http<sp/>request</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(as<sp/>well<sp/>as<sp/>any<sp/>non-https<sp/>requests.)<sp/>Default<sp/>is<sp/>NO,<sp/>only<sp/>requests<sp/>with<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight><highlight class="comment">//<sp/>scheme<sp/>https<sp/>are<sp/>authorized,<sp/>since<sp/>security<sp/>may<sp/>be<sp/>compromised<sp/>if<sp/>tokens</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight><highlight class="comment">//<sp/>are<sp/>sent<sp/>over<sp/>the<sp/>wire<sp/>using<sp/>an<sp/>unencrypted<sp/>protocol<sp/>like<sp/>http.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195" refid="interface_g_t_m_o_auth2_authentication_1ab925a3241edff05f55cc9c2530f1fc1c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(assign)<sp/>BOOL<sp/>shouldAuthorizeAllRequests;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight><highlight class="comment">//<sp/>userData<sp/>is<sp/>retained<sp/>for<sp/>the<sp/>convenience<sp/>of<sp/>the<sp/>caller</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="198" refid="interface_g_t_m_o_auth2_authentication_1a99c8fcf64c503fb0742678c864c5ef1d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(retain)<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>userData;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Stored<sp/>property<sp/>values<sp/>are<sp/>retained<sp/>for<sp/>the<sp/>convenience<sp/>of<sp/>the<sp/>caller</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201" refid="interface_g_t_m_o_auth2_authentication_1ad5487c147d5d673d6b7e4af5cddad7b1" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(retain)<sp/>NSDictionary<sp/>*properties;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Property<sp/>for<sp/>the<sp/>optional<sp/>fetcher<sp/>service<sp/>instance<sp/>to<sp/>be<sp/>used<sp/>to<sp/>create</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight><highlight class="comment">//<sp/>fetchers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Fetcher<sp/>service<sp/>objects<sp/>retain<sp/>authorizations,<sp/>so<sp/>this<sp/>is<sp/>weak<sp/>to<sp/>avoid</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight><highlight class="comment">//<sp/>circular<sp/>retains.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208" refid="interface_g_t_m_o_auth2_authentication_1a1df9d7c79a0c0688f2c5bcf6e76afcf1" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(assign)<sp/>id<sp/>&lt;GTMHTTPFetcherServiceProtocol&gt;<sp/>fetcherService;<sp/></highlight><highlight class="comment">//<sp/>WEAK</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Alternative<sp/>JSON<sp/>parsing<sp/>class;<sp/>this<sp/>should<sp/>implement<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight><highlight class="comment">//<sp/>GTMOAuth2ParserClass<sp/>informal<sp/>protocol.<sp/>If<sp/>this<sp/>property<sp/>is</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight><highlight class="comment">//<sp/>not<sp/>set,<sp/>the<sp/>class<sp/>SBJSON<sp/>must<sp/>be<sp/>available<sp/>in<sp/>the<sp/>runtime.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="213" refid="interface_g_t_m_o_auth2_authentication_1aa224e7a0772301f48bda422ca0e43cd5" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(assign)<sp/>Class<sp/>parserClass;</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Convenience<sp/>method<sp/>for<sp/>creating<sp/>an<sp/>authentication<sp/>object</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal">+<sp/>(id)authenticationWithServiceProvider:(NSString<sp/>*)serviceProvider</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tokenURL:(NSURL<sp/>*)tokenURL</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>redirectURI:(NSString<sp/>*)redirectURI</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>clientID:(NSString<sp/>*)clientID</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>clientSecret:(NSString<sp/>*)clientSecret;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Clear<sp/>out<sp/>any<sp/>authentication<sp/>values,<sp/>prepare<sp/>for<sp/>a<sp/>new<sp/>request<sp/>fetch</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal">-<sp/>(void)reset;</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Main<sp/>authorization<sp/>entry<sp/>points</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight><highlight class="comment">//<sp/>These<sp/>will<sp/>refresh<sp/>the<sp/>access<sp/>token,<sp/>if<sp/>necessary,<sp/>add<sp/>the<sp/>access<sp/>token<sp/>to</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight><highlight class="comment">//<sp/>the<sp/>request,<sp/>then<sp/>invoke<sp/>the<sp/>callback.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>request<sp/>argument<sp/>may<sp/>be<sp/>nil<sp/>to<sp/>just<sp/>force<sp/>a<sp/>refresh<sp/>of<sp/>the<sp/>access<sp/>token,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight><highlight class="comment">//<sp/>if<sp/>needed.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight><highlight class="comment">//<sp/>NOTE:<sp/>To<sp/>avoid<sp/>accidental<sp/>leaks<sp/>of<sp/>bearer<sp/>tokens,<sp/>the<sp/>request<sp/>must</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight><highlight class="comment">//<sp/>be<sp/>for<sp/>a<sp/>URL<sp/>with<sp/>the<sp/>scheme<sp/>https<sp/>unless<sp/>the<sp/>shouldAuthorizeAllRequests</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight><highlight class="comment">//<sp/>property<sp/>is<sp/>set.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>finish<sp/>selector<sp/>should<sp/>have<sp/>a<sp/>signature<sp/>matching</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>-<sp/>(void)authentication:(GTMOAuth2Authentication<sp/>*)auth</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>request:(NSMutableURLRequest<sp/>*)request</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>finishedWithError:(NSError<sp/>*)error;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal">-<sp/>(void)authorizeRequest:(NSMutableURLRequest<sp/>*)request</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>delegate:(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)delegate</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>didFinishSelector:(</highlight><highlight class="keywordtype">SEL</highlight><highlight class="normal">)sel;</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>NS_BLOCKS_AVAILABLE</highlight></codeline>
+<codeline lineno="247"><highlight class="preprocessor"></highlight><highlight class="normal">-<sp/>(void)authorizeRequest:(NSMutableURLRequest<sp/>*)request</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>completionHandler:(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(^)(NSError<sp/>*error))handler;</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="250"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Synchronous<sp/>entry<sp/>point;<sp/>authorizing<sp/>this<sp/>way<sp/>cannot<sp/>refresh<sp/>an<sp/>expired</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight><highlight class="comment">//<sp/>access<sp/>token</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal">-<sp/>(BOOL)authorizeRequest:(NSMutableURLRequest<sp/>*)request;</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight><highlight class="comment">//<sp/>If<sp/>the<sp/>authentication<sp/>is<sp/>waiting<sp/>for<sp/>a<sp/>refresh<sp/>to<sp/>complete,<sp/>spin<sp/>the<sp/>run</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight><highlight class="comment">//<sp/>loop,<sp/>discarding<sp/>events,<sp/>until<sp/>the<sp/>fetch<sp/>has<sp/>completed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>is<sp/>only<sp/>for<sp/>use<sp/>in<sp/>testing<sp/>or<sp/>in<sp/>tools<sp/>without<sp/>a<sp/>user<sp/>interface.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal">-<sp/>(void)waitForCompletionWithTimeout:(NSTimeInterval)timeoutInSeconds;</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Internal<sp/>properties<sp/>and<sp/>methods<sp/>for<sp/>use<sp/>by<sp/>GTMOAuth2SignIn</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Pending<sp/>fetcher<sp/>to<sp/>get<sp/>a<sp/>new<sp/>access<sp/>token,<sp/>if<sp/>any</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="268" refid="interface_g_t_m_o_auth2_authentication_1a038f00a147c6d25ead7f0f4a25c7fb9a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(retain)<sp/><ref refid="interface_g_t_m_h_t_t_p_fetcher" kindref="compound">GTMHTTPFetcher</ref><sp/>*refreshFetcher;</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Check<sp/>if<sp/>a<sp/>request<sp/>is<sp/>queued<sp/>up<sp/>to<sp/>be<sp/>authorized</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal">-<sp/>(BOOL)isAuthorizingRequest:(NSURLRequest<sp/>*)request;</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Check<sp/>if<sp/>a<sp/>request<sp/>appears<sp/>to<sp/>be<sp/>authorized</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal">-<sp/>(BOOL)isAuthorizedRequest:(NSURLRequest<sp/>*)request;</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Stop<sp/>any<sp/>pending<sp/>refresh<sp/>fetch</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal">-<sp/>(void)stopAuthorization;</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight><highlight class="comment">//<sp/>OAuth<sp/>fetch<sp/>user-agent<sp/>header<sp/>value</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal">-<sp/>(NSString<sp/>*)userAgent;</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Parse<sp/>and<sp/>set<sp/>token<sp/>and<sp/>token<sp/>secret<sp/>from<sp/>response<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal">-<sp/>(void)setKeysForResponseString:(NSString<sp/>*)str;</highlight></codeline>
+<codeline lineno="284"><highlight class="normal">-<sp/>(void)setKeysForResponseDictionary:(NSDictionary<sp/>*)dict;</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Persistent<sp/>token<sp/>string<sp/>for<sp/>keychain<sp/>storage</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight><highlight class="comment">//<sp/>We&apos;ll<sp/>use<sp/>the<sp/>format<sp/>&quot;refresh_token=foo&amp;serviceProvider=bar&quot;<sp/>so<sp/>we<sp/>can</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight><highlight class="comment">//<sp/>easily<sp/>alter<sp/>what<sp/>portions<sp/>of<sp/>the<sp/>auth<sp/>data<sp/>are<sp/>stored</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="291"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Use<sp/>these<sp/>methods<sp/>for<sp/>serialization</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal">-<sp/>(NSString<sp/>*)persistenceResponseString;</highlight></codeline>
+<codeline lineno="293"><highlight class="normal">-<sp/>(void)setKeysForPersistenceResponseString:(NSString<sp/>*)str;</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight><highlight class="comment">//<sp/>method<sp/>to<sp/>begin<sp/>fetching<sp/>an<sp/>access<sp/>token,<sp/>used<sp/>by<sp/>the<sp/>sign-in<sp/>object</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal">-<sp/>(<ref refid="interface_g_t_m_h_t_t_p_fetcher" kindref="compound">GTMHTTPFetcher</ref><sp/>*)beginTokenFetchWithDelegate:(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)delegate</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>didFinishSelector:(</highlight><highlight class="keywordtype">SEL</highlight><highlight class="normal">)finishedSel;</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Entry<sp/>point<sp/>to<sp/>post<sp/>a<sp/>notification<sp/>about<sp/>a<sp/>fetcher<sp/>currently<sp/>used<sp/>for</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight><highlight class="comment">//<sp/>obtaining<sp/>or<sp/>refreshing<sp/>a<sp/>token;<sp/>the<sp/>sign-in<sp/>object<sp/>will<sp/>also<sp/>use<sp/>this</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight><highlight class="comment">//<sp/>to<sp/>indicate<sp/>when<sp/>the<sp/>user&apos;s<sp/>email<sp/>address<sp/>is<sp/>being<sp/>fetched.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="302"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Fetch<sp/>type<sp/>constants<sp/>are<sp/>above<sp/>under<sp/>&quot;notifications<sp/>for<sp/>token<sp/>fetches&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="304"><highlight class="normal">-<sp/>(void)notifyFetchIsRunning:(BOOL)isStarting</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>fetcher:(<ref refid="interface_g_t_m_h_t_t_p_fetcher" kindref="compound">GTMHTTPFetcher</ref><sp/>*)fetcher</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>type:(NSString<sp/>*)fetchType;</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Arbitrary<sp/>key-value<sp/>properties<sp/>retained<sp/>for<sp/>the<sp/>user</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="309"><highlight class="normal">-<sp/>(void)setProperty:(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)obj<sp/>forKey:(NSString<sp/>*)key;</highlight></codeline>
+<codeline lineno="310"><highlight class="normal">-<sp/>(id)propertyForKey:(NSString<sp/>*)key;</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight></codeline>
+<codeline lineno="312"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="313"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Utilities</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight></codeline>
+<codeline lineno="316"><highlight class="normal">+<sp/>(NSString<sp/>*)encodedOAuthValueForString:(NSString<sp/>*)str;</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"></highlight></codeline>
+<codeline lineno="318"><highlight class="normal">+<sp/>(NSString<sp/>*)encodedQueryParametersForDictionary:(NSDictionary<sp/>*)dict;</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"></highlight></codeline>
+<codeline lineno="320"><highlight class="normal">+<sp/>(NSDictionary<sp/>*)dictionaryWithResponseString:(NSString<sp/>*)responseStr;</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="normal">+<sp/>(NSString<sp/>*)scopeWithStrings:(NSString<sp/>*)firsStr,<sp/>...<sp/>NS_REQUIRES_NIL_TERMINATION;</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"></highlight><highlight class="keyword">@end</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="324"><highlight class="normal"></highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>GTM_INCLUDE_OAUTH2<sp/>||<sp/>!GDATA_REQUIRE_SERVICE_INCLUDES</highlight></codeline>
+    </programlisting>
+    <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.h"/>
+  </compounddef>
+</doxygen>

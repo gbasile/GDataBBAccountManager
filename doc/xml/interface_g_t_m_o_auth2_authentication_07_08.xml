@@ -1,0 +1,301 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="interface_g_t_m_o_auth2_authentication_07_08" kind="class" prot="public">
+    <compoundname>GTMOAuth2Authentication()</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="interface_g_t_m_o_auth2_authentication_07_08_1a7aac6e3d5365c47868d554ad82d873d0" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>NSMutableArray *</type>
+        <definition>NSMutableArray* GTMOAuth2Authentication()::authorizationQueue</definition>
+        <argsstring></argsstring>
+        <name>authorizationQueue</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.m" line="119" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.m" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_g_t_m_o_auth2_authentication_07_08_1aac6e819466a3a14d2e91d2daf0d1d2c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void GTMOAuth2Authentication()::setKeysForResponseJSONData:</definition>
+        <argsstring>(NSData *data)</argsstring>
+        <name>setKeysForResponseJSONData:</name>
+        <param>
+          <type>NSData *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.m" line="121"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_g_t_m_o_auth2_authentication_07_08_1ad4098870ccc75556a88a0f684dabfbb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL GTMOAuth2Authentication()::authorizeRequestArgs:</definition>
+        <argsstring>(GTMOAuth2AuthorizationArgs *args)</argsstring>
+        <name>authorizeRequestArgs:</name>
+        <param>
+          <type><ref refid="interface_g_t_m_o_auth2_authorization_args" kindref="compound">GTMOAuth2AuthorizationArgs</ref> *</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.m" line="123"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_g_t_m_o_auth2_authentication_07_08_1a38ab37adb5eff3e61bcfbc06f038b769" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL GTMOAuth2Authentication()::authorizeRequestImmediateArgs:</definition>
+        <argsstring>(GTMOAuth2AuthorizationArgs *args)</argsstring>
+        <name>authorizeRequestImmediateArgs:</name>
+        <param>
+          <type><ref refid="interface_g_t_m_o_auth2_authorization_args" kindref="compound">GTMOAuth2AuthorizationArgs</ref> *</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.m" line="125"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_g_t_m_o_auth2_authentication_07_08_1a7a7400c60b026f2bcac3e730eb8a1133" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL GTMOAuth2Authentication()::shouldRefreshAccessToken</definition>
+        <argsstring>()</argsstring>
+        <name>shouldRefreshAccessToken</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.m" line="127"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_g_t_m_o_auth2_authentication_07_08_1a51a9d665e5fe757e74ef55b78ca14f36" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void GTMOAuth2Authentication()::updateExpirationDate</definition>
+        <argsstring>()</argsstring>
+        <name>updateExpirationDate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.m" line="129"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_g_t_m_o_auth2_authentication_07_08_1afd3face2642f5be45d50cd6a0eada375" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSDictionary *</type>
+        <definition>NSDictionary * GTMOAuth2Authentication()::dictionaryWithJSONData:</definition>
+        <argsstring>(NSData *data)</argsstring>
+        <name>dictionaryWithJSONData:</name>
+        <param>
+          <type>NSData *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.m" line="131"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_g_t_m_o_auth2_authentication_07_08_1a974cddb1c87567a0b2874395cd3acd3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void GTMOAuth2Authentication()::tokenFetcher:finishedWithData:error:</definition>
+        <argsstring>(GTMHTTPFetcher *fetcher,[finishedWithData] NSData *data,[error] NSError *error)</argsstring>
+        <name>tokenFetcher:finishedWithData:error:</name>
+        <param>
+          <type><ref refid="interface_g_t_m_h_t_t_p_fetcher" kindref="compound">GTMHTTPFetcher</ref> *</type>
+          <declname>fetcher</declname>
+        </param>
+        <param>
+          <attributes>[finishedWithData]</attributes>
+          <type>NSData *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <attributes>[error]</attributes>
+          <type>NSError *</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.m" line="135"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_g_t_m_o_auth2_authentication_07_08_1aed10e2573d223f48aaedfdc21cf37533" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void GTMOAuth2Authentication()::auth:finishedRefreshWithFetcher:error:</definition>
+        <argsstring>(GTMOAuth2Authentication *auth,[finishedRefreshWithFetcher] GTMHTTPFetcher *fetcher,[error] NSError *error)</argsstring>
+        <name>auth:finishedRefreshWithFetcher:error:</name>
+        <param>
+          <type><ref refid="interface_g_t_m_o_auth2_authentication" kindref="compound">GTMOAuth2Authentication</ref> *</type>
+          <declname>auth</declname>
+        </param>
+        <param>
+          <attributes>[finishedRefreshWithFetcher]</attributes>
+          <type><ref refid="interface_g_t_m_h_t_t_p_fetcher" kindref="compound">GTMHTTPFetcher</ref> *</type>
+          <declname>fetcher</declname>
+        </param>
+        <param>
+          <attributes>[error]</attributes>
+          <type>NSError *</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.m" line="139"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_g_t_m_o_auth2_authentication_07_08_1a8ab880be1b426848ead6200fee2d9e12" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void GTMOAuth2Authentication()::invokeCallbackArgs:</definition>
+        <argsstring>(GTMOAuth2AuthorizationArgs *args)</argsstring>
+        <name>invokeCallbackArgs:</name>
+        <param>
+          <type><ref refid="interface_g_t_m_o_auth2_authorization_args" kindref="compound">GTMOAuth2AuthorizationArgs</ref> *</type>
+          <declname>args</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.m" line="141"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="interface_g_t_m_o_auth2_authentication_07_08_1af19b5f2a25fdb3b3ace5874e99e63835" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void GTMOAuth2Authentication()::invokeDelegate:selector:object:object:object:</definition>
+        <argsstring>(id delegate,[selector] SEL sel,[object] id obj1,[object] id obj2,[object] id obj3)</argsstring>
+        <name>invokeDelegate:selector:object:object:object:</name>
+        <param>
+          <type>id</type>
+          <declname>delegate</declname>
+        </param>
+        <param>
+          <attributes>[selector]</attributes>
+          <type>SEL</type>
+          <declname>sel</declname>
+        </param>
+        <param>
+          <attributes>[object]</attributes>
+          <type>id</type>
+          <declname>obj1</declname>
+        </param>
+        <param>
+          <attributes>[object]</attributes>
+          <type>id</type>
+          <declname>obj2</declname>
+        </param>
+        <param>
+          <attributes>[object]</attributes>
+          <type>id</type>
+          <declname>obj3</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.m" line="147"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_g_t_m_o_auth2_authentication_07_08_1a5fea8fb291fd17e8276ab3444695101b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSString *</type>
+        <definition>NSString * GTMOAuth2Authentication()::unencodedOAuthParameterForString:</definition>
+        <argsstring>(NSString *str)</argsstring>
+        <name>unencodedOAuthParameterForString:</name>
+        <param>
+          <type>NSString *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.m" line="149"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_g_t_m_o_auth2_authentication_07_08_1a5fbcf6691e74a65063c3caa058bdd369" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSString *</type>
+        <definition>NSString * GTMOAuth2Authentication()::encodedQueryParametersForDictionary:</definition>
+        <argsstring>(NSDictionary *dict)</argsstring>
+        <name>encodedQueryParametersForDictionary:</name>
+        <param>
+          <type>NSDictionary *</type>
+          <declname>dict</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.m" line="150"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_g_t_m_o_auth2_authentication_07_08_1a997763da66f66213601739ac09ad1141" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSDictionary *</type>
+        <definition>NSDictionary * GTMOAuth2Authentication()::dictionaryWithResponseData:</definition>
+        <argsstring>(NSData *data)</argsstring>
+        <name>dictionaryWithResponseData:</name>
+        <param>
+          <type>NSData *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.m" line="152"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.m" line="117" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.m" bodystart="117" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="interface_g_t_m_o_auth2_authentication_07_08_1aed10e2573d223f48aaedfdc21cf37533" prot="public" virt="virtual"><scope>GTMOAuth2Authentication()</scope><name>auth:finishedRefreshWithFetcher:error:</name></member>
+      <member refid="interface_g_t_m_o_auth2_authentication_07_08_1a7aac6e3d5365c47868d554ad82d873d0" prot="public" virt="non-virtual"><scope>GTMOAuth2Authentication()</scope><name>authorizationQueue</name></member>
+      <member refid="interface_g_t_m_o_auth2_authentication_07_08_1ad4098870ccc75556a88a0f684dabfbb4" prot="public" virt="virtual"><scope>GTMOAuth2Authentication()</scope><name>authorizeRequestArgs:</name></member>
+      <member refid="interface_g_t_m_o_auth2_authentication_07_08_1a38ab37adb5eff3e61bcfbc06f038b769" prot="public" virt="virtual"><scope>GTMOAuth2Authentication()</scope><name>authorizeRequestImmediateArgs:</name></member>
+      <member refid="interface_g_t_m_o_auth2_authentication_07_08_1afd3face2642f5be45d50cd6a0eada375" prot="public" virt="virtual"><scope>GTMOAuth2Authentication()</scope><name>dictionaryWithJSONData:</name></member>
+      <member refid="interface_g_t_m_o_auth2_authentication_07_08_1a997763da66f66213601739ac09ad1141" prot="public" virt="virtual"><scope>GTMOAuth2Authentication()</scope><name>dictionaryWithResponseData:</name></member>
+      <member refid="interface_g_t_m_o_auth2_authentication_07_08_1a5fbcf6691e74a65063c3caa058bdd369" prot="public" virt="virtual"><scope>GTMOAuth2Authentication()</scope><name>encodedQueryParametersForDictionary:</name></member>
+      <member refid="interface_g_t_m_o_auth2_authentication_07_08_1a8ab880be1b426848ead6200fee2d9e12" prot="public" virt="virtual"><scope>GTMOAuth2Authentication()</scope><name>invokeCallbackArgs:</name></member>
+      <member refid="interface_g_t_m_o_auth2_authentication_07_08_1af19b5f2a25fdb3b3ace5874e99e63835" prot="public" virt="virtual"><scope>GTMOAuth2Authentication()</scope><name>invokeDelegate:selector:object:object:object:</name></member>
+      <member refid="interface_g_t_m_o_auth2_authentication_07_08_1aac6e819466a3a14d2e91d2daf0d1d2c4" prot="public" virt="virtual"><scope>GTMOAuth2Authentication()</scope><name>setKeysForResponseJSONData:</name></member>
+      <member refid="interface_g_t_m_o_auth2_authentication_07_08_1a7a7400c60b026f2bcac3e730eb8a1133" prot="public" virt="virtual"><scope>GTMOAuth2Authentication()</scope><name>shouldRefreshAccessToken</name></member>
+      <member refid="interface_g_t_m_o_auth2_authentication_07_08_1a974cddb1c87567a0b2874395cd3acd3c" prot="public" virt="virtual"><scope>GTMOAuth2Authentication()</scope><name>tokenFetcher:finishedWithData:error:</name></member>
+      <member refid="interface_g_t_m_o_auth2_authentication_07_08_1a5fea8fb291fd17e8276ab3444695101b" prot="public" virt="virtual"><scope>GTMOAuth2Authentication()</scope><name>unencodedOAuthParameterForString:</name></member>
+      <member refid="interface_g_t_m_o_auth2_authentication_07_08_1a51a9d665e5fe757e74ef55b78ca14f36" prot="public" virt="virtual"><scope>GTMOAuth2Authentication()</scope><name>updateExpirationDate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

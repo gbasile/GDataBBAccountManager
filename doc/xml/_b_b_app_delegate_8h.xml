@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="_b_b_app_delegate_8h" kind="file">
+    <compoundname>BBAppDelegate.h</compoundname>
+    <includes local="no">Cocoa/Cocoa.h</includes>
+    <includedby refid="_b_b_app_delegate_8m" local="yes">GMultiAccountManager/GMultiAccountManager/BBAppDelegate.m</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>Cocoa/Cocoa.h</label>
+      </node>
+      <node id="0">
+        <label>GMultiAccountManager/GMultiAccountManager/BBAppDelegate.h</label>
+        <link refid="BBAppDelegate.h"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>GMultiAccountManager/GMultiAccountManager/BBAppDelegate.h</label>
+        <link refid="BBAppDelegate.h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>GMultiAccountManager/GMultiAccountManager/BBAppDelegate.m</label>
+        <link refid="_b_b_app_delegate_8m"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="interface_b_b_app_delegate" prot="public">BBAppDelegate</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>BBAppDelegate.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>GMultiAccountManager</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Created<sp/>by<sp/>Giuseppe<sp/>Basile<sp/>on<sp/>05/05/12.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Copyright<sp/>(c)<sp/>2012<sp/>Archy.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&lt;Cocoa/Cocoa.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="interface_b_b_app_delegate" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">@interface<sp/></highlight><highlight class="normal"><ref refid="interface_b_b_app_delegate" kindref="compound">BBAppDelegate</ref><sp/>:<sp/>NSObject<sp/>&lt;NSApplicationDelegate&gt;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="interface_b_b_app_delegate_1ad0a2b30ff750a8620c5e05291766de66" refkind="member"><highlight class="normal">@property<sp/>(assign)<sp/>IBOutlet<sp/>NSWindow<sp/>*<ref refid="interface_b_b_app_delegate_1ad0a2b30ff750a8620c5e05291766de66" kindref="member">window</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal">@end</highlight></codeline>
+    </programlisting>
+    <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/BBAppDelegate.h"/>
+  </compounddef>
+</doxygen>

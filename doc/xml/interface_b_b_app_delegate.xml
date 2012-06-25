@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="interface_b_b_app_delegate" kind="class" prot="public">
+    <compoundname>BBAppDelegate</compoundname>
+    <includes refid="_b_b_app_delegate_8h" local="no">BBAppDelegate.h</includes>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="interface_b_b_app_delegate_1ad0a2b30ff750a8620c5e05291766de66" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="assign">
+        <type>IBOutlet NSWindow *</type>
+        <definition>IBOutlet NSWindow* BBAppDelegate::window</definition>
+        <argsstring></argsstring>
+        <name>window</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/BBAppDelegate.h" line="13" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/BBAppDelegate.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/BBAppDelegate.h" line="11" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/BBAppDelegate.h" bodystart="11" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="interface_b_b_app_delegate_1ad0a2b30ff750a8620c5e05291766de66" prot="public" virt="non-virtual"><scope>BBAppDelegate</scope><name>window</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

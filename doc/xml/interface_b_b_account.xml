@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="interface_b_b_account" kind="class" prot="public">
+    <compoundname>BBAccount</compoundname>
+    <basecompoundref refid="protocol_b_b_account-p" prot="public" virt="non-virtual">&lt;BBAccount&gt;</basecompoundref>
+    <includes refid="_b_b_account_8h" local="no">BBAccount.h</includes>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="0">
+        <label>BBAccount</label>
+        <link refid="interface_b_b_account"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>&lt;BBAccount&gt;</label>
+        <link refid="protocol_b_b_account-p"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>BBAccount</label>
+        <link refid="interface_b_b_account"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>&lt;BBAccount&gt;</label>
+        <link refid="protocol_b_b_account-p"/>
+      </node>
+    </collaborationgraph>
+    <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/Manager/BBAccount.h" line="36" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/Manager/BBAccount.h" bodystart="36" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="protocol_b_b_account-p_1a603659d1a3e1bdbe55c4ab17747ed65f" prot="public" virt="non-virtual"><scope>BBAccount</scope><name>authToken</name></member>
+      <member refid="protocol_b_b_account-p_1a299b5409c8bafc61e9b0192c208197d2" prot="public" virt="non-virtual"><scope>BBAccount</scope><name>principal</name></member>
+      <member refid="protocol_b_b_account-p_1a89a01acd723c80d2e1dbb9a805b0eaae" prot="public" virt="non-virtual"><scope>BBAccount</scope><name>username</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

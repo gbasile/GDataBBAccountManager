@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="dir_7f09cc7ceddfc51cab0b1f4dedaa7179" kind="dir">
+    <compoundname>GMultiAccountManager/GMultiAccountManager/Manager/</compoundname>
+    <innerfile refid="_b_b_account_8h">BBAccount.h</innerfile>
+    <innerfile refid="_b_b_account_8m">BBAccount.m</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/Manager/"/>
+  </compounddef>
+</doxygen>

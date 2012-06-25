@@ -1,0 +1,282 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="interface_b_b_g_multi_account_manager" kind="class" prot="public">
+    <compoundname>BBGMultiAccountManager</compoundname>
+    <includes refid="_b_b_g_multi_account_manager_8h" local="no">BBGMultiAccountManager.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_b_b_g_multi_account_manager_1ade4a8bf8f2bc94d859163d310236e442" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void BBGMultiAccountManager::registerWithClientId:clientSecret:scope:</definition>
+        <argsstring>(NSString *clientID,[clientSecret] NSString *clientSecret,[scope] NSString *scope)</argsstring>
+        <name>registerWithClientId:clientSecret:scope:</name>
+        <param>
+          <type>NSString *</type>
+          <declname>clientID</declname>
+        </param>
+        <param>
+          <attributes>[clientSecret]</attributes>
+          <type>NSString *</type>
+          <declname>clientSecret</declname>
+        </param>
+        <param>
+          <attributes>[scope]</attributes>
+          <type>NSString *</type>
+          <declname>scope</declname>
+        </param>
+        <briefdescription>
+<para><verbatim>Mandatory! Set the Google Parameters necessary 
+</verbatim> to login against your application. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>clientID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Your unique Google API identificator </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>clientSecret</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Your secret Google API code </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scope</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The scope of the service you want to authorize </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="see"><para><ulink url="https://code.google.com/apis/console">https://code.google.com/apis/console</ulink> for Google API Console </para><simplesectsep/><para><ulink url="https://developers.google.com/google-apps/documents-list/?hl=es-ES#authorizing_requests_with_oauth_20">https://developers.google.com/google-apps/documents-list/?hl=es-ES#authorizing_requests_with_oauth_20</ulink> for scope description </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/BBGMultiAccountManager.h" line="28" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/BBGMultiAccountManager.m" bodystart="13" bodyend="18"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_b_b_g_multi_account_manager_1a0019e7a9d2d7b55cc079f9e8e07a09ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void BBGMultiAccountManager::addAccount</definition>
+        <argsstring>()</argsstring>
+        <name>addAccount</name>
+        <briefdescription>
+<para>Start the procedures to authenticate your application against the scopes. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/BBGMultiAccountManager.h" line="34" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/BBGMultiAccountManager.m" bodystart="20" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_b_b_g_multi_account_manager_1a9f9dfd3218fcdc7453a783606468cd34" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void BBGMultiAccountManager::addAccountWithCompletionBlock:</definition>
+        <argsstring>(id&lt; BBAccount &gt; account, NSError *error block)</argsstring>
+        <name>addAccountWithCompletionBlock:</name>
+        <param>
+          <type>id&lt; <ref refid="interface_b_b_account" kindref="compound">BBAccount</ref> &gt;</type>
+          <declname>account</declname>
+          <defname>block</defname>
+        </param>
+        <param>
+          <type>NSError *error</type>
+          <declname>block</declname>
+        </param>
+        <briefdescription>
+<para>Start the procedures to authenticate your application against the scopes. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>block</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Completion block </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/BBGMultiAccountManager.h" line="41" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/BBGMultiAccountManager.m" bodystart="24" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_b_b_g_multi_account_manager_1a1af045cbe29e5ba9821010cc15727a8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void BBGMultiAccountManager::accountsWithCompletionBlock:</definition>
+        <argsstring>(NSArray *accounts, NSError *error block)</argsstring>
+        <name>accountsWithCompletionBlock:</name>
+        <param>
+          <type>NSArray *</type>
+          <declname>accounts</declname>
+          <defname>block</defname>
+        </param>
+        <param>
+          <type>NSError *error</type>
+          <declname>block</declname>
+        </param>
+        <briefdescription>
+<para>Return the list of existing account. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>block</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Completion block </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/BBGMultiAccountManager.h" line="48" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/BBGMultiAccountManager.m" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_b_b_g_multi_account_manager_1a2eb51a663e8d4be32e4670ec28bf941a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void BBGMultiAccountManager::removeAccount:</definition>
+        <argsstring>(id&lt; BBAccount &gt; account)</argsstring>
+        <name>removeAccount:</name>
+        <param>
+          <type>id&lt; <ref refid="interface_b_b_account" kindref="compound">BBAccount</ref> &gt;</type>
+          <declname>account</declname>
+        </param>
+        <briefdescription>
+<para>Remove the provided Account, if exist. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>account</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The account to delete </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/BBGMultiAccountManager.h" line="55" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/BBGMultiAccountManager.m" bodystart="34" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_b_b_g_multi_account_manager_1a73cb7fb3040ce3c376b8cd7eb4104969" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void BBGMultiAccountManager::removeAccount:withCompletionBlock:</definition>
+        <argsstring>(id&lt; BBAccount &gt; account,[withCompletionBlock] BOOL success, NSError *error block)</argsstring>
+        <name>removeAccount:withCompletionBlock:</name>
+        <param>
+          <type>id&lt; <ref refid="interface_b_b_account" kindref="compound">BBAccount</ref> &gt;</type>
+          <declname>account</declname>
+        </param>
+        <param>
+          <attributes>[withCompletionBlock]</attributes>
+          <type>BOOL</type>
+          <declname>success</declname>
+          <defname>block</defname>
+        </param>
+        <param>
+          <type>NSError *error</type>
+          <declname>block</declname>
+        </param>
+        <briefdescription>
+<para>Remove the provided Account, if exist. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>account</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The account to delete </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>block</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Completion block </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/BBGMultiAccountManager.h" line="62" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/BBGMultiAccountManager.m" bodystart="39" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_b_b_g_multi_account_manager_1a5e6bcaec5d3640c54b107fe2197f3388" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void BBGMultiAccountManager::setPrincipalAccount:</definition>
+        <argsstring>(id&lt; BBAccount &gt; account)</argsstring>
+        <name>setPrincipalAccount:</name>
+        <param>
+          <type>id&lt; <ref refid="interface_b_b_account" kindref="compound">BBAccount</ref> &gt;</type>
+          <declname>account</declname>
+        </param>
+        <briefdescription>
+<para>Set this account as principal. </para>        </briefdescription>
+        <detaileddescription>
+<para>NB: only one account can be the principal. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>account</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The account to mark as principal </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/BBGMultiAccountManager.h" line="70" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/BBGMultiAccountManager.m" bodystart="44" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_b_b_g_multi_account_manager_1ac3d291e42f89be2d31558ba076627960" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void BBGMultiAccountManager::setDefaultAccount:withCompletionBlock:</definition>
+        <argsstring>(id&lt; BBAccount &gt; account,[withCompletionBlock] BOOL success, NSError *error block)</argsstring>
+        <name>setDefaultAccount:withCompletionBlock:</name>
+        <param>
+          <type>id&lt; <ref refid="interface_b_b_account" kindref="compound">BBAccount</ref> &gt;</type>
+          <declname>account</declname>
+        </param>
+        <param>
+          <attributes>[withCompletionBlock]</attributes>
+          <type>BOOL</type>
+          <declname>success</declname>
+          <defname>block</defname>
+        </param>
+        <param>
+          <type>NSError *error</type>
+          <declname>block</declname>
+        </param>
+        <briefdescription>
+<para>Set this account as principal. </para>        </briefdescription>
+        <detaileddescription>
+<para>NB: only one account can be the principal. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>account</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The account to mark as principal </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>block</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Completion block </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/BBGMultiAccountManager.h" line="79" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/BBGMultiAccountManager.m" bodystart="49" bodyend="52"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/BBGMultiAccountManager.h" line="14" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/BBGMultiAccountManager.h" bodystart="13" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="interface_b_b_g_multi_account_manager_1a1af045cbe29e5ba9821010cc15727a8a" prot="public" virt="virtual"><scope>BBGMultiAccountManager</scope><name>accountsWithCompletionBlock:</name></member>
+      <member refid="interface_b_b_g_multi_account_manager_1a0019e7a9d2d7b55cc079f9e8e07a09ea" prot="public" virt="virtual"><scope>BBGMultiAccountManager</scope><name>addAccount</name></member>
+      <member refid="interface_b_b_g_multi_account_manager_1a9f9dfd3218fcdc7453a783606468cd34" prot="public" virt="virtual"><scope>BBGMultiAccountManager</scope><name>addAccountWithCompletionBlock:</name></member>
+      <member refid="interface_b_b_g_multi_account_manager_1ade4a8bf8f2bc94d859163d310236e442" prot="public" virt="virtual"><scope>BBGMultiAccountManager</scope><name>registerWithClientId:clientSecret:scope:</name></member>
+      <member refid="interface_b_b_g_multi_account_manager_1a2eb51a663e8d4be32e4670ec28bf941a" prot="public" virt="virtual"><scope>BBGMultiAccountManager</scope><name>removeAccount:</name></member>
+      <member refid="interface_b_b_g_multi_account_manager_1a73cb7fb3040ce3c376b8cd7eb4104969" prot="public" virt="virtual"><scope>BBGMultiAccountManager</scope><name>removeAccount:withCompletionBlock:</name></member>
+      <member refid="interface_b_b_g_multi_account_manager_1ac3d291e42f89be2d31558ba076627960" prot="public" virt="virtual"><scope>BBGMultiAccountManager</scope><name>setDefaultAccount:withCompletionBlock:</name></member>
+      <member refid="interface_b_b_g_multi_account_manager_1a5e6bcaec5d3640c54b107fe2197f3388" prot="public" virt="virtual"><scope>BBGMultiAccountManager</scope><name>setPrincipalAccount:</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

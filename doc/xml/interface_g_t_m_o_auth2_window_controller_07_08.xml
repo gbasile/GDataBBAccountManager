@@ -1,0 +1,270 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="interface_g_t_m_o_auth2_window_controller_07_08" kind="class" prot="public">
+    <compoundname>GTMOAuth2WindowController()</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="interface_g_t_m_o_auth2_window_controller_07_08_1a11120a5c94dfb802c9068d426188da81" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type><ref refid="interface_g_t_m_o_auth2_sign_in" kindref="compound">GTMOAuth2SignIn</ref> *</type>
+        <definition>GTMOAuth2SignIn* GTMOAuth2WindowController()::signIn</definition>
+        <argsstring></argsstring>
+        <name>signIn</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2WindowController.m" line="25" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2WindowController.m" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_g_t_m_o_auth2_window_controller_07_08_1acc2592bdd9b5d6c5023d06968c338644" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="copy">
+        <type>NSURLRequest *</type>
+        <definition>NSURLRequest* GTMOAuth2WindowController()::initialRequest</definition>
+        <argsstring></argsstring>
+        <name>initialRequest</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2WindowController.m" line="26" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2WindowController.m" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_g_t_m_o_auth2_window_controller_07_08_1aa8de713ca1d3a1de89ce8630d6ac2b6a" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>GTMCookieStorage *</type>
+        <definition>GTMCookieStorage* GTMOAuth2WindowController()::cookieStorage</definition>
+        <argsstring></argsstring>
+        <name>cookieStorage</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2WindowController.m" line="27" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2WindowController.m" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_g_t_m_o_auth2_window_controller_07_08_1afd75768a08ad45a6e2b62a2b7adfc0f6" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>NSWindow *</type>
+        <definition>NSWindow* GTMOAuth2WindowController()::sheetModalForWindow</definition>
+        <argsstring></argsstring>
+        <name>sheetModalForWindow</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2WindowController.m" line="28" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2WindowController.m" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_g_t_m_o_auth2_window_controller_07_08_1ac1e977cb8f69ac4eb82ebb6bd0e9fe2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void GTMOAuth2WindowController()::signInCommonForWindow:</definition>
+        <argsstring>(NSWindow *parentWindowOrNil)</argsstring>
+        <name>signInCommonForWindow:</name>
+        <param>
+          <type>NSWindow *</type>
+          <declname>parentWindowOrNil</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2WindowController.m" line="30"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_g_t_m_o_auth2_window_controller_07_08_1a862fdff9b8ee6b4180bbf68d589af663" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void GTMOAuth2WindowController()::setupSheetTerminationHandling</definition>
+        <argsstring>()</argsstring>
+        <name>setupSheetTerminationHandling</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2WindowController.m" line="31"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_g_t_m_o_auth2_window_controller_07_08_1a8c9150fcfcaf3553372e2b916cec6d07" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void GTMOAuth2WindowController()::destroyWindow</definition>
+        <argsstring>()</argsstring>
+        <name>destroyWindow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2WindowController.m" line="32"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_g_t_m_o_auth2_window_controller_07_08_1ad9acc7572be1649854c018afca7e0a6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void GTMOAuth2WindowController()::handlePrematureWindowClose</definition>
+        <argsstring>()</argsstring>
+        <name>handlePrematureWindowClose</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2WindowController.m" line="33"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_g_t_m_o_auth2_window_controller_07_08_1a10cb8cd7ec7f262668596a0d8f573860" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL GTMOAuth2WindowController()::shouldUseKeychain</definition>
+        <argsstring>()</argsstring>
+        <name>shouldUseKeychain</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2WindowController.m" line="34"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_g_t_m_o_auth2_window_controller_07_08_1ae640c4cf359d2516d68da6d20ad79ca0" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void GTMOAuth2WindowController()::signIn:displayRequest:</definition>
+        <argsstring>(GTMOAuth2SignIn *signIn,[displayRequest] NSURLRequest *request)</argsstring>
+        <name>signIn:displayRequest:</name>
+        <param>
+          <type><ref refid="interface_g_t_m_o_auth2_sign_in" kindref="compound">GTMOAuth2SignIn</ref> *</type>
+          <declname>signIn</declname>
+        </param>
+        <param>
+          <attributes>[displayRequest]</attributes>
+          <type>NSURLRequest *</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2WindowController.m" line="35"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_g_t_m_o_auth2_window_controller_07_08_1aa72a1b05a2802c32509b8f2f6b9b4684" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void GTMOAuth2WindowController()::signIn:finishedWithAuth:error:</definition>
+        <argsstring>(GTMOAuth2SignIn *signIn,[finishedWithAuth] GTMOAuth2Authentication *auth,[error] NSError *error)</argsstring>
+        <name>signIn:finishedWithAuth:error:</name>
+        <param>
+          <type><ref refid="interface_g_t_m_o_auth2_sign_in" kindref="compound">GTMOAuth2SignIn</ref> *</type>
+          <declname>signIn</declname>
+        </param>
+        <param>
+          <attributes>[finishedWithAuth]</attributes>
+          <type><ref refid="interface_g_t_m_o_auth2_authentication" kindref="compound">GTMOAuth2Authentication</ref> *</type>
+          <declname>auth</declname>
+        </param>
+        <param>
+          <attributes>[error]</attributes>
+          <type>NSError *</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2WindowController.m" line="36"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_g_t_m_o_auth2_window_controller_07_08_1a491a7177f0bc8fa39ecb789e6ad2919f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void GTMOAuth2WindowController()::sheetDidEnd:returnCode:contextInfo:</definition>
+        <argsstring>(NSWindow *sheet,[returnCode] NSInteger returnCode,[contextInfo] void *contextInfo)</argsstring>
+        <name>sheetDidEnd:returnCode:contextInfo:</name>
+        <param>
+          <type>NSWindow *</type>
+          <declname>sheet</declname>
+        </param>
+        <param>
+          <attributes>[returnCode]</attributes>
+          <type>NSInteger</type>
+          <declname>returnCode</declname>
+        </param>
+        <param>
+          <attributes>[contextInfo]</attributes>
+          <type>void *</type>
+          <declname>contextInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2WindowController.m" line="37"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_g_t_m_o_auth2_window_controller_07_08_1a47ca654dfb0e7f9ce93c7bdc9b17ea00" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void GTMOAuth2WindowController()::handleCookiesForResponse:</definition>
+        <argsstring>(NSURLResponse *response)</argsstring>
+        <name>handleCookiesForResponse:</name>
+        <param>
+          <type>NSURLResponse *</type>
+          <declname>response</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2WindowController.m" line="39"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_g_t_m_o_auth2_window_controller_07_08_1ad45aed8ebb9a84721e6e80479b6e809d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSURLRequest *</type>
+        <definition>NSURLRequest * GTMOAuth2WindowController()::addCookiesToRequest:</definition>
+        <argsstring>(NSURLRequest *request)</argsstring>
+        <name>addCookiesToRequest:</name>
+        <param>
+          <type>NSURLRequest *</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2WindowController.m" line="40"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2WindowController.m" line="24" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2WindowController.m" bodystart="24" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="interface_g_t_m_o_auth2_window_controller_07_08_1ad45aed8ebb9a84721e6e80479b6e809d" prot="public" virt="virtual"><scope>GTMOAuth2WindowController()</scope><name>addCookiesToRequest:</name></member>
+      <member refid="interface_g_t_m_o_auth2_window_controller_07_08_1aa8de713ca1d3a1de89ce8630d6ac2b6a" prot="public" virt="non-virtual"><scope>GTMOAuth2WindowController()</scope><name>cookieStorage</name></member>
+      <member refid="interface_g_t_m_o_auth2_window_controller_07_08_1a8c9150fcfcaf3553372e2b916cec6d07" prot="public" virt="virtual"><scope>GTMOAuth2WindowController()</scope><name>destroyWindow</name></member>
+      <member refid="interface_g_t_m_o_auth2_window_controller_07_08_1a47ca654dfb0e7f9ce93c7bdc9b17ea00" prot="public" virt="virtual"><scope>GTMOAuth2WindowController()</scope><name>handleCookiesForResponse:</name></member>
+      <member refid="interface_g_t_m_o_auth2_window_controller_07_08_1ad9acc7572be1649854c018afca7e0a6a" prot="public" virt="virtual"><scope>GTMOAuth2WindowController()</scope><name>handlePrematureWindowClose</name></member>
+      <member refid="interface_g_t_m_o_auth2_window_controller_07_08_1acc2592bdd9b5d6c5023d06968c338644" prot="public" virt="non-virtual"><scope>GTMOAuth2WindowController()</scope><name>initialRequest</name></member>
+      <member refid="interface_g_t_m_o_auth2_window_controller_07_08_1a862fdff9b8ee6b4180bbf68d589af663" prot="public" virt="virtual"><scope>GTMOAuth2WindowController()</scope><name>setupSheetTerminationHandling</name></member>
+      <member refid="interface_g_t_m_o_auth2_window_controller_07_08_1a491a7177f0bc8fa39ecb789e6ad2919f" prot="public" virt="virtual"><scope>GTMOAuth2WindowController()</scope><name>sheetDidEnd:returnCode:contextInfo:</name></member>
+      <member refid="interface_g_t_m_o_auth2_window_controller_07_08_1afd75768a08ad45a6e2b62a2b7adfc0f6" prot="public" virt="non-virtual"><scope>GTMOAuth2WindowController()</scope><name>sheetModalForWindow</name></member>
+      <member refid="interface_g_t_m_o_auth2_window_controller_07_08_1a10cb8cd7ec7f262668596a0d8f573860" prot="public" virt="virtual"><scope>GTMOAuth2WindowController()</scope><name>shouldUseKeychain</name></member>
+      <member refid="interface_g_t_m_o_auth2_window_controller_07_08_1a11120a5c94dfb802c9068d426188da81" prot="public" virt="non-virtual"><scope>GTMOAuth2WindowController()</scope><name>signIn</name></member>
+      <member refid="interface_g_t_m_o_auth2_window_controller_07_08_1ae640c4cf359d2516d68da6d20ad79ca0" prot="public" virt="virtual"><scope>GTMOAuth2WindowController()</scope><name>signIn:displayRequest:</name></member>
+      <member refid="interface_g_t_m_o_auth2_window_controller_07_08_1aa72a1b05a2802c32509b8f2f6b9b4684" prot="public" virt="virtual"><scope>GTMOAuth2WindowController()</scope><name>signIn:finishedWithAuth:error:</name></member>
+      <member refid="interface_g_t_m_o_auth2_window_controller_07_08_1ac1e977cb8f69ac4eb82ebb6bd0e9fe2a" prot="public" virt="virtual"><scope>GTMOAuth2WindowController()</scope><name>signInCommonForWindow:</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

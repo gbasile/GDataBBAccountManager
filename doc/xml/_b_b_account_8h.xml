@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="_b_b_account_8h" kind="file">
+    <compoundname>BBAccount.h</compoundname>
+    <includes local="no">Foundation/Foundation.h</includes>
+    <includedby refid="_b_b_account_8m" local="yes">GMultiAccountManager/GMultiAccountManager/Manager/BBAccount.m</includedby>
+    <incdepgraph>
+      <node id="92">
+        <label>GMultiAccountManager/GMultiAccountManager/Manager/BBAccount.h</label>
+        <link refid="BBAccount.h"/>
+        <childnode refid="93" relation="include">
+        </childnode>
+      </node>
+      <node id="93">
+        <label>Foundation/Foundation.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="94">
+        <label>GMultiAccountManager/GMultiAccountManager/Manager/BBAccount.h</label>
+        <link refid="BBAccount.h"/>
+        <childnode refid="95" relation="include">
+        </childnode>
+      </node>
+      <node id="95">
+        <label>GMultiAccountManager/GMultiAccountManager/Manager/BBAccount.m</label>
+        <link refid="_b_b_account_8m"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="protocol_b_b_account-p" prot="public">BBAccount-p</innerclass>
+    <innerclass refid="interface_b_b_account" prot="public">BBAccount</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>BBAccount.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>GMultiAccountManager</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Created<sp/>by<sp/>Giuseppe<sp/>Basile<sp/>on<sp/>05/05/12.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Copyright<sp/>(c)<sp/>2012<sp/>Archy.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&lt;Foundation/Foundation.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">@class</highlight><highlight class="normal"><sp/><ref refid="interface_g_t_m_o_auth2_authentication" kindref="compound">GTMOAuth2Authentication</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="protocol_b_b_account-p" refkind="compound"><highlight class="keyword">@protocol<sp/></highlight><highlight class="normal"><ref refid="interface_b_b_account" kindref="compound">BBAccount</ref></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/>&lt;NSObject,<sp/>NSCoding&gt;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="22" refid="protocol_b_b_account-p_1a603659d1a3e1bdbe55c4ab17747ed65f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(retain,<sp/>nonatomic)<sp/><sp/><ref refid="interface_g_t_m_o_auth2_authentication" kindref="compound">GTMOAuth2Authentication</ref>*<sp/><ref refid="protocol_b_b_account-p_1a603659d1a3e1bdbe55c4ab17747ed65f" kindref="member" tooltip="The valid GTMOAuth2Authentication token.">authToken</ref>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="27" refid="protocol_b_b_account-p_1a89a01acd723c80d2e1dbb9a805b0eaae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(copy,<sp/>nonatomic)<sp/>NSString<sp/>*<ref refid="protocol_b_b_account-p_1a89a01acd723c80d2e1dbb9a805b0eaae" kindref="member" tooltip="The username of the authenticated user, equivalent to the mail address.">username</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>getter=isPrincipal)<sp/>BOOL<sp/><ref refid="protocol_b_b_account-p_1a299b5409c8bafc61e9b0192c208197d2" kindref="member" tooltip="Define whenever the account is principal.">principal</ref></highlight></codeline>
+<codeline lineno="33" refid="protocol_b_b_account-p_1a299b5409c8bafc61e9b0192c208197d2" refkind="member"><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">@end</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="interface_b_b_account" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">@interface<sp/></highlight><highlight class="normal"><ref refid="interface_b_b_account" kindref="compound">BBAccount</ref><sp/>:<sp/>NSObject<sp/>&lt;<ref refid="protocol_b_b_account-p" kindref="compound" tooltip="BBAccount Protocol.">BBAccount</ref>&gt;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal">@end</highlight></codeline>
+    </programlisting>
+    <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/Manager/BBAccount.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,307 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="interface_g_t_m_o_auth2_sign_in_07_08" kind="class" prot="public">
+    <compoundname>GTMOAuth2SignIn()</compoundname>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="interface_g_t_m_o_auth2_sign_in_07_08_1a3ffc6e33116675c944f3c945dca24cec" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="assign">
+        <type>BOOL</type>
+        <definition>BOOL GTMOAuth2SignIn()::hasHandledCallback</definition>
+        <argsstring></argsstring>
+        <name>hasHandledCallback</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2SignIn.m" line="37" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2SignIn.m" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_g_t_m_o_auth2_sign_in_07_08_1aac4f684d39b605e693f5c743a84388e0" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type><ref refid="interface_g_t_m_h_t_t_p_fetcher" kindref="compound">GTMHTTPFetcher</ref> *</type>
+        <definition>GTMHTTPFetcher* GTMOAuth2SignIn()::pendingFetcher</definition>
+        <argsstring></argsstring>
+        <name>pendingFetcher</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2SignIn.m" line="38" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2SignIn.m" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="property" id="interface_g_t_m_o_auth2_sign_in_07_08_1a08cded6162df7d5aae20c059e396aaf0" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="retain">
+        <type>NSDictionary *</type>
+        <definition>NSDictionary* GTMOAuth2SignIn()::userProfile</definition>
+        <argsstring></argsstring>
+        <name>userProfile</name>
+        <read></read>
+        <write></write>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2SignIn.m" line="40" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2SignIn.m" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_g_t_m_o_auth2_sign_in_07_08_1aff4f0d541d7a730dfdf2d71d914a8b9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void GTMOAuth2SignIn()::invokeFinalCallbackWithError:</definition>
+        <argsstring>(NSError *error)</argsstring>
+        <name>invokeFinalCallbackWithError:</name>
+        <param>
+          <type>NSError *</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2SignIn.m" line="43"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_g_t_m_o_auth2_sign_in_07_08_1ad268c9aaf59d4a88b4a76ce419585520" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL GTMOAuth2SignIn()::startWebRequest</definition>
+        <argsstring>()</argsstring>
+        <name>startWebRequest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2SignIn.m" line="45"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_g_t_m_o_auth2_sign_in_07_08_1a45b1f5bb40f88fa709b1552922006931" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void GTMOAuth2SignIn()::fetchGoogleUserInfo</definition>
+        <argsstring>()</argsstring>
+        <name>fetchGoogleUserInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2SignIn.m" line="49"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_g_t_m_o_auth2_sign_in_07_08_1a1ee09ed0724807581f8ed66334eef1bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void GTMOAuth2SignIn()::finishSignInWithError:</definition>
+        <argsstring>(NSError *error)</argsstring>
+        <name>finishSignInWithError:</name>
+        <param>
+          <type>NSError *</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2SignIn.m" line="51"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_g_t_m_o_auth2_sign_in_07_08_1a4e92510099621a1c527eb8c566a031fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void GTMOAuth2SignIn()::handleCallbackReached</definition>
+        <argsstring>()</argsstring>
+        <name>handleCallbackReached</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2SignIn.m" line="53"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_g_t_m_o_auth2_sign_in_07_08_1a971237ba152b688acd4d5683d7a82caa" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void GTMOAuth2SignIn()::auth:finishedWithFetcher:error:</definition>
+        <argsstring>(GTMOAuth2Authentication *auth,[finishedWithFetcher] GTMHTTPFetcher *fetcher,[error] NSError *error)</argsstring>
+        <name>auth:finishedWithFetcher:error:</name>
+        <param>
+          <type><ref refid="interface_g_t_m_o_auth2_authentication" kindref="compound">GTMOAuth2Authentication</ref> *</type>
+          <declname>auth</declname>
+        </param>
+        <param>
+          <attributes>[finishedWithFetcher]</attributes>
+          <type><ref refid="interface_g_t_m_h_t_t_p_fetcher" kindref="compound">GTMHTTPFetcher</ref> *</type>
+          <declname>fetcher</declname>
+        </param>
+        <param>
+          <attributes>[error]</attributes>
+          <type>NSError *</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2SignIn.m" line="57"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_g_t_m_o_auth2_sign_in_07_08_1a47a1beca6137f5011dc49a402f00c893" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void GTMOAuth2SignIn()::infoFetcher:finishedWithData:error:</definition>
+        <argsstring>(GTMHTTPFetcher *fetcher,[finishedWithData] NSData *data,[error] NSError *error)</argsstring>
+        <name>infoFetcher:finishedWithData:error:</name>
+        <param>
+          <type><ref refid="interface_g_t_m_h_t_t_p_fetcher" kindref="compound">GTMHTTPFetcher</ref> *</type>
+          <declname>fetcher</declname>
+        </param>
+        <param>
+          <attributes>[finishedWithData]</attributes>
+          <type>NSData *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <attributes>[error]</attributes>
+          <type>NSError *</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2SignIn.m" line="62"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_g_t_m_o_auth2_sign_in_07_08_1ae5c89250c4bcecc65134a4b224a4d346" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void GTMOAuth2SignIn()::closeTheWindow</definition>
+        <argsstring>()</argsstring>
+        <name>closeTheWindow</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2SignIn.m" line="65"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_g_t_m_o_auth2_sign_in_07_08_1a77cad466e13bdec313eae1219aaa39c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void GTMOAuth2SignIn()::startReachabilityCheck</definition>
+        <argsstring>()</argsstring>
+        <name>startReachabilityCheck</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2SignIn.m" line="67"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_g_t_m_o_auth2_sign_in_07_08_1aac977280ec665502390e4d3c751dda87" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void GTMOAuth2SignIn()::stopReachabilityCheck</definition>
+        <argsstring>()</argsstring>
+        <name>stopReachabilityCheck</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2SignIn.m" line="68"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_g_t_m_o_auth2_sign_in_07_08_1abdaa446b1e9a84559fe924bceeb51c70" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void GTMOAuth2SignIn()::reachabilityTarget:changedFlags:</definition>
+        <argsstring>(SCNetworkReachabilityRef reachabilityRef,[changedFlags] SCNetworkConnectionFlags flags)</argsstring>
+        <name>reachabilityTarget:changedFlags:</name>
+        <param>
+          <type>SCNetworkReachabilityRef</type>
+          <declname>reachabilityRef</declname>
+        </param>
+        <param>
+          <attributes>[changedFlags]</attributes>
+          <type>SCNetworkConnectionFlags</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2SignIn.m" line="70"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_g_t_m_o_auth2_sign_in_07_08_1a921aef0d0c097e2d177bb824b985012f" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void GTMOAuth2SignIn()::reachabilityTimerFired:</definition>
+        <argsstring>(NSTimer *timer)</argsstring>
+        <name>reachabilityTimerFired:</name>
+        <param>
+          <type>NSTimer *</type>
+          <declname>timer</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2SignIn.m" line="71"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="interface_g_t_m_o_auth2_sign_in_07_08_1acea6a22479eaf5cf0955ea27069ef18b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSMutableURLRequest *</type>
+        <definition>NSMutableURLRequest * GTMOAuth2SignIn()::mutableURLRequestWithURL:paramString:</definition>
+        <argsstring>(NSURL *oldURL,[paramString] NSString *paramStr)</argsstring>
+        <name>mutableURLRequestWithURL:paramString:</name>
+        <param>
+          <type>NSURL *</type>
+          <declname>oldURL</declname>
+        </param>
+        <param>
+          <attributes>[paramString]</attributes>
+          <type>NSString *</type>
+          <declname>paramStr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2SignIn.m" line="47"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2SignIn.m" line="36" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2SignIn.m" bodystart="36" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="interface_g_t_m_o_auth2_sign_in_07_08_1a971237ba152b688acd4d5683d7a82caa" prot="public" virt="virtual"><scope>GTMOAuth2SignIn()</scope><name>auth:finishedWithFetcher:error:</name></member>
+      <member refid="interface_g_t_m_o_auth2_sign_in_07_08_1ae5c89250c4bcecc65134a4b224a4d346" prot="public" virt="virtual"><scope>GTMOAuth2SignIn()</scope><name>closeTheWindow</name></member>
+      <member refid="interface_g_t_m_o_auth2_sign_in_07_08_1a45b1f5bb40f88fa709b1552922006931" prot="public" virt="virtual"><scope>GTMOAuth2SignIn()</scope><name>fetchGoogleUserInfo</name></member>
+      <member refid="interface_g_t_m_o_auth2_sign_in_07_08_1a1ee09ed0724807581f8ed66334eef1bc" prot="public" virt="virtual"><scope>GTMOAuth2SignIn()</scope><name>finishSignInWithError:</name></member>
+      <member refid="interface_g_t_m_o_auth2_sign_in_07_08_1a4e92510099621a1c527eb8c566a031fe" prot="public" virt="virtual"><scope>GTMOAuth2SignIn()</scope><name>handleCallbackReached</name></member>
+      <member refid="interface_g_t_m_o_auth2_sign_in_07_08_1a3ffc6e33116675c944f3c945dca24cec" prot="public" virt="non-virtual"><scope>GTMOAuth2SignIn()</scope><name>hasHandledCallback</name></member>
+      <member refid="interface_g_t_m_o_auth2_sign_in_07_08_1a47a1beca6137f5011dc49a402f00c893" prot="public" virt="virtual"><scope>GTMOAuth2SignIn()</scope><name>infoFetcher:finishedWithData:error:</name></member>
+      <member refid="interface_g_t_m_o_auth2_sign_in_07_08_1aff4f0d541d7a730dfdf2d71d914a8b9c" prot="public" virt="virtual"><scope>GTMOAuth2SignIn()</scope><name>invokeFinalCallbackWithError:</name></member>
+      <member refid="interface_g_t_m_o_auth2_sign_in_07_08_1acea6a22479eaf5cf0955ea27069ef18b" prot="public" virt="virtual"><scope>GTMOAuth2SignIn()</scope><name>mutableURLRequestWithURL:paramString:</name></member>
+      <member refid="interface_g_t_m_o_auth2_sign_in_07_08_1aac4f684d39b605e693f5c743a84388e0" prot="public" virt="non-virtual"><scope>GTMOAuth2SignIn()</scope><name>pendingFetcher</name></member>
+      <member refid="interface_g_t_m_o_auth2_sign_in_07_08_1abdaa446b1e9a84559fe924bceeb51c70" prot="public" virt="virtual"><scope>GTMOAuth2SignIn()</scope><name>reachabilityTarget:changedFlags:</name></member>
+      <member refid="interface_g_t_m_o_auth2_sign_in_07_08_1a921aef0d0c097e2d177bb824b985012f" prot="public" virt="virtual"><scope>GTMOAuth2SignIn()</scope><name>reachabilityTimerFired:</name></member>
+      <member refid="interface_g_t_m_o_auth2_sign_in_07_08_1a77cad466e13bdec313eae1219aaa39c1" prot="public" virt="virtual"><scope>GTMOAuth2SignIn()</scope><name>startReachabilityCheck</name></member>
+      <member refid="interface_g_t_m_o_auth2_sign_in_07_08_1ad268c9aaf59d4a88b4a76ce419585520" prot="public" virt="virtual"><scope>GTMOAuth2SignIn()</scope><name>startWebRequest</name></member>
+      <member refid="interface_g_t_m_o_auth2_sign_in_07_08_1aac977280ec665502390e4d3c751dda87" prot="public" virt="virtual"><scope>GTMOAuth2SignIn()</scope><name>stopReachabilityCheck</name></member>
+      <member refid="interface_g_t_m_o_auth2_sign_in_07_08_1a08cded6162df7d5aae20c059e396aaf0" prot="public" virt="non-virtual"><scope>GTMOAuth2SignIn()</scope><name>userProfile</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,600 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		36DD1C8515569D6A0028F77A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36DD1C8415569D6A0028F77A /* Security.framework */; };
+		36DD1C8715569D8C0028F77A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36DD1C8615569D8C0028F77A /* SystemConfiguration.framework */; };
+		36DDBBF6156B7DDB005C59DC /* GTMHTTPFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 36DDBBE9156B7DDB005C59DC /* GTMHTTPFetcher.m */; };
+		36DDBBF7156B7DDB005C59DC /* GTMHTTPFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 36DDBBE9156B7DDB005C59DC /* GTMHTTPFetcher.m */; };
+		36DDBBF8156B7DDB005C59DC /* GTMHTTPFetchHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = 36DDBBEB156B7DDB005C59DC /* GTMHTTPFetchHistory.m */; };
+		36DDBBF9156B7DDB005C59DC /* GTMHTTPFetchHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = 36DDBBEB156B7DDB005C59DC /* GTMHTTPFetchHistory.m */; };
+		36DDBBFA156B7DDB005C59DC /* GTMOAuth2Authentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 36DDBBED156B7DDB005C59DC /* GTMOAuth2Authentication.m */; };
+		36DDBBFB156B7DDB005C59DC /* GTMOAuth2Authentication.m in Sources */ = {isa = PBXBuildFile; fileRef = 36DDBBED156B7DDB005C59DC /* GTMOAuth2Authentication.m */; };
+		36DDBBFC156B7DDB005C59DC /* GTMOAuth2SignIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 36DDBBEF156B7DDB005C59DC /* GTMOAuth2SignIn.m */; };
+		36DDBBFD156B7DDB005C59DC /* GTMOAuth2SignIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 36DDBBEF156B7DDB005C59DC /* GTMOAuth2SignIn.m */; };
+		36DDBBFE156B7DDB005C59DC /* GTMOAuth2ViewControllerTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 36DDBBF1156B7DDB005C59DC /* GTMOAuth2ViewControllerTouch.m */; };
+		36DDBBFF156B7DDB005C59DC /* GTMOAuth2ViewControllerTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 36DDBBF1156B7DDB005C59DC /* GTMOAuth2ViewControllerTouch.m */; };
+		36DDBC00156B7DDB005C59DC /* GTMOAuth2ViewTouch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36DDBBF2156B7DDB005C59DC /* GTMOAuth2ViewTouch.xib */; };
+		36DDBC01156B7DDB005C59DC /* GTMOAuth2ViewTouch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36DDBBF2156B7DDB005C59DC /* GTMOAuth2ViewTouch.xib */; };
+		36DDBC02156B7DDB005C59DC /* GTMOAuth2Window.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36DDBBF3156B7DDB005C59DC /* GTMOAuth2Window.xib */; };
+		36DDBC03156B7DDB005C59DC /* GTMOAuth2Window.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36DDBBF3156B7DDB005C59DC /* GTMOAuth2Window.xib */; };
+		36DDBC04156B7DDB005C59DC /* GTMOAuth2WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36DDBBF5156B7DDB005C59DC /* GTMOAuth2WindowController.m */; };
+		36DDBC05156B7DDB005C59DC /* GTMOAuth2WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36DDBBF5156B7DDB005C59DC /* GTMOAuth2WindowController.m */; };
+		36DDBC13156B7E6E005C59DC /* BBAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 36DDBC08156B7E6E005C59DC /* BBAccount.m */; };
+		36DDBC14156B7E6E005C59DC /* BBAccount.m in Sources */ = {isa = PBXBuildFile; fileRef = 36DDBC08156B7E6E005C59DC /* BBAccount.m */; };
+		36DDBC15156B7E6E005C59DC /* BBGMultiAccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 36DDBC0A156B7E6E005C59DC /* BBGMultiAccountManager.m */; };
+		36DDBC16156B7E6E005C59DC /* BBGMultiAccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 36DDBC0A156B7E6E005C59DC /* BBGMultiAccountManager.m */; };
+		36DDBC17156B7E6E005C59DC /* BBGMultiAccountFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 36DDBC0D156B7E6E005C59DC /* BBGMultiAccountFileManager.m */; };
+		36DDBC18156B7E6E005C59DC /* BBGMultiAccountFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 36DDBC0D156B7E6E005C59DC /* BBGMultiAccountFileManager.m */; };
+		5B2F99DD157A04C000008420 /* NSError+convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B2F99DB157A04B500008420 /* NSError+convenience.m */; };
+		5B8E741B1566A395003080C6 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B8E741A1566A395003080C6 /* WebKit.framework */; };
+		5BF11EE015559166007C3E2D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF11EDF15559166007C3E2D /* Cocoa.framework */; };
+		5BF11EEA15559166007C3E2D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5BF11EE815559166007C3E2D /* InfoPlist.strings */; };
+		5BF11EEC15559166007C3E2D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF11EEB15559166007C3E2D /* main.m */; };
+		5BF11EF015559166007C3E2D /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 5BF11EEE15559166007C3E2D /* Credits.rtf */; };
+		5BF11EF315559166007C3E2D /* BBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF11EF215559166007C3E2D /* BBAppDelegate.m */; };
+		5BF11EF615559166007C3E2D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5BF11EF415559166007C3E2D /* MainMenu.xib */; };
+		5BF11EFE15559166007C3E2D /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF11EFD15559166007C3E2D /* SenTestingKit.framework */; };
+		5BF11EFF15559166007C3E2D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BF11EDF15559166007C3E2D /* Cocoa.framework */; };
+		5BF11F0715559166007C3E2D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5BF11F0515559166007C3E2D /* InfoPlist.strings */; };
+		5BF11F0A15559166007C3E2D /* GMultiAccountManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF11F0915559166007C3E2D /* GMultiAccountManagerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5BF11F0015559166007C3E2D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5BF11ED215559166007C3E2D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BF11EDA15559166007C3E2D;
+			remoteInfo = GMultiAccountManager;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		36DD1C8415569D6A0028F77A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		36DD1C8615569D8C0028F77A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		36DDBBE8156B7DDB005C59DC /* GTMHTTPFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMHTTPFetcher.h; sourceTree = "<group>"; };
+		36DDBBE9156B7DDB005C59DC /* GTMHTTPFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMHTTPFetcher.m; sourceTree = "<group>"; };
+		36DDBBEA156B7DDB005C59DC /* GTMHTTPFetchHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMHTTPFetchHistory.h; sourceTree = "<group>"; };
+		36DDBBEB156B7DDB005C59DC /* GTMHTTPFetchHistory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMHTTPFetchHistory.m; sourceTree = "<group>"; };
+		36DDBBEC156B7DDB005C59DC /* GTMOAuth2Authentication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMOAuth2Authentication.h; sourceTree = "<group>"; };
+		36DDBBED156B7DDB005C59DC /* GTMOAuth2Authentication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMOAuth2Authentication.m; sourceTree = "<group>"; };
+		36DDBBEE156B7DDB005C59DC /* GTMOAuth2SignIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMOAuth2SignIn.h; sourceTree = "<group>"; };
+		36DDBBEF156B7DDB005C59DC /* GTMOAuth2SignIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMOAuth2SignIn.m; sourceTree = "<group>"; };
+		36DDBBF0156B7DDB005C59DC /* GTMOAuth2ViewControllerTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMOAuth2ViewControllerTouch.h; sourceTree = "<group>"; };
+		36DDBBF1156B7DDB005C59DC /* GTMOAuth2ViewControllerTouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMOAuth2ViewControllerTouch.m; sourceTree = "<group>"; };
+		36DDBBF2156B7DDB005C59DC /* GTMOAuth2ViewTouch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GTMOAuth2ViewTouch.xib; sourceTree = "<group>"; };
+		36DDBBF3156B7DDB005C59DC /* GTMOAuth2Window.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GTMOAuth2Window.xib; sourceTree = "<group>"; };
+		36DDBBF4156B7DDB005C59DC /* GTMOAuth2WindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMOAuth2WindowController.h; sourceTree = "<group>"; };
+		36DDBBF5156B7DDB005C59DC /* GTMOAuth2WindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMOAuth2WindowController.m; sourceTree = "<group>"; };
+		36DDBC07156B7E6E005C59DC /* BBAccount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBAccount.h; sourceTree = "<group>"; };
+		36DDBC08156B7E6E005C59DC /* BBAccount.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBAccount.m; sourceTree = "<group>"; };
+		36DDBC09156B7E6E005C59DC /* BBGMultiAccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBGMultiAccountManager.h; sourceTree = "<group>"; };
+		36DDBC0A156B7E6E005C59DC /* BBGMultiAccountManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBGMultiAccountManager.m; sourceTree = "<group>"; };
+		36DDBC0C156B7E6E005C59DC /* BBGMultiAccountFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBGMultiAccountFileManager.h; sourceTree = "<group>"; };
+		36DDBC0D156B7E6E005C59DC /* BBGMultiAccountFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBGMultiAccountFileManager.m; sourceTree = "<group>"; };
+		5B2F99DA157A04B500008420 /* NSError+convenience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+convenience.h"; sourceTree = "<group>"; };
+		5B2F99DB157A04B500008420 /* NSError+convenience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+convenience.m"; sourceTree = "<group>"; };
+		5B8E741A1566A395003080C6 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		5BA07951156B849C00654A0B /* BBGMultiAccountManagerErrors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBGMultiAccountManagerErrors.h; sourceTree = "<group>"; };
+		5BA07962156B89BA00654A0B /* BBGMultiAccountFileManagerErrors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBGMultiAccountFileManagerErrors.h; sourceTree = "<group>"; };
+		5BF11EDB15559166007C3E2D /* MACExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MACExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BF11EDF15559166007C3E2D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		5BF11EE215559166007C3E2D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		5BF11EE315559166007C3E2D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		5BF11EE415559166007C3E2D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5BF11EE715559166007C3E2D /* MACExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MACExample-Info.plist"; sourceTree = "<group>"; };
+		5BF11EE915559166007C3E2D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5BF11EEB15559166007C3E2D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5BF11EED15559166007C3E2D /* MACExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MACExample-Prefix.pch"; sourceTree = "<group>"; };
+		5BF11EEF15559166007C3E2D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		5BF11EF115559166007C3E2D /* BBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBAppDelegate.h; sourceTree = "<group>"; };
+		5BF11EF215559166007C3E2D /* BBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = BBAppDelegate.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
+		5BF11EF515559166007C3E2D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		5BF11EFC15559166007C3E2D /* MACExampleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MACExampleTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BF11EFD15559166007C3E2D /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		5BF11F0415559166007C3E2D /* MACExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MACExampleTests-Info.plist"; sourceTree = "<group>"; };
+		5BF11F0615559166007C3E2D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5BF11F0815559166007C3E2D /* GMultiAccountManagerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GMultiAccountManagerTests.h; sourceTree = "<group>"; };
+		5BF11F0915559166007C3E2D /* GMultiAccountManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GMultiAccountManagerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5BF11ED815559166007C3E2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B8E741B1566A395003080C6 /* WebKit.framework in Frameworks */,
+				36DD1C8715569D8C0028F77A /* SystemConfiguration.framework in Frameworks */,
+				36DD1C8515569D6A0028F77A /* Security.framework in Frameworks */,
+				5BF11EE015559166007C3E2D /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BF11EF815559166007C3E2D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BF11EFE15559166007C3E2D /* SenTestingKit.framework in Frameworks */,
+				5BF11EFF15559166007C3E2D /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		36DDBBE7156B7DDB005C59DC /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				36DDBBE8156B7DDB005C59DC /* GTMHTTPFetcher.h */,
+				36DDBBE9156B7DDB005C59DC /* GTMHTTPFetcher.m */,
+				36DDBBEA156B7DDB005C59DC /* GTMHTTPFetchHistory.h */,
+				36DDBBEB156B7DDB005C59DC /* GTMHTTPFetchHistory.m */,
+				36DDBBEC156B7DDB005C59DC /* GTMOAuth2Authentication.h */,
+				36DDBBED156B7DDB005C59DC /* GTMOAuth2Authentication.m */,
+				36DDBBEE156B7DDB005C59DC /* GTMOAuth2SignIn.h */,
+				36DDBBEF156B7DDB005C59DC /* GTMOAuth2SignIn.m */,
+				36DDBBF0156B7DDB005C59DC /* GTMOAuth2ViewControllerTouch.h */,
+				36DDBBF1156B7DDB005C59DC /* GTMOAuth2ViewControllerTouch.m */,
+				36DDBBF2156B7DDB005C59DC /* GTMOAuth2ViewTouch.xib */,
+				36DDBBF3156B7DDB005C59DC /* GTMOAuth2Window.xib */,
+				36DDBBF4156B7DDB005C59DC /* GTMOAuth2WindowController.h */,
+				36DDBBF5156B7DDB005C59DC /* GTMOAuth2WindowController.m */,
+			);
+			name = Lib;
+			path = "../../gtm-oauth2";
+			sourceTree = "<group>";
+		};
+		36DDBC06156B7E6E005C59DC /* BBGMultiAccount */ = {
+			isa = PBXGroup;
+			children = (
+				5BF69D16157A1C99004AEFB1 /* Account Manager */,
+				5B2F99D8157A049900008420 /* Categories */,
+			);
+			name = BBGMultiAccount;
+			path = ../../BBGMultiAccount;
+			sourceTree = "<group>";
+		};
+		36DDBC0B156B7E6E005C59DC /* Data Manager */ = {
+			isa = PBXGroup;
+			children = (
+				5BA07962156B89BA00654A0B /* BBGMultiAccountFileManagerErrors.h */,
+				36DDBC0C156B7E6E005C59DC /* BBGMultiAccountFileManager.h */,
+				36DDBC0D156B7E6E005C59DC /* BBGMultiAccountFileManager.m */,
+			);
+			path = "Data Manager";
+			sourceTree = "<group>";
+		};
+		5B2F99D8157A049900008420 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				5B2F99DA157A04B500008420 /* NSError+convenience.h */,
+				5B2F99DB157A04B500008420 /* NSError+convenience.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		5BF11ED015559166007C3E2D = {
+			isa = PBXGroup;
+			children = (
+				5BF11EE515559166007C3E2D /* GMultiAccountManager */,
+				5BF11F0215559166007C3E2D /* GMultiAccountManagerTests */,
+				5BF11EDE15559166007C3E2D /* Frameworks */,
+				5BF11EDC15559166007C3E2D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5BF11EDC15559166007C3E2D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5BF11EDB15559166007C3E2D /* MACExample.app */,
+				5BF11EFC15559166007C3E2D /* MACExampleTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5BF11EDE15559166007C3E2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B8E741A1566A395003080C6 /* WebKit.framework */,
+				36DD1C8615569D8C0028F77A /* SystemConfiguration.framework */,
+				36DD1C8415569D6A0028F77A /* Security.framework */,
+				5BF11EDF15559166007C3E2D /* Cocoa.framework */,
+				5BF11EFD15559166007C3E2D /* SenTestingKit.framework */,
+				5BF11EE115559166007C3E2D /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5BF11EE115559166007C3E2D /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5BF11EE215559166007C3E2D /* AppKit.framework */,
+				5BF11EE315559166007C3E2D /* CoreData.framework */,
+				5BF11EE415559166007C3E2D /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		5BF11EE515559166007C3E2D /* GMultiAccountManager */ = {
+			isa = PBXGroup;
+			children = (
+				5BF11EF115559166007C3E2D /* BBAppDelegate.h */,
+				5BF11EF215559166007C3E2D /* BBAppDelegate.m */,
+				36DDBC06156B7E6E005C59DC /* BBGMultiAccount */,
+				36DDBBE7156B7DDB005C59DC /* Lib */,
+				5BF11EF415559166007C3E2D /* MainMenu.xib */,
+				5BF11EE615559166007C3E2D /* Supporting Files */,
+			);
+			path = GMultiAccountManager;
+			sourceTree = "<group>";
+		};
+		5BF11EE615559166007C3E2D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5BF11EE715559166007C3E2D /* MACExample-Info.plist */,
+				5BF11EE815559166007C3E2D /* InfoPlist.strings */,
+				5BF11EEB15559166007C3E2D /* main.m */,
+				5BF11EED15559166007C3E2D /* MACExample-Prefix.pch */,
+				5BF11EEE15559166007C3E2D /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5BF11F0215559166007C3E2D /* GMultiAccountManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				5BF11F0815559166007C3E2D /* GMultiAccountManagerTests.h */,
+				5BF11F0915559166007C3E2D /* GMultiAccountManagerTests.m */,
+				5BF11F0315559166007C3E2D /* Supporting Files */,
+			);
+			path = GMultiAccountManagerTests;
+			sourceTree = "<group>";
+		};
+		5BF11F0315559166007C3E2D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5BF11F0415559166007C3E2D /* MACExampleTests-Info.plist */,
+				5BF11F0515559166007C3E2D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5BF69D16157A1C99004AEFB1 /* Account Manager */ = {
+			isa = PBXGroup;
+			children = (
+				36DDBC0B156B7E6E005C59DC /* Data Manager */,
+				36DDBC07156B7E6E005C59DC /* BBAccount.h */,
+				36DDBC08156B7E6E005C59DC /* BBAccount.m */,
+				5BA07951156B849C00654A0B /* BBGMultiAccountManagerErrors.h */,
+				36DDBC09156B7E6E005C59DC /* BBGMultiAccountManager.h */,
+				36DDBC0A156B7E6E005C59DC /* BBGMultiAccountManager.m */,
+			);
+			name = "Account Manager";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5BF11EDA15559166007C3E2D /* MACExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BF11F0D15559167007C3E2D /* Build configuration list for PBXNativeTarget "MACExample" */;
+			buildPhases = (
+				5BF11ED715559166007C3E2D /* Sources */,
+				5BF11ED815559166007C3E2D /* Frameworks */,
+				5BF11ED915559166007C3E2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MACExample;
+			productName = GMultiAccountManager;
+			productReference = 5BF11EDB15559166007C3E2D /* MACExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5BF11EFB15559166007C3E2D /* MACExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BF11F1015559167007C3E2D /* Build configuration list for PBXNativeTarget "MACExampleTests" */;
+			buildPhases = (
+				5BF11EF715559166007C3E2D /* Sources */,
+				5BF11EF815559166007C3E2D /* Frameworks */,
+				5BF11EF915559166007C3E2D /* Resources */,
+				5BF11EFA15559166007C3E2D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5BF11F0115559166007C3E2D /* PBXTargetDependency */,
+			);
+			name = MACExampleTests;
+			productName = GMultiAccountManagerTests;
+			productReference = 5BF11EFC15559166007C3E2D /* MACExampleTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5BF11ED215559166007C3E2D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BB;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = Archy;
+			};
+			buildConfigurationList = 5BF11ED515559166007C3E2D /* Build configuration list for PBXProject "MACExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5BF11ED015559166007C3E2D;
+			productRefGroup = 5BF11EDC15559166007C3E2D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5BF11EDA15559166007C3E2D /* MACExample */,
+				5BF11EFB15559166007C3E2D /* MACExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5BF11ED915559166007C3E2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BF11EEA15559166007C3E2D /* InfoPlist.strings in Resources */,
+				5BF11EF015559166007C3E2D /* Credits.rtf in Resources */,
+				5BF11EF615559166007C3E2D /* MainMenu.xib in Resources */,
+				36DDBC00156B7DDB005C59DC /* GTMOAuth2ViewTouch.xib in Resources */,
+				36DDBC02156B7DDB005C59DC /* GTMOAuth2Window.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BF11EF915559166007C3E2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BF11F0715559166007C3E2D /* InfoPlist.strings in Resources */,
+				36DDBC01156B7DDB005C59DC /* GTMOAuth2ViewTouch.xib in Resources */,
+				36DDBC03156B7DDB005C59DC /* GTMOAuth2Window.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5BF11EFA15559166007C3E2D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5BF11ED715559166007C3E2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BF11EEC15559166007C3E2D /* main.m in Sources */,
+				5BF11EF315559166007C3E2D /* BBAppDelegate.m in Sources */,
+				36DDBBF6156B7DDB005C59DC /* GTMHTTPFetcher.m in Sources */,
+				36DDBBF8156B7DDB005C59DC /* GTMHTTPFetchHistory.m in Sources */,
+				36DDBBFA156B7DDB005C59DC /* GTMOAuth2Authentication.m in Sources */,
+				36DDBBFC156B7DDB005C59DC /* GTMOAuth2SignIn.m in Sources */,
+				36DDBBFE156B7DDB005C59DC /* GTMOAuth2ViewControllerTouch.m in Sources */,
+				36DDBC04156B7DDB005C59DC /* GTMOAuth2WindowController.m in Sources */,
+				36DDBC13156B7E6E005C59DC /* BBAccount.m in Sources */,
+				36DDBC15156B7E6E005C59DC /* BBGMultiAccountManager.m in Sources */,
+				36DDBC17156B7E6E005C59DC /* BBGMultiAccountFileManager.m in Sources */,
+				5B2F99DD157A04C000008420 /* NSError+convenience.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BF11EF715559166007C3E2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BF11F0A15559166007C3E2D /* GMultiAccountManagerTests.m in Sources */,
+				36DDBBF7156B7DDB005C59DC /* GTMHTTPFetcher.m in Sources */,
+				36DDBBF9156B7DDB005C59DC /* GTMHTTPFetchHistory.m in Sources */,
+				36DDBBFB156B7DDB005C59DC /* GTMOAuth2Authentication.m in Sources */,
+				36DDBBFD156B7DDB005C59DC /* GTMOAuth2SignIn.m in Sources */,
+				36DDBBFF156B7DDB005C59DC /* GTMOAuth2ViewControllerTouch.m in Sources */,
+				36DDBC05156B7DDB005C59DC /* GTMOAuth2WindowController.m in Sources */,
+				36DDBC14156B7E6E005C59DC /* BBAccount.m in Sources */,
+				36DDBC16156B7E6E005C59DC /* BBGMultiAccountManager.m in Sources */,
+				36DDBC18156B7E6E005C59DC /* BBGMultiAccountFileManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5BF11F0115559166007C3E2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5BF11EDA15559166007C3E2D /* MACExample */;
+			targetProxy = 5BF11F0015559166007C3E2D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5BF11EE815559166007C3E2D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5BF11EE915559166007C3E2D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5BF11EEE15559166007C3E2D /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5BF11EEF15559166007C3E2D /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		5BF11EF415559166007C3E2D /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5BF11EF515559166007C3E2D /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		5BF11F0515559166007C3E2D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5BF11F0615559166007C3E2D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5BF11F0B15559166007C3E2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5BF11F0C15559166007C3E2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5BF11F0E15559167007C3E2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GMultiAccountManager/MACExample-Prefix.pch";
+				INFOPLIST_FILE = "GMultiAccountManager/MACExample-Info.plist";
+				PRODUCT_NAME = MACExample;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5BF11F0F15559167007C3E2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GMultiAccountManager/MACExample-Prefix.pch";
+				INFOPLIST_FILE = "GMultiAccountManager/MACExample-Info.plist";
+				PRODUCT_NAME = MACExample;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		5BF11F1115559167007C3E2D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GMultiAccountManager.app/Contents/MacOS/GMultiAccountManager";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GMultiAccountManager/GMultiAccountManager-Prefix.pch";
+				INFOPLIST_FILE = "GMultiAccountManagerTests/MACExampleTests-Info.plist";
+				PRODUCT_NAME = MACExampleTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		5BF11F1215559167007C3E2D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GMultiAccountManager.app/Contents/MacOS/GMultiAccountManager";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GMultiAccountManager/GMultiAccountManager-Prefix.pch";
+				INFOPLIST_FILE = "GMultiAccountManagerTests/MACExampleTests-Info.plist";
+				PRODUCT_NAME = MACExampleTests;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5BF11ED515559166007C3E2D /* Build configuration list for PBXProject "MACExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BF11F0B15559166007C3E2D /* Debug */,
+				5BF11F0C15559166007C3E2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BF11F0D15559167007C3E2D /* Build configuration list for PBXNativeTarget "MACExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BF11F0E15559167007C3E2D /* Debug */,
+				5BF11F0F15559167007C3E2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BF11F1015559167007C3E2D /* Build configuration list for PBXNativeTarget "MACExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BF11F1115559167007C3E2D /* Debug */,
+				5BF11F1215559167007C3E2D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5BF11ED215559166007C3E2D /* Project object */;
+}

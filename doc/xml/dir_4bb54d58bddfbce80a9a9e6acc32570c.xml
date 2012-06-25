@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="dir_4bb54d58bddfbce80a9a9e6acc32570c" kind="dir">
+    <compoundname>GMultiAccountManager/GMultiAccountManager/</compoundname>
+    <innerdir refid="dir_7f09cc7ceddfc51cab0b1f4dedaa7179">GMultiAccountManager/GMultiAccountManager/Manager/</innerdir>
+    <innerfile refid="_b_b_app_delegate_8h">BBAppDelegate.h</innerfile>
+    <innerfile refid="_b_b_app_delegate_8m">BBAppDelegate.m</innerfile>
+    <innerfile refid="_b_b_g_multi_account_manager_8h">BBGMultiAccountManager.h</innerfile>
+    <innerfile refid="_b_b_g_multi_account_manager_8m">BBGMultiAccountManager.m</innerfile>
+    <innerfile refid="_g_t_m_h_t_t_p_fetcher_8h">GTMHTTPFetcher.h</innerfile>
+    <innerfile refid="_g_t_m_h_t_t_p_fetcher_8m">GTMHTTPFetcher.m</innerfile>
+    <innerfile refid="_g_t_m_o_auth2_authentication_8h">GTMOAuth2Authentication.h</innerfile>
+    <innerfile refid="_g_t_m_o_auth2_authentication_8m">GTMOAuth2Authentication.m</innerfile>
+    <innerfile refid="_g_t_m_o_auth2_sign_in_8h">GTMOAuth2SignIn.h</innerfile>
+    <innerfile refid="_g_t_m_o_auth2_sign_in_8m">GTMOAuth2SignIn.m</innerfile>
+    <innerfile refid="_g_t_m_o_auth2_view_controller_touch_8h">GTMOAuth2ViewControllerTouch.h</innerfile>
+    <innerfile refid="_g_t_m_o_auth2_view_controller_touch_8m">GTMOAuth2ViewControllerTouch.m</innerfile>
+    <innerfile refid="_g_t_m_o_auth2_window_controller_8h">GTMOAuth2WindowController.h</innerfile>
+    <innerfile refid="_g_t_m_o_auth2_window_controller_8m">GTMOAuth2WindowController.m</innerfile>
+    <innerfile refid="main_8m">main.m</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/"/>
+  </compounddef>
+</doxygen>

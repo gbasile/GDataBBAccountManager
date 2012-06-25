@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="dir_594c6afc745cf1451fecb010c08fa3c0" kind="dir">
+    <compoundname>GMultiAccountManager/GMultiAccountManagerTests/</compoundname>
+    <innerfile refid="_g_multi_account_manager_tests_8h">GMultiAccountManagerTests.h</innerfile>
+    <innerfile refid="_g_multi_account_manager_tests_8m">GMultiAccountManagerTests.m</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManagerTests/"/>
+  </compounddef>
+</doxygen>

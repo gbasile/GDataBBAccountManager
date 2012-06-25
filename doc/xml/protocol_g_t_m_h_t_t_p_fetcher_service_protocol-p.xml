@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="protocol_g_t_m_h_t_t_p_fetcher_service_protocol-p" kind="protocol" prot="public">
+    <compoundname>GTMHTTPFetcherServiceProtocol-p</compoundname>
+    <includes refid="_g_t_m_h_t_t_p_fetcher_8h" local="no">GTMHTTPFetcher.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="protocol_g_t_m_h_t_t_p_fetcher_service_protocol-p_1a370e3020a067dcfaf34610dc6d62e129" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL GTMHTTPFetcherServiceProtocol-p::fetcherShouldBeginFetching:</definition>
+        <argsstring>(GTMHTTPFetcher *fetcher)</argsstring>
+        <name>fetcherShouldBeginFetching:</name>
+        <param>
+          <type><ref refid="interface_g_t_m_h_t_t_p_fetcher" kindref="compound">GTMHTTPFetcher</ref> *</type>
+          <declname>fetcher</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="338"/>
+      </memberdef>
+      <memberdef kind="function" id="protocol_g_t_m_h_t_t_p_fetcher_service_protocol-p_1a4b1a6f46f330a6cb7fe5cdfb0dd53db9" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void GTMHTTPFetcherServiceProtocol-p::fetcherDidStop:</definition>
+        <argsstring>(GTMHTTPFetcher *fetcher)</argsstring>
+        <name>fetcherDidStop:</name>
+        <param>
+          <type><ref refid="interface_g_t_m_h_t_t_p_fetcher" kindref="compound">GTMHTTPFetcher</ref> *</type>
+          <declname>fetcher</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="339"/>
+      </memberdef>
+      <memberdef kind="function" id="protocol_g_t_m_h_t_t_p_fetcher_service_protocol-p_1a29b8b6b7e02a6dd9b5292e290fa01666" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type><ref refid="interface_g_t_m_h_t_t_p_fetcher" kindref="compound">GTMHTTPFetcher</ref> *</type>
+        <definition>GTMHTTPFetcher * GTMHTTPFetcherServiceProtocol-p::fetcherWithRequest:</definition>
+        <argsstring>(NSURLRequest *request)</argsstring>
+        <name>fetcherWithRequest:</name>
+        <param>
+          <type>NSURLRequest *</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="341"/>
+      </memberdef>
+      <memberdef kind="function" id="protocol_g_t_m_h_t_t_p_fetcher_service_protocol-p_1ac98be756a0eefea6057a1dd73fb6a607" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL GTMHTTPFetcherServiceProtocol-p::isDelayingFetcher:</definition>
+        <argsstring>(GTMHTTPFetcher *fetcher)</argsstring>
+        <name>isDelayingFetcher:</name>
+        <param>
+          <type><ref refid="interface_g_t_m_h_t_t_p_fetcher" kindref="compound">GTMHTTPFetcher</ref> *</type>
+          <declname>fetcher</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="342"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="335" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="335" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="protocol_g_t_m_h_t_t_p_fetcher_service_protocol-p_1a4b1a6f46f330a6cb7fe5cdfb0dd53db9" prot="public" virt="virtual"><scope>GTMHTTPFetcherServiceProtocol-p</scope><name>fetcherDidStop:</name></member>
+      <member refid="protocol_g_t_m_h_t_t_p_fetcher_service_protocol-p_1a370e3020a067dcfaf34610dc6d62e129" prot="public" virt="virtual"><scope>GTMHTTPFetcherServiceProtocol-p</scope><name>fetcherShouldBeginFetching:</name></member>
+      <member refid="protocol_g_t_m_h_t_t_p_fetcher_service_protocol-p_1a29b8b6b7e02a6dd9b5292e290fa01666" prot="public" virt="virtual"><scope>GTMHTTPFetcherServiceProtocol-p</scope><name>fetcherWithRequest:</name></member>
+      <member refid="protocol_g_t_m_h_t_t_p_fetcher_service_protocol-p_1ac98be756a0eefea6057a1dd73fb6a607" prot="public" virt="virtual"><scope>GTMHTTPFetcherServiceProtocol-p</scope><name>isDelayingFetcher:</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

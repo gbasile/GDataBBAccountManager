@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="interface_g_t_m_o_auth2_authentication_07_internal_methods_08" kind="class" prot="public">
+    <compoundname>GTMOAuth2Authentication(InternalMethods)</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_g_t_m_o_auth2_authentication_07_internal_methods_08_1a706ca1cca86ecd013db16e555452b3e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSDictionary *</type>
+        <definition>NSDictionary * GTMOAuth2Authentication(InternalMethods)::dictionaryWithJSONData:</definition>
+        <argsstring>(NSData *data)</argsstring>
+        <name>dictionaryWithJSONData:</name>
+        <param>
+          <type>NSData *</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2SignIn.m" line="33"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2SignIn.m" line="32" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2SignIn.m" bodystart="32" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="interface_g_t_m_o_auth2_authentication_07_internal_methods_08_1a706ca1cca86ecd013db16e555452b3e3" prot="public" virt="virtual"><scope>GTMOAuth2Authentication(InternalMethods)</scope><name>dictionaryWithJSONData:</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

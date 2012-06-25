@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="interface_g_t_m_h_t_t_p_fetcher_07_g_t_m_h_t_t_p_fetcher_logging_internal_08" kind="class" prot="public">
+    <compoundname>GTMHTTPFetcher(GTMHTTPFetcherLoggingInternal)</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_g_t_m_h_t_t_p_fetcher_07_g_t_m_h_t_t_p_fetcher_logging_internal_08_1a2079b07a85c601b42351fbf1ad69b855" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void GTMHTTPFetcher(GTMHTTPFetcherLoggingInternal)::setupStreamLogging</definition>
+        <argsstring>()</argsstring>
+        <name>setupStreamLogging</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.m" line="94"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_g_t_m_h_t_t_p_fetcher_07_g_t_m_h_t_t_p_fetcher_logging_internal_08_1a61ccbc7d4d426d8bad7340b929297711" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void GTMHTTPFetcher(GTMHTTPFetcherLoggingInternal)::logFetchWithError:</definition>
+        <argsstring>(NSError *error)</argsstring>
+        <name>logFetchWithError:</name>
+        <param>
+          <type>NSError *</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.m" line="95"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.m" line="93" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.m" bodystart="93" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_07_g_t_m_h_t_t_p_fetcher_logging_internal_08_1a61ccbc7d4d426d8bad7340b929297711" prot="public" virt="virtual"><scope>GTMHTTPFetcher(GTMHTTPFetcherLoggingInternal)</scope><name>logFetchWithError:</name></member>
+      <member refid="interface_g_t_m_h_t_t_p_fetcher_07_g_t_m_h_t_t_p_fetcher_logging_internal_08_1a2079b07a85c601b42351fbf1ad69b855" prot="public" virt="virtual"><scope>GTMHTTPFetcher(GTMHTTPFetcherLoggingInternal)</scope><name>setupStreamLogging</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

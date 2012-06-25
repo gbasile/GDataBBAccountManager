@@ -1,0 +1,158 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="protocol_g_t_m_fetcher_authorization_protocol-p" kind="protocol" prot="public">
+    <compoundname>GTMFetcherAuthorizationProtocol-p</compoundname>
+    <derivedcompoundref refid="interface_g_t_m_o_auth2_authentication" prot="public" virt="non-virtual">GTMOAuth2Authentication</derivedcompoundref>
+    <includes refid="_g_t_m_h_t_t_p_fetcher_8h" local="no">GTMHTTPFetcher.h</includes>
+      <sectiondef kind="property">
+      <memberdef kind="property" id="protocol_g_t_m_fetcher_authorization_protocol-p_1aa793418554a56a4856b4013387e70a90" prot="public" static="no" readable="yes" writable="yes" gettable="no" settable="no" accessor="assign">
+        <type>id&lt; <ref refid="protocol_g_t_m_h_t_t_p_fetcher_service_protocol-p" kindref="compound">GTMHTTPFetcherServiceProtocol</ref> &gt;</type>
+        <definition>id&lt;GTMHTTPFetcherServiceProtocol&gt; GTMFetcherAuthorizationProtocol-p::fetcherService</definition>
+        <argsstring></argsstring>
+        <name>fetcherService</name>
+        <read></read>
+        <write></write>
+        <reimplementedby refid="interface_g_t_m_o_auth2_authentication_1a1df9d7c79a0c0688f2c5bcf6e76afcf1">fetcherService</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="362" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="362" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="protocol_g_t_m_fetcher_authorization_protocol-p_1a1a009162a3d2207ebfe4a8ee435e5140" prot="public" static="no" const="no" explicit="no" inline="no" required="yes" virt="virtual">
+        <type>void</type>
+        <definition>void GTMFetcherAuthorizationProtocol-p::authorizeRequest:delegate:didFinishSelector:</definition>
+        <argsstring>(NSMutableURLRequest *request,[delegate] id delegate,[didFinishSelector] SEL sel)</argsstring>
+        <name>authorizeRequest:delegate:didFinishSelector:</name>
+        <reimplementedby refid="interface_g_t_m_o_auth2_authentication_1aaa3220e267577df0f9acc3250f67e39d">authorizeRequest:delegate:didFinishSelector:</reimplementedby>
+        <param>
+          <type>NSMutableURLRequest *</type>
+          <declname>request</declname>
+        </param>
+        <param>
+          <attributes>[delegate]</attributes>
+          <type>id</type>
+          <declname>delegate</declname>
+        </param>
+        <param>
+          <attributes>[didFinishSelector]</attributes>
+          <type>SEL</type>
+          <declname>sel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="351"/>
+      </memberdef>
+      <memberdef kind="function" id="protocol_g_t_m_fetcher_authorization_protocol-p_1a4929bdaf95a3df48faf9cf6e8394df18" prot="public" static="no" const="no" explicit="no" inline="no" required="yes" virt="virtual">
+        <type>void</type>
+        <definition>void GTMFetcherAuthorizationProtocol-p::stopAuthorization</definition>
+        <argsstring>()</argsstring>
+        <name>stopAuthorization</name>
+        <reimplementedby refid="interface_g_t_m_o_auth2_authentication_1ab2e78624ae68dba6b1f120581d723663">stopAuthorization</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="353"/>
+      </memberdef>
+      <memberdef kind="function" id="protocol_g_t_m_fetcher_authorization_protocol-p_1a1b939b1eaa6c6c5fb5ec98525ec54433" prot="public" static="no" const="no" explicit="no" inline="no" required="yes" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL GTMFetcherAuthorizationProtocol-p::isAuthorizingRequest:</definition>
+        <argsstring>(NSURLRequest *request)</argsstring>
+        <name>isAuthorizingRequest:</name>
+        <reimplementedby refid="interface_g_t_m_o_auth2_authentication_1a0d05e4f12211c15407867aca60d61f4c">isAuthorizingRequest:</reimplementedby>
+        <param>
+          <type>NSURLRequest *</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="355"/>
+      </memberdef>
+      <memberdef kind="function" id="protocol_g_t_m_fetcher_authorization_protocol-p_1a363ebd83726b289a6f6898328926c3e9" prot="public" static="no" const="no" explicit="no" inline="no" required="yes" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL GTMFetcherAuthorizationProtocol-p::isAuthorizedRequest:</definition>
+        <argsstring>(NSURLRequest *request)</argsstring>
+        <name>isAuthorizedRequest:</name>
+        <reimplementedby refid="interface_g_t_m_o_auth2_authentication_1a731f6f3c45ce3b1dac6c2f3d8b7305ce">isAuthorizedRequest:</reimplementedby>
+        <param>
+          <type>NSURLRequest *</type>
+          <declname>request</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="357"/>
+      </memberdef>
+      <memberdef kind="function" id="protocol_g_t_m_fetcher_authorization_protocol-p_1a0e7f99a2b47a888dabdd41e2df5f2f8a" prot="public" static="no" const="no" explicit="no" inline="no" required="yes" virt="virtual">
+        <type>NSString *</type>
+        <definition>NSString * GTMFetcherAuthorizationProtocol-p::userEmail</definition>
+        <argsstring>()</argsstring>
+        <name>userEmail</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="359"/>
+      </memberdef>
+      <memberdef kind="function" id="protocol_g_t_m_fetcher_authorization_protocol-p_1a8febb5519b2b2fca1054954a0d0f99ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>BOOL</type>
+        <definition>BOOL GTMFetcherAuthorizationProtocol-p::primeForRefresh</definition>
+        <argsstring>()</argsstring>
+        <name>primeForRefresh</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="364"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="16">
+        <label>GTMOAuth2Authentication</label>
+        <link refid="interface_g_t_m_o_auth2_authentication"/>
+        <childnode refid="15" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>&lt;GTMFetcherAuthorizationProtocol&gt;</label>
+        <link refid="protocol_g_t_m_fetcher_authorization_protocol-p"/>
+      </node>
+    </inheritancegraph>
+    <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="345" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="345" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="protocol_g_t_m_fetcher_authorization_protocol-p_1a1a009162a3d2207ebfe4a8ee435e5140" prot="public" virt="virtual"><scope>GTMFetcherAuthorizationProtocol-p</scope><name>authorizeRequest:delegate:didFinishSelector:</name></member>
+      <member refid="protocol_g_t_m_fetcher_authorization_protocol-p_1aa793418554a56a4856b4013387e70a90" prot="public" virt="non-virtual"><scope>GTMFetcherAuthorizationProtocol-p</scope><name>fetcherService</name></member>
+      <member refid="protocol_g_t_m_fetcher_authorization_protocol-p_1a363ebd83726b289a6f6898328926c3e9" prot="public" virt="virtual"><scope>GTMFetcherAuthorizationProtocol-p</scope><name>isAuthorizedRequest:</name></member>
+      <member refid="protocol_g_t_m_fetcher_authorization_protocol-p_1a1b939b1eaa6c6c5fb5ec98525ec54433" prot="public" virt="virtual"><scope>GTMFetcherAuthorizationProtocol-p</scope><name>isAuthorizingRequest:</name></member>
+      <member refid="protocol_g_t_m_fetcher_authorization_protocol-p_1a8febb5519b2b2fca1054954a0d0f99ee" prot="public" virt="virtual"><scope>GTMFetcherAuthorizationProtocol-p</scope><name>primeForRefresh</name></member>
+      <member refid="protocol_g_t_m_fetcher_authorization_protocol-p_1a4929bdaf95a3df48faf9cf6e8394df18" prot="public" virt="virtual"><scope>GTMFetcherAuthorizationProtocol-p</scope><name>stopAuthorization</name></member>
+      <member refid="protocol_g_t_m_fetcher_authorization_protocol-p_1a0e7f99a2b47a888dabdd41e2df5f2f8a" prot="public" virt="virtual"><scope>GTMFetcherAuthorizationProtocol-p</scope><name>userEmail</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

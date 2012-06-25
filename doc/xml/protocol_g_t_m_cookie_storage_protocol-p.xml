@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="protocol_g_t_m_cookie_storage_protocol-p" kind="protocol" prot="public">
+    <compoundname>GTMCookieStorageProtocol-p</compoundname>
+    <includes refid="_g_t_m_h_t_t_p_fetcher_8h" local="no">GTMHTTPFetcher.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="protocol_g_t_m_cookie_storage_protocol-p_1a3e8a39b32c22b2f10c50fac9bc226229" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>NSArray *</type>
+        <definition>NSArray * GTMCookieStorageProtocol-p::cookiesForURL:</definition>
+        <argsstring>(NSURL *theURL)</argsstring>
+        <name>cookiesForURL:</name>
+        <param>
+          <type>NSURL *</type>
+          <declname>theURL</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="318"/>
+      </memberdef>
+      <memberdef kind="function" id="protocol_g_t_m_cookie_storage_protocol-p_1aaeb034ab78bc06844aa6a8376fb599da" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void GTMCookieStorageProtocol-p::setCookies:</definition>
+        <argsstring>(NSArray *newCookies)</argsstring>
+        <name>setCookies:</name>
+        <param>
+          <type>NSArray *</type>
+          <declname>newCookies</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="319"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" line="311" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMHTTPFetcher.h" bodystart="311" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="protocol_g_t_m_cookie_storage_protocol-p_1a3e8a39b32c22b2f10c50fac9bc226229" prot="public" virt="virtual"><scope>GTMCookieStorageProtocol-p</scope><name>cookiesForURL:</name></member>
+      <member refid="protocol_g_t_m_cookie_storage_protocol-p_1aaeb034ab78bc06844aa6a8376fb599da" prot="public" virt="virtual"><scope>GTMCookieStorageProtocol-p</scope><name>setCookies:</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

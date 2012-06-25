@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="interface_g_t_m_o_auth2_parser_class" kind="class" prot="public">
+    <compoundname>GTMOAuth2ParserClass</compoundname>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="interface_g_t_m_o_auth2_parser_class_1a0438d7e1038acfff9885693e7e4308a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>id</type>
+        <definition>id GTMOAuth2ParserClass::objectWithString:error:</definition>
+        <argsstring>(NSString *repr,[error] NSError **error)</argsstring>
+        <name>objectWithString:error:</name>
+        <param>
+          <type>NSString *</type>
+          <declname>repr</declname>
+        </param>
+        <param>
+          <attributes>[error]</attributes>
+          <type>NSError **</type>
+          <declname>error</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.m" line="53"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.m" line="52" bodyfile="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2Authentication.m" bodystart="51" bodyend="-1"/>
+    <listofallmembers>
+      <member refid="interface_g_t_m_o_auth2_parser_class_1a0438d7e1038acfff9885693e7e4308a7" prot="public" virt="virtual"><scope>GTMOAuth2ParserClass</scope><name>objectWithString:error:</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

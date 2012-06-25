@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="_b_b_g_multi_account_manager_8h" kind="file">
+    <compoundname>BBGMultiAccountManager.h</compoundname>
+    <includes local="no">Foundation/Foundation.h</includes>
+    <includedby refid="_b_b_g_multi_account_manager_8m" local="yes">GMultiAccountManager/GMultiAccountManager/BBGMultiAccountManager.m</includedby>
+    <incdepgraph>
+      <node id="9">
+        <label>Foundation/Foundation.h</label>
+      </node>
+      <node id="8">
+        <label>GMultiAccountManager/GMultiAccountManager/BBGMultiAccountManager.h</label>
+        <link refid="BBGMultiAccountManager.h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="10">
+        <label>GMultiAccountManager/GMultiAccountManager/BBGMultiAccountManager.h</label>
+        <link refid="BBGMultiAccountManager.h"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>GMultiAccountManager/GMultiAccountManager/BBGMultiAccountManager.m</label>
+        <link refid="_b_b_g_multi_account_manager_8m"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="interface_b_b_g_multi_account_manager" prot="public">BBGMultiAccountManager</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>BBGMultiAccountManager.h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>GMultiAccountManager</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Created<sp/>by<sp/>Giuseppe<sp/>Basile<sp/>on<sp/>05/05/12.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Copyright<sp/>(c)<sp/>2012<sp/>Archy.<sp/>All<sp/>rights<sp/>reserved.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&lt;Foundation/Foundation.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">@protocol<sp/></highlight><highlight class="normal"><ref refid="interface_b_b_account" kindref="compound">BBAccount</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="interface_b_b_g_multi_account_manager" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">@interface<sp/></highlight><highlight class="normal"><ref refid="interface_b_b_g_multi_account_manager" kindref="compound">BBGMultiAccountManager</ref><sp/>:<sp/>NSObject</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal">-<sp/>(void)registerWithClientId:(NSString<sp/>*)clientID</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>clientSecret:(NSString<sp/>*)clientSecret</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>scope:(NSString<sp/>*)scope</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal">-<sp/>(void)<ref refid="interface_b_b_g_multi_account_manager_1a0019e7a9d2d7b55cc079f9e8e07a09ea" kindref="member" tooltip="Start the procedures to authenticate your application against the scopes.">addAccount</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal">-<sp/>(void)addAccountWithCompletionBlock:<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(^)(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">&lt;<ref refid="interface_b_b_account" kindref="compound">BBAccount</ref>&gt;<sp/>account,<sp/>NSError<sp/>*error))block;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal">-<sp/>(void)accountsWithCompletionBlock:<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(^)(NSArray<sp/>*accounts,<sp/>NSError<sp/>*error))block;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal">-<sp/>(void)removeAccount:(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">&lt;<ref refid="interface_b_b_account" kindref="compound">BBAccount</ref>&gt;)account;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal">-<sp/>(void)removeAccount:(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">&lt;<ref refid="interface_b_b_account" kindref="compound">BBAccount</ref>&gt;)account<sp/>withCompletionBlock:<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(^)(BOOL<sp/>success,<sp/>NSError<sp/>*error))block;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal">-<sp/>(void)setPrincipalAccount:<sp/>(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">&lt;<ref refid="interface_b_b_account" kindref="compound">BBAccount</ref>&gt;)<sp/>account;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal">-<sp/>(void)setDefaultAccount:<sp/>(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">&lt;<ref refid="interface_b_b_account" kindref="compound">BBAccount</ref>&gt;)<sp/>account<sp/>withCompletionBlock:<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(^)(BOOL<sp/>success,<sp/>NSError<sp/>*error))block</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="keyword">@end</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/BBGMultiAccountManager.h"/>
+  </compounddef>
+</doxygen>

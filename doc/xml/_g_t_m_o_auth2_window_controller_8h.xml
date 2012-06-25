@@ -1,0 +1,427 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.0">
+  <compounddef id="_g_t_m_o_auth2_window_controller_8h" kind="file">
+    <compoundname>GTMOAuth2WindowController.h</compoundname>
+    <includes local="no">Foundation/Foundation.h</includes>
+    <includes local="no">Cocoa/Cocoa.h</includes>
+    <includes local="no">WebKit/WebKit.h</includes>
+    <includes refid="_g_t_m_h_t_t_p_fetcher_8h" local="yes">GTMHTTPFetcher.h</includes>
+    <includes refid="_g_t_m_o_auth2_sign_in_8h" local="yes">GTMOAuth2SignIn.h</includes>
+    <includes refid="_g_t_m_o_auth2_authentication_8h" local="yes">GTMOAuth2Authentication.h</includes>
+    <includes local="yes">GTMHTTPFetchHistory.h</includes>
+    <includedby refid="_g_t_m_o_auth2_window_controller_8m" local="yes">GMultiAccountManager/GMultiAccountManager/GTMOAuth2WindowController.m</includedby>
+    <incdepgraph>
+      <node id="71">
+        <label>GTMHTTPFetcher.h</label>
+        <link refid="_g_t_m_h_t_t_p_fetcher_8h"/>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+      <node id="69">
+        <label>Cocoa/Cocoa.h</label>
+      </node>
+      <node id="70">
+        <label>WebKit/WebKit.h</label>
+      </node>
+      <node id="67">
+        <label>GMultiAccountManager/GMultiAccountManager/GTMOAuth2WindowController.h</label>
+        <link refid="GTMOAuth2WindowController.h"/>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+      </node>
+      <node id="73">
+        <label>SystemConfiguration/SystemConfiguration.h</label>
+      </node>
+      <node id="74">
+        <label>GTMOAuth2Authentication.h</label>
+        <link refid="_g_t_m_o_auth2_authentication_8h"/>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+      </node>
+      <node id="75">
+        <label>GTMHTTPFetchHistory.h</label>
+      </node>
+      <node id="68">
+        <label>Foundation/Foundation.h</label>
+      </node>
+      <node id="72">
+        <label>GTMOAuth2SignIn.h</label>
+        <link refid="_g_t_m_o_auth2_sign_in_8h"/>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="76">
+        <label>GMultiAccountManager/GMultiAccountManager/GTMOAuth2WindowController.h</label>
+        <link refid="GTMOAuth2WindowController.h"/>
+        <childnode refid="77" relation="include">
+        </childnode>
+      </node>
+      <node id="77">
+        <label>GMultiAccountManager/GMultiAccountManager/GTMOAuth2WindowController.m</label>
+        <link refid="_g_t_m_o_auth2_window_controller_8m"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="interface_g_t_m_o_auth2_window_controller" prot="public">GTMOAuth2WindowController</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>Copyright<sp/>(c)<sp/>2011<sp/>Google<sp/>Inc.</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>Licensed<sp/>under<sp/>the<sp/>Apache<sp/>License,<sp/>Version<sp/>2.0<sp/>(the<sp/>&quot;License&quot;);</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>you<sp/>may<sp/>not<sp/>use<sp/>this<sp/>file<sp/>except<sp/>in<sp/>compliance<sp/>with<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>You<sp/>may<sp/>obtain<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>License<sp/>at</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>http://www.apache.org/licenses/LICENSE-2.0</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>Unless<sp/>required<sp/>by<sp/>applicable<sp/>law<sp/>or<sp/>agreed<sp/>to<sp/>in<sp/>writing,<sp/>software</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>distributed<sp/>under<sp/>the<sp/>License<sp/>is<sp/>distributed<sp/>on<sp/>an<sp/>&quot;AS<sp/>IS&quot;<sp/>BASIS,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>WITHOUT<sp/>WARRANTIES<sp/>OR<sp/>CONDITIONS<sp/>OF<sp/>ANY<sp/>KIND,<sp/>either<sp/>express<sp/>or<sp/>implied.</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>See<sp/>the<sp/>License<sp/>for<sp/>the<sp/>specific<sp/>language<sp/>governing<sp/>permissions<sp/>and</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>limitations<sp/>under<sp/>the<sp/>License.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>GTMOAuth2WindowController</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>window<sp/>controller<sp/>for<sp/>Mac<sp/>handles<sp/>sign-in<sp/>via<sp/>OAuth2<sp/>to<sp/>Google<sp/>or</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>other<sp/>services.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>controller<sp/>is<sp/>not<sp/>reusable;<sp/>create<sp/>a<sp/>new<sp/>instance<sp/>of<sp/>this<sp/>controller</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//<sp/>every<sp/>time<sp/>the<sp/>user<sp/>will<sp/>sign<sp/>in.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Sample<sp/>usage<sp/>for<sp/>signing<sp/>in<sp/>to<sp/>a<sp/>Google<sp/>service:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>static<sp/>NSString<sp/>*const<sp/>kKeychainItemName<sp/>=<sp/>@”My<sp/>App:<sp/>Google<sp/>Plus”;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>NSString<sp/>*scope<sp/>=<sp/>@&quot;https://www.googleapis.com/auth/plus.me&quot;;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>GTMOAuth2WindowController<sp/>*windowController;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>windowController<sp/>=<sp/>[[[GTMOAuth2WindowController<sp/>alloc]<sp/>initWithScope:scope</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>clientID:clientID</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>clientSecret:clientSecret</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>keychainItemName:kKeychainItemName</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>resourceBundle:nil]<sp/>autorelease];</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>[windowController<sp/>signInSheetModalForWindow:mMainWindow</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>delegate:self</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>finishedSelector:@selector(windowController:finishedWithAuth:error:)];</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>finished<sp/>selector<sp/>should<sp/>have<sp/>a<sp/>signature<sp/>matching<sp/>this:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>-<sp/>(void)windowController:(GTMOAuth2WindowController<sp/>*)windowController</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>finishedWithAuth:(GTMOAuth2Authentication<sp/>*)auth</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error:(NSError<sp/>*)error<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>if<sp/>(error<sp/>!=<sp/>nil)<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>//<sp/>sign<sp/>in<sp/>failed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>}<sp/>else<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>//<sp/>sign<sp/>in<sp/>succeeded</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>//<sp/>with<sp/>the<sp/>GTL<sp/>library,<sp/>pass<sp/>the<sp/>authentication<sp/>to<sp/>the<sp/>service<sp/>object,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>//<sp/>like</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>//<sp/><sp/><sp/>[[self<sp/>contactService]<sp/>setAuthorizer:auth];</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>//<sp/>or<sp/>use<sp/>it<sp/>to<sp/>sign<sp/>a<sp/>request<sp/>directly,<sp/>like</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>//<sp/><sp/>BOOL<sp/>isAuthorizing<sp/>=<sp/>[self<sp/>authorizeRequest:request</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>delegate:self</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>didFinishSelector:@selector(auth:finishedWithError:)];</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment">//<sp/>To<sp/>sign<sp/>in<sp/>to<sp/>services<sp/>other<sp/>than<sp/>Google,<sp/>use<sp/>the<sp/>longer<sp/>init<sp/>method,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="comment">//<sp/>as<sp/>shown<sp/>in<sp/>the<sp/>sample<sp/>application</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment">//<sp/>If<sp/>the<sp/>network<sp/>connection<sp/>is<sp/>lost<sp/>for<sp/>more<sp/>than<sp/>30<sp/>seconds<sp/>while<sp/>the<sp/>sign-in</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment">//<sp/>html<sp/>is<sp/>displayed,<sp/>the<sp/>notification<sp/>kGTLOAuthNetworkLost<sp/>will<sp/>be<sp/>sent.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>GTM_INCLUDE_OAUTH2<sp/>||<sp/>!GDATA_REQUIRE_SERVICE_INCLUDES</highlight></codeline>
+<codeline lineno="69"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Foundation/Foundation.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!TARGET_OS_IPHONE</highlight></codeline>
+<codeline lineno="73"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&lt;Cocoa/Cocoa.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&lt;WebKit/WebKit.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="comment">//<sp/>GTMHTTPFetcher.h<sp/>brings<sp/>in<sp/>GTLDefines/GDataDefines</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&quot;<ref refid="_g_t_m_h_t_t_p_fetcher_8h" kindref="compound">GTMHTTPFetcher.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&quot;<ref refid="_g_t_m_o_auth2_sign_in_8h" kindref="compound">GTMOAuth2SignIn.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&quot;<ref refid="_g_t_m_o_auth2_authentication_8h" kindref="compound">GTMOAuth2Authentication.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor">#import<sp/>&quot;GTMHTTPFetchHistory.h&quot;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>for<sp/>GTMCookieStorage</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="keyword">@class</highlight><highlight class="normal"><sp/><ref refid="interface_g_t_m_o_auth2_sign_in" kindref="compound">GTMOAuth2SignIn</ref>;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="interface_g_t_m_o_auth2_window_controller" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">@interface<sp/></highlight><highlight class="normal"><ref refid="interface_g_t_m_o_auth2_window_controller" kindref="compound">GTMOAuth2WindowController</ref><sp/>:<sp/>NSWindowController<sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/></highlight><highlight class="keyword">@private</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>IBOutlets</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/>NSButton<sp/>*keychainCheckbox_;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/>WebView<sp/>*webView_;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/>NSButton<sp/>*webCloseButton_;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/>NSButton<sp/>*webBackButton_;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>object<sp/>responsible<sp/>for<sp/>the<sp/>sign-in<sp/>networking<sp/>sequence;<sp/>it<sp/>holds</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>onto<sp/>the<sp/>authentication<sp/>object<sp/>as<sp/>well</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><ref refid="interface_g_t_m_o_auth2_sign_in" kindref="compound">GTMOAuth2SignIn</ref><sp/>*signIn_;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>page<sp/>request<sp/>to<sp/>load<sp/>when<sp/>awakeFromNib<sp/>occurs</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/>NSURLRequest<sp/>*initialRequest_;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>local<sp/>storage<sp/>for<sp/>WebKit<sp/>cookies<sp/>so<sp/>they&apos;re<sp/>not<sp/>shared<sp/>with<sp/>Safari</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/>GTMCookieStorage<sp/>*cookieStorage_;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>user<sp/>we&apos;re<sp/>calling<sp/>back</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>delegate<sp/>is<sp/>retained<sp/>only<sp/>until<sp/>the<sp/>callback<sp/>is<sp/>invoked</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>or<sp/>the<sp/>sign-in<sp/>is<sp/>canceled</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>delegate_;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">SEL</highlight><highlight class="normal"><sp/>finishedSelector_;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>NS_BLOCKS_AVAILABLE</highlight></codeline>
+<codeline lineno="112"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/>void<sp/>(^completionBlock_)(<ref refid="interface_g_t_m_o_auth2_authentication" kindref="compound">GTMOAuth2Authentication</ref><sp/>*,<sp/>NSError<sp/>*);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>!__LP64__</highlight></codeline>
+<codeline lineno="114"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>placeholders:<sp/>for<sp/>32-bit<sp/>builds,<sp/>keep<sp/>the<sp/>size<sp/>of<sp/>the<sp/>object&apos;s<sp/>ivar<sp/>section</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>same<sp/>with<sp/>and<sp/>without<sp/>blocks</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__clang_analyzer__</highlight></codeline>
+<codeline lineno="117"><highlight class="preprocessor"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>completionPlaceholder_;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="119"><highlight class="preprocessor"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="120"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>flag<sp/>allowing<sp/>application<sp/>to<sp/>quit<sp/>during<sp/>display<sp/>of<sp/>sign-in<sp/>sheet<sp/>on<sp/>10.6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>and<sp/>later</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/>BOOL<sp/>shouldAllowApplicationTermination_;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>delegate<sp/>method<sp/>for<sp/>handling<sp/>URLs<sp/>to<sp/>be<sp/>opened<sp/>in<sp/>external<sp/>windows</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">SEL</highlight><highlight class="normal"><sp/>externalRequestSelector_;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/>BOOL<sp/>isWindowShown_;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>paranoid<sp/>flag<sp/>to<sp/>ensure<sp/>we<sp/>only<sp/>close<sp/>once<sp/>during<sp/>the<sp/>sign-in<sp/>sequence</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/>BOOL<sp/>hasDoneFinalRedirect_;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>paranoid<sp/>flag<sp/>to<sp/>ensure<sp/>we<sp/>only<sp/>call<sp/>the<sp/>user<sp/>back<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/>BOOL<sp/>hasCalledFinished_;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>non-nil,<sp/>we<sp/>display<sp/>as<sp/>a<sp/>sheet<sp/>on<sp/>the<sp/>specified<sp/>window</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/>NSWindow<sp/>*sheetModalForWindow_;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>non-empty,<sp/>the<sp/>name<sp/>of<sp/>the<sp/>application<sp/>and<sp/>service<sp/>used<sp/>for<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>keychain<sp/>item</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/>NSString<sp/>*keychainItemName_;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>non-nil,<sp/>the<sp/>html<sp/>string<sp/>to<sp/>be<sp/>displayed<sp/>immediately<sp/>upon<sp/>opening</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>of<sp/>the<sp/>web<sp/>view</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/>NSString<sp/>*initialHTMLString_;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>true,<sp/>we<sp/>allow<sp/>default<sp/>WebView<sp/>handling<sp/>of<sp/>cookies,<sp/>so<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>same<sp/>user<sp/>remains<sp/>signed<sp/>in<sp/>each<sp/>time<sp/>the<sp/>dialog<sp/>is<sp/>displayed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/>BOOL<sp/>shouldPersistUser_;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>user-defined<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>userData_;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/>NSMutableDictionary<sp/>*properties_;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="comment">//<sp/>User<sp/>interface<sp/>elements</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157" refid="interface_g_t_m_o_auth2_window_controller_1ab119950596e4aa97637d86cf1f626cda" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>assign)<sp/>IBOutlet<sp/>NSButton<sp/>*keychainCheckbox;</highlight></codeline>
+<codeline lineno="158" refid="interface_g_t_m_o_auth2_window_controller_1ab6fea238a8e6b9e1824319e8d7f1c2cc" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>assign)<sp/>IBOutlet<sp/>WebView<sp/>*webView;</highlight></codeline>
+<codeline lineno="159" refid="interface_g_t_m_o_auth2_window_controller_1ab83c1f0fd517eaf6fb300660c58d9012" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>assign)<sp/>IBOutlet<sp/>NSButton<sp/>*webCloseButton;</highlight></codeline>
+<codeline lineno="160" refid="interface_g_t_m_o_auth2_window_controller_1abdc77127bb0389454140eb05c9978355" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>assign)<sp/>IBOutlet<sp/>NSButton<sp/>*webBackButton;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>application<sp/>and<sp/>service<sp/>name<sp/>to<sp/>use<sp/>for<sp/>saving<sp/>the<sp/>auth<sp/>tokens</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="comment">//<sp/>to<sp/>the<sp/>keychain</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164" refid="interface_g_t_m_o_auth2_window_controller_1ab21f1591d4bb7dea340c01e557170bd7" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>copy)<sp/><sp/><sp/>NSString<sp/>*keychainItemName;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="comment">//<sp/>If<sp/>true,<sp/>the<sp/>sign-in<sp/>will<sp/>remember<sp/>which<sp/>user<sp/>was<sp/>last<sp/>signed<sp/>in</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Defaults<sp/>to<sp/>false,<sp/>so<sp/>showing<sp/>the<sp/>sign-in<sp/>window<sp/>will<sp/>always<sp/>ask<sp/>for</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight><highlight class="comment">//<sp/>the<sp/>username<sp/>and<sp/>password,<sp/>rather<sp/>than<sp/>skip<sp/>to<sp/>the<sp/>grant<sp/>authorization</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight><highlight class="comment">//<sp/>page.<sp/><sp/>During<sp/>development,<sp/>it<sp/>may<sp/>be<sp/>convenient<sp/>to<sp/>set<sp/>this<sp/>to<sp/>true</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight><highlight class="comment">//<sp/>to<sp/>speed<sp/>up<sp/>signing<sp/>in.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172" refid="interface_g_t_m_o_auth2_window_controller_1ac1a216be71ad5b8d0d0a7090bf9dfceb" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>assign)<sp/>BOOL<sp/>shouldPersistUser;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Optional<sp/>html<sp/>string<sp/>displayed<sp/>immediately<sp/>upon<sp/>opening<sp/>the<sp/>web<sp/>view</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>string<sp/>is<sp/>visible<sp/>just<sp/>until<sp/>the<sp/>sign-in<sp/>web<sp/>page<sp/>loads,<sp/>and</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight><highlight class="comment">//<sp/>may<sp/>be<sp/>used<sp/>for<sp/>a<sp/>&quot;Loading...&quot;<sp/>type<sp/>of<sp/>message</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178" refid="interface_g_t_m_o_auth2_window_controller_1ac1b195d0102bb1ed2042938cc075c23e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>copy)<sp/><sp/><sp/>NSString<sp/>*initialHTMLString;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>default<sp/>timeout<sp/>for<sp/>an<sp/>unreachable<sp/>network<sp/>during<sp/>display<sp/>of<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight><highlight class="comment">//<sp/>sign-in<sp/>page<sp/>is<sp/>30<sp/>seconds,<sp/>after<sp/>which<sp/>the<sp/>notification</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight><highlight class="comment">//<sp/>kGTLOAuthNetworkLost<sp/>is<sp/>sent;<sp/>set<sp/>this<sp/>to<sp/>0<sp/>to<sp/>have<sp/>no<sp/>timeout</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183" refid="interface_g_t_m_o_auth2_window_controller_1a810bc4ad8d95e8f5021c7eed686b954a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>assign)<sp/>NSTimeInterval<sp/>networkLossTimeoutInterval;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight><highlight class="comment">//<sp/>On<sp/>10.6<sp/>and<sp/>later,<sp/>the<sp/>sheet<sp/>can<sp/>allow<sp/>application<sp/>termination<sp/>by<sp/>calling</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight><highlight class="comment">//<sp/>NSWindow&apos;s<sp/>setPreventsApplicationTerminationWhenModal:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187" refid="interface_g_t_m_o_auth2_window_controller_1a9dc56e4d3cca15df1c42202a3dfa50f2" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>assign)<sp/>BOOL<sp/>shouldAllowApplicationTermination;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Selector<sp/>for<sp/>a<sp/>delegate<sp/>method<sp/>to<sp/>handle<sp/>requests<sp/>sent<sp/>to<sp/>an<sp/>external</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight><highlight class="comment">//<sp/>browser.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Selector<sp/>should<sp/>have<sp/>a<sp/>signature<sp/>matching</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight><highlight class="comment">//<sp/>-<sp/>(void)windowController:(GTMOAuth2WindowController<sp/>*)controller</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>opensRequest:(NSURLRequest<sp/>*)request;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>controller&apos;s<sp/>default<sp/>behavior<sp/>is<sp/>to<sp/>use<sp/>NSWorkspace&apos;s<sp/>openURL:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197" refid="interface_g_t_m_o_auth2_window_controller_1a50c2c6aa02d92e2282367a58d2b1c589" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>assign)<sp/></highlight><highlight class="keywordtype">SEL</highlight><highlight class="normal"><sp/>externalRequestSelector;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>underlying<sp/>object<sp/>to<sp/>hold<sp/>authentication<sp/>tokens<sp/>and<sp/>authorize<sp/>http</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight><highlight class="comment">//<sp/>requests</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201" refid="interface_g_t_m_o_auth2_window_controller_1aa5ce8bffcd82aca46cee4db6a5632806" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>retain,<sp/>readonly)<sp/><ref refid="interface_g_t_m_o_auth2_authentication" kindref="compound">GTMOAuth2Authentication</ref><sp/>*authentication;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>underlying<sp/>object<sp/>which<sp/>performs<sp/>the<sp/>sign-in<sp/>networking<sp/>sequence</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204" refid="interface_g_t_m_o_auth2_window_controller_1a66b4763d1c3ac18028caa7d07bf96d5d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>retain,<sp/>readonly)<sp/><ref refid="interface_g_t_m_o_auth2_sign_in" kindref="compound">GTMOAuth2SignIn</ref><sp/>*signIn;</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Any<sp/>arbitrary<sp/>data<sp/>object<sp/>the<sp/>user<sp/>would<sp/>like<sp/>the<sp/>controller<sp/>to<sp/>retain</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="207" refid="interface_g_t_m_o_auth2_window_controller_1a2f125814b793d8e1c3bda2966694001b" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>retain)<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>userData;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Stored<sp/>property<sp/>values<sp/>are<sp/>retained<sp/>for<sp/>the<sp/>convenience<sp/>of<sp/>the<sp/>caller</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal">-<sp/>(void)setProperty:(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)obj<sp/>forKey:(NSString<sp/>*)key;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal">-<sp/>(id)propertyForKey:(NSString<sp/>*)key;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213" refid="interface_g_t_m_o_auth2_window_controller_1a073e8018116409fdc86f393f110d9755" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">@property</highlight><highlight class="normal"><sp/>(nonatomic,<sp/>retain)<sp/>NSDictionary<sp/>*properties;</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal">-<sp/>(IBAction)closeWindow:(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)sender;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Create<sp/>a<sp/>controller<sp/>for<sp/>authenticating<sp/>to<sp/>Google<sp/>services</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight><highlight class="comment">//<sp/>scope<sp/>is<sp/>the<sp/>requested<sp/>scope<sp/>of<sp/>authorization</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>(like<sp/>&quot;http://www.google.com/m8/feeds&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight><highlight class="comment">//<sp/>keychainItemName<sp/>is<sp/>used<sp/>for<sp/>storing<sp/>the<sp/>token<sp/>on<sp/>the<sp/>keychain,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>and<sp/>is<sp/>required<sp/>for<sp/>the<sp/>&quot;remember<sp/>for<sp/>later&quot;<sp/>checkbox<sp/>to<sp/>be<sp/>shown;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>keychainItemName<sp/>should<sp/>be<sp/>like<sp/>&quot;My<sp/>Application:<sp/>Google<sp/>Contacts&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>(or<sp/>set<sp/>to<sp/>nil<sp/>if<sp/>no<sp/>persistent<sp/>keychain<sp/>storage<sp/>is<sp/>desired)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight><highlight class="comment">//<sp/>resourceBundle<sp/>may<sp/>be<sp/>nil<sp/>if<sp/>the<sp/>window<sp/>is<sp/>in<sp/>the<sp/>main<sp/>bundle&apos;s<sp/>nib</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!GTM_OAUTH2_SKIP_GOOGLE_SUPPORT</highlight></codeline>
+<codeline lineno="229"><highlight class="preprocessor"></highlight><highlight class="normal">+<sp/>(id)controllerWithScope:(NSString<sp/>*)scope</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>clientID:(NSString<sp/>*)clientID</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>clientSecret:(NSString<sp/>*)clientSecret</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>keychainItemName:(NSString<sp/>*)keychainItemName<sp/><sp/></highlight><highlight class="comment">//<sp/>may<sp/>be<sp/>nil</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>resourceBundle:(NSBundle<sp/>*)bundle;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>may<sp/>be<sp/>nil</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal">-<sp/>(id)initWithScope:(NSString<sp/>*)scope</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>clientID:(NSString<sp/>*)clientID</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>clientSecret:(NSString<sp/>*)clientSecret</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/>keychainItemName:(NSString<sp/>*)keychainItemName</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>resourceBundle:(NSBundle<sp/>*)bundle;</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="241"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Create<sp/>a<sp/>controller<sp/>for<sp/>authenticating<sp/>to<sp/>non-Google<sp/>services,<sp/>taking</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>explicit<sp/>endpoint<sp/>URLs<sp/>and<sp/>an<sp/>authentication<sp/>object</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal">+<sp/>(id)controllerWithAuthentication:(<ref refid="interface_g_t_m_o_auth2_authentication" kindref="compound">GTMOAuth2Authentication</ref><sp/>*)auth</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>authorizationURL:(NSURL<sp/>*)authorizationURL</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>keychainItemName:(NSString<sp/>*)keychainItemName<sp/><sp/></highlight><highlight class="comment">//<sp/>may<sp/>be<sp/>nil</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>resourceBundle:(NSBundle<sp/>*)bundle;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>may<sp/>be<sp/>nil</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>is<sp/>the<sp/>designated<sp/>initializer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal">-<sp/>(id)initWithAuthentication:(<ref refid="interface_g_t_m_o_auth2_authentication" kindref="compound">GTMOAuth2Authentication</ref><sp/>*)auth</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>authorizationURL:(NSURL<sp/>*)authorizationURL</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>keychainItemName:(NSString<sp/>*)keychainItemName</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>resourceBundle:(NSBundle<sp/>*)bundle;</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Entry<sp/>point<sp/>to<sp/>begin<sp/>displaying<sp/>the<sp/>sign-in<sp/>window</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight><highlight class="comment">//<sp/>the<sp/>finished<sp/>selector<sp/>should<sp/>have<sp/>a<sp/>signature<sp/>matching</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>-<sp/>(void)windowController:(GTMOAuth2WindowController<sp/>*)windowController</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>finishedWithAuth:(GTMOAuth2Authentication<sp/>*)auth</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>error:(NSError<sp/>*)error<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Once<sp/>the<sp/>finished<sp/>method<sp/>has<sp/>been<sp/>invoked<sp/>with<sp/>no<sp/>error,<sp/>the<sp/>auth<sp/>object</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight><highlight class="comment">//<sp/>may<sp/>be<sp/>used<sp/>to<sp/>authorize<sp/>requests<sp/>(refreshing<sp/>the<sp/>access<sp/>token,<sp/>if<sp/>necessary,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight><highlight class="comment">//<sp/>and<sp/>adding<sp/>the<sp/>auth<sp/>header)<sp/>like:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>[authorizer<sp/>authorizeRequest:myNSMutableURLRequest]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>delegate:self</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>didFinishSelector:@selector(auth:finishedWithError:)];</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight><highlight class="comment">//<sp/>or<sp/>can<sp/>be<sp/>stored<sp/>in<sp/>a<sp/>GTL<sp/>service<sp/>object<sp/>like</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>GTLServiceGoogleContact<sp/>*service<sp/>=<sp/>[self<sp/>contactService];</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>[service<sp/>setAuthorizer:auth];</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>delegate<sp/>is<sp/>retained<sp/>only<sp/>until<sp/>the<sp/>finished<sp/>selector<sp/>is<sp/>invoked<sp/>or</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>the<sp/>sign-in<sp/>is<sp/>canceled</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal">-<sp/>(void)signInSheetModalForWindow:(NSWindow<sp/>*)parentWindowOrNil</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>delegate:(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">)delegate</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>finishedSelector:(</highlight><highlight class="keywordtype">SEL</highlight><highlight class="normal">)finishedSelector;</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>NS_BLOCKS_AVAILABLE</highlight></codeline>
+<codeline lineno="281"><highlight class="preprocessor"></highlight><highlight class="normal">-<sp/>(void)signInSheetModalForWindow:(NSWindow<sp/>*)parentWindowOrNil</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>completionHandler:(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(^)(<ref refid="interface_g_t_m_o_auth2_authentication" kindref="compound">GTMOAuth2Authentication</ref><sp/>*auth,<sp/>NSError<sp/>*error))handler;</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="284"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="normal">-<sp/>(void)cancelSigningIn;</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Subclasses<sp/>may<sp/>override<sp/>authNibName<sp/>to<sp/>specify<sp/>a<sp/>custom<sp/>name</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal">+<sp/>(NSString<sp/>*)authNibName;</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight><highlight class="comment">//<sp/>apps<sp/>may<sp/>replace<sp/>the<sp/>sign-in<sp/>class<sp/>with<sp/>their<sp/>own<sp/>subclass<sp/>of<sp/>it</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="291"><highlight class="normal">+<sp/>(Class)signInClass;</highlight></codeline>
+<codeline lineno="292"><highlight class="normal">+<sp/>(void)setSignInClass:(Class)theClass;</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Revocation<sp/>of<sp/>an<sp/>authorized<sp/>token<sp/>from<sp/>Google</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!GTM_OAUTH2_SKIP_GOOGLE_SUPPORT</highlight></codeline>
+<codeline lineno="296"><highlight class="preprocessor"></highlight><highlight class="normal">+<sp/>(void)revokeTokenForGoogleAuthentication:(<ref refid="interface_g_t_m_o_auth2_authentication" kindref="compound">GTMOAuth2Authentication</ref><sp/>*)auth;</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="298"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Keychain</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>keychain<sp/>checkbox<sp/>is<sp/>shown<sp/>if<sp/>the<sp/>keychain<sp/>application<sp/>service</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="302"><highlight class="normal"></highlight><highlight class="comment">//<sp/>name<sp/>(typically<sp/>set<sp/>in<sp/>the<sp/>initWithScope:<sp/>method)<sp/>is<sp/>non-empty</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight></codeline>
+<codeline lineno="305"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Create<sp/>an<sp/>authentication<sp/>object<sp/>for<sp/>Google<sp/>services<sp/>from<sp/>the<sp/>access</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="306"><highlight class="normal"></highlight><highlight class="comment">//<sp/>token<sp/>and<sp/>secret<sp/>stored<sp/>in<sp/>the<sp/>keychain;<sp/>if<sp/>no<sp/>token<sp/>is<sp/>available,<sp/>return</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight><highlight class="comment">//<sp/>an<sp/>unauthorized<sp/>auth<sp/>object</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!GTM_OAUTH2_SKIP_GOOGLE_SUPPORT</highlight></codeline>
+<codeline lineno="309"><highlight class="preprocessor"></highlight><highlight class="normal">+<sp/>(<ref refid="interface_g_t_m_o_auth2_authentication" kindref="compound">GTMOAuth2Authentication</ref><sp/>*)authForGoogleFromKeychainForName:(NSString<sp/>*)keychainItemName</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>clientID:(NSString<sp/>*)clientID</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>clientSecret:(NSString<sp/>*)clientSecret;</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="313"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Add<sp/>tokens<sp/>from<sp/>the<sp/>keychain,<sp/>if<sp/>available,<sp/>to<sp/>the<sp/>authentication<sp/>object</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight><highlight class="comment">//<sp/>returns<sp/>YES<sp/>if<sp/>the<sp/>authentication<sp/>object<sp/>was<sp/>authorized<sp/>from<sp/>the<sp/>keychain</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="317"><highlight class="normal">+<sp/>(BOOL)authorizeFromKeychainForName:(NSString<sp/>*)keychainItemName</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>authentication:(<ref refid="interface_g_t_m_o_auth2_authentication" kindref="compound">GTMOAuth2Authentication</ref><sp/>*)auth;</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"></highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Method<sp/>for<sp/>deleting<sp/>the<sp/>stored<sp/>access<sp/>token<sp/>and<sp/>secret,<sp/>useful<sp/>for<sp/>&quot;signing</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="321"><highlight class="normal"></highlight><highlight class="comment">//<sp/>out&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="normal">+<sp/>(BOOL)removeAuthFromKeychainForName:(NSString<sp/>*)keychainItemName;</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"></highlight></codeline>
+<codeline lineno="324"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Method<sp/>for<sp/>saving<sp/>the<sp/>stored<sp/>access<sp/>token<sp/>and<sp/>secret;<sp/>typically,<sp/>this<sp/>method</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight><highlight class="comment">//<sp/>is<sp/>used<sp/>only<sp/>by<sp/>the<sp/>window<sp/>controller</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="326"><highlight class="normal">+<sp/>(BOOL)saveAuthToKeychainForName:(NSString<sp/>*)keychainItemName</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>authentication:(<ref refid="interface_g_t_m_o_auth2_authentication" kindref="compound">GTMOAuth2Authentication</ref><sp/>*)auth;</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"></highlight><highlight class="keyword">@end</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="329"><highlight class="normal"></highlight></codeline>
+<codeline lineno="330"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>#if<sp/>!TARGET_OS_IPHONE</highlight></codeline>
+<codeline lineno="331"><highlight class="preprocessor"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="332"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>#if<sp/>GTM_INCLUDE_OAUTH2<sp/>||<sp/>!GDATA_REQUIRE_SERVICE_INCLUDES</highlight></codeline>
+    </programlisting>
+    <location file="/Users/iPepito/src/GBBMultiAccountManager/GMultiAccountManager/GMultiAccountManager/GTMOAuth2WindowController.h"/>
+  </compounddef>
+</doxygen>

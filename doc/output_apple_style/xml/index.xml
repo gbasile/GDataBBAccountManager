@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<project name="Untitled">
+	<object kind="class">
+		<name>
+			BBGMultiAccountManager
+		</name>
+	</object>
+	<object kind="protocol">
+		<name>
+			BBAccount
+		</name>
+	</object>
+</project>
