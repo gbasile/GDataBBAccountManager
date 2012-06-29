@@ -207,7 +207,11 @@
 
 + (id<BBAccount>) defaultAccount
 {
-    return [[self instance].accounts lastObject];
+    if ([self instance].accounts.count) {
+        return [[self instance].accounts objectAtIndex:0];
+    } else {
+        return nil;
+    }
 }
 
 #pragma mark - Exchange position
