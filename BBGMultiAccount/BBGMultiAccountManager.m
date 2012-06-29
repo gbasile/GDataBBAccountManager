@@ -110,13 +110,13 @@
 			}
 		}
 		
+        [[[self instance] mutableArrayValueForKey: @"accounts"] addObject: newAccount];		
+		[[self instance] persistAccountsIntoDataManager];
+        
 		if (block != NULL) 
 		{
 			block(newAccount, nil);
 		}	
-		
-		[[[self instance] mutableArrayValueForKey: @"accounts"] addObject: newAccount];		
-		[[self instance] persistAccountsIntoDataManager];
     }];
 }
 
@@ -163,12 +163,12 @@
 		}
 	}
 	
+   	[[self instance] persistAccountsIntoDataManager];
+    
 	if (block != NULL) 
 	{
 		block(YES, error);
 	}
-	
-	[[self instance] persistAccountsIntoDataManager];	
 }
 
 #pragma mark - Default Account
@@ -196,12 +196,11 @@
 	
 	[[instance mutableArrayValueForKey:@"accounts"] exchangeObjectAtIndex:theIndex withObjectAtIndex:defaultBBAccountIndex];
 	
+   	[[self instance] persistAccountsIntoDataManager];
 	if (block != NULL)
 	{
 		block(YES, nil);
 	}
-	
-	[[self instance] persistAccountsIntoDataManager];
 }
 
 + (id<BBAccount>) defaultAccount
