@@ -207,7 +207,7 @@
 
 + (id<BBAccount>) defaultAccount
 {
-	return [[self instance].accounts objectAtIndex:0];
+    return [[self instance].accounts lastObject];
 }
 
 #pragma mark - Exchange position
