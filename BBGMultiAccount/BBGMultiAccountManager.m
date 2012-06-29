@@ -57,7 +57,6 @@
 	[self instance].clientID = clientID;
 	[self instance].clientSecret = clientSecret;
 	[self instance].scope = scope;
-	[self instance].accounts = [NSMutableArray array];
 	
 	if ([dataManager conformsToProtocol:@protocol(BBGMultiAccountDataManager)])
 	{
