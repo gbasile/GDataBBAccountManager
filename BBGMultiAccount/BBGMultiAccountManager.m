@@ -306,10 +306,18 @@
     
     dispatch_once(&dispatchOncePredicate, ^{
         myInstance = [[self alloc] init];
-        myInstance.accounts = [NSMutableArray array];
     });
     
     return myInstance;
+}
+
+- (id) init
+{
+    self = [super init];
+    if (self) {
+        self.accounts = [NSMutableArray array];
+    }
+    return self;
 }
 
 - (GTMOAuth2WindowController *)loginWindowController
