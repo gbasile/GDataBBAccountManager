@@ -281,17 +281,15 @@
 {
 	if ([self.dataManager conformsToProtocol:@protocol(BBGMultiAccountDataManager)]) 
 	{
-		dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-			NSError *error = nil;
-			NSArray *restoredAccounts = [self.dataManager restoreAccountsWithError:&error];
-			if (restoredAccounts == nil && error != nil) {
-				@throw [NSException exceptionWithName:BBDataManagerRestoreException 
-											   reason:@"Impossible to restore existing accounts from Data Manager"
-											 userInfo:[error userInfo]];
-			}
-			
-			[self setAccounts:[NSMutableArray arrayWithArray:restoredAccounts]];
-		});
+        NSError *error = nil;
+        NSArray *restoredAccounts = [self.dataManager restoreAccountsWithError:&error];
+        if (restoredAccounts == nil && error != nil) {
+            @throw [NSException exceptionWithName:BBDataManagerRestoreException 
+                                           reason:@"Impossible to restore existing accounts from Data Manager"
+                                         userInfo:[error userInfo]];
+        }
+        
+        [self setAccounts:[NSMutableArray arrayWithArray:restoredAccounts]];
 	}
 }
 
