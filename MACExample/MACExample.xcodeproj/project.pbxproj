@@ -102,6 +102,7 @@
 		5BF11F0615559166007C3E2D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5BF11F0815559166007C3E2D /* GMultiAccountManagerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GMultiAccountManagerTests.h; sourceTree = "<group>"; };
 		5BF11F0915559166007C3E2D /* GMultiAccountManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GMultiAccountManagerTests.m; sourceTree = "<group>"; };
+		B849C695159F48FE0037AEA3 /* BBGMultiAccountConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBGMultiAccountConfig.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -272,6 +273,7 @@
 				36DDBC07156B7E6E005C59DC /* BBAccount.h */,
 				36DDBC08156B7E6E005C59DC /* BBAccount.m */,
 				5BA07951156B849C00654A0B /* BBGMultiAccountManagerErrors.h */,
+				B849C695159F48FE0037AEA3 /* BBGMultiAccountConfig.h */,
 				36DDBC09156B7E6E005C59DC /* BBGMultiAccountManager.h */,
 				36DDBC0A156B7E6E005C59DC /* BBGMultiAccountManager.m */,
 			);

@@ -23,9 +23,7 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    [BBGMultiAccountManager registerWithClientId:@"1020270034843.apps.googleusercontent.com" 
-                                    clientSecret:@"8k0hF2-VINO7mNWvrjSrJbni"
-                                           scope:@"https://docs.google.com/feeds/ https://spreadsheets.google.com/feeds/ https://www.google.com/m8/feeds/ https://docs.googleusercontent.com/"];
+    [BBGMultiAccountManager register];
 }
 
 

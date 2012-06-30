@@ -8,6 +8,8 @@
 
 #import "BBAccount.h"
 #import "GTMOAuth2Authentication.h"
+#import "GTMOAuth2WindowController.h"
+#import "BBGMultiAccountConfig.h"
 
 @implementation BBAccount
 @synthesize authToken, identifier;
@@ -24,6 +26,11 @@
 	return self.authToken.userEmail;
 }
 
+- (NSString *)keychainKeyForUsername:(NSString *)username
+{
+    return [NSString stringWithFormat:@"Archy Login:%@", self.identifier];
+}
+
 + (NSSet *)keyPathsForValuesAffectingIdentifier
 {
 	return [NSSet setWithObject:@"authToken"];
@@ -32,17 +39,34 @@
 #pragma NSCoding Protocol
 - (void)encodeWithCoder:(NSCoder *)aCoder
 {
-	[aCoder encodeObject:[self.authToken persistenceResponseString]	forKey:@"authToken"];
+    // **** Restore me when I can resume a token without the Keychain ****
+    // **** Start HERE ****
+//    [aCoder encodeObject:[self.authToken persistenceResponseString]	forKey:@"authToken"];
+    // **** END HERE ****
+    
+    [aCoder encodeObject:self.identifier forKey:@"userEmail"];
+    [GTMOAuth2WindowController saveAuthToKeychainForName:[self keychainKeyForUsername:self.identifier] authentication:self.authToken];
 }
 
 - (id)initWithCoder:(NSCoder *)aDecoder
 {
 	if (self = [super init]) 
 	{
-        NSString *authResponseString = [aDecoder decodeObjectForKey:@"authToken"];
-		GTMOAuth2Authentication *theAuthToken = [[[GTMOAuth2Authentication alloc] init] autorelease];
-		[theAuthToken setKeysForResponseString:authResponseString];
-		self.authToken = theAuthToken;
+        // **** Restore me when I can resume a token without the Keychain ****
+        // **** Start HERE ****
+//      NSString *authResponseString = [aDecoder decodeObjectForKey:@"authToken"];
+//		GTMOAuth2Authentication *theAuthToken = [[[GTMOAuth2Authentication alloc] init] autorelease];
+//		[theAuthToken setKeysForResponseString:authResponseString];
+//		self.authToken = theAuthToken;
+        // **** END HERE ****
+        
+        NSString *userEmail = [aDecoder decodeObjectForKey:@"userEmail"];
+		GTMOAuth2Authentication *auth = [GTMOAuth2WindowController authForGoogleFromKeychainForName:[self keychainKeyForUsername:userEmail] 
+                                                                                           clientID:kBBOAuthGoogleClientID
+                                                                                       clientSecret:kBBOAuthGoogleClientSecret];
+        auth.userEmail = userEmail;
+        self.authToken = auth;
+        
     }
     return self;
 }

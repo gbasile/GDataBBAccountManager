@@ -13,6 +13,7 @@
 #import "BBGMultiAccountFileManager.h"
 #import "BBAccount.h"
 #import "NSError+convenience.h"
+#import "BBGMultiAccountConfig.h"
 
 #define defaultBBAccountIndex 0
 
@@ -39,24 +40,21 @@
 @synthesize dataManager = _dataManager;
 
 #pragma mark - Register
-+ (void)registerWithClientId:(NSString *)clientID
-                clientSecret:(NSString *)clientSecret
-                       scope:(NSString *)scope
++ (void)register 
 {
-	return [self registerWithClientId:clientID 
-						 clientSecret:clientSecret
-								scope:scope
-						  dataManager:[BBGMultiAccountFileManager fileManager]];
+    [self instance].clientID = kBBOAuthGoogleClientID;
+	[self instance].clientSecret = kBBOAuthGoogleClientSecret;
+	[self instance].scope = KBBOauthGoogleScope;
+	
+    [self instance].dataManager = [BBGMultiAccountFileManager fileManager];
+	
+	[[self instance] restoreAccountsFromDataManager];
 }
-
-+ (void)registerWithClientId:(NSString *)clientID
-                clientSecret:(NSString *)clientSecret
-                       scope:(NSString *)scope 
-				 dataManager:(id<BBGMultiAccountDataManager>)dataManager
++ (void)registerWithDataManager:(id<BBGMultiAccountDataManager>)dataManager
 {
-	[self instance].clientID = clientID;
-	[self instance].clientSecret = clientSecret;
-	[self instance].scope = scope;
+	[self instance].clientID = kBBOAuthGoogleClientID;
+	[self instance].clientSecret = kBBOAuthGoogleClientSecret;
+	[self instance].scope = KBBOauthGoogleScope;
 	
 	if ([dataManager conformsToProtocol:@protocol(BBGMultiAccountDataManager)])
 	{
