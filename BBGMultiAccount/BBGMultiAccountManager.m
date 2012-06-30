@@ -265,15 +265,13 @@
 {
 	if ([self.dataManager conformsToProtocol:@protocol(BBGMultiAccountDataManager)]) 
 	{
-		dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-			NSError *theError;
-			if (![self.dataManager persistAccounts:self.accounts error:&theError]) 
-			{
-				@throw [NSException exceptionWithName:BBDataManagerPersistenceException
-											   reason:@"Impossible to persist accounts into Data Manager"
-											 userInfo:[theError userInfo]];
-			}
-		});
+		NSError *theError;
+		if (![self.dataManager persistAccounts:self.accounts error:&theError]) 
+		{
+			@throw [NSException exceptionWithName:BBDataManagerPersistenceException
+										   reason:@"Impossible to persist accounts into Data Manager"
+										 userInfo:[theError userInfo]];
+		}
 	}
 }
 
