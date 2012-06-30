@@ -72,7 +72,9 @@
 
 + (void)addAccountWithCompletionBlock:(void (^)(id<BBAccount> account, NSError *error))block
 {
-    [[[self instance] loginWindowController] signInSheetModalForWindow:nil completionHandler:^(GTMOAuth2Authentication *auth, NSError *error) {
+    GTMOAuth2WindowController *theLoginWindowController = [[self instance] loginWindowController];
+    
+    [theLoginWindowController signInSheetModalForWindow:nil completionHandler:^(GTMOAuth2Authentication *auth, NSError *error) {
 		if (error != nil) 
 		{
 			if ([error code] == kGTMOAuth2ErrorWindowClosed) 
@@ -116,6 +118,15 @@
 			block(newAccount, nil);
 		}	
     }];
+    
+    // Resize login window so the user has not to scroll
+    NSRect frame = [[theLoginWindowController window] frame]; 
+    frame.size.height += 40;
+    frame.size.width += 123;
+    [[theLoginWindowController window] setFrame:frame
+                                        display:YES
+                                        animate:NO];
+    [[theLoginWindowController window] center];
 }
 
 #pragma mark - Accounts
@@ -320,14 +331,6 @@
 																						 clientSecret:self.clientSecret
 																					 keychainItemName:nil 
 																					   resourceBundle:frameworkBundle];
-	// Resize login window so the user has not to scroll
-//	NSRect frame = [[loginWindowController window] frame];
-//	frame.size.height += 50;
-//	[[loginWindowController window] setFrame:frame
-//									 display:YES
-//									 animate:YES];
-//	[[loginWindowController window] center];
-	
     return loginWindowController;
 }
 
