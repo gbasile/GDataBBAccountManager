@@ -41,11 +41,11 @@
 {
     // **** Restore me when I can resume a token without the Keychain ****
     // **** Start HERE ****
-//    [aCoder encodeObject:[self.authToken persistenceResponseString]	forKey:@"authToken"];
+    // [aCoder encodeObject:[self.authToken persistenceResponseString]	forKey:@"authToken"];
     // **** END HERE ****
     
     [aCoder encodeObject:self.identifier forKey:@"userEmail"];
-    [GTMOAuth2WindowController saveAuthToKeychainForName:[self keychainKeyForUsername:self.identifier] authentication:self.authToken];
+    [GTMOAuth2WindowController saveAuthToKeychainForName:self.identifier authentication:self.authToken];
 }
 
 - (id)initWithCoder:(NSCoder *)aDecoder
@@ -61,7 +61,7 @@
         // **** END HERE ****
         
         NSString *userEmail = [aDecoder decodeObjectForKey:@"userEmail"];
-		GTMOAuth2Authentication *auth = [GTMOAuth2WindowController authForGoogleFromKeychainForName:[self keychainKeyForUsername:userEmail] 
+		GTMOAuth2Authentication *auth = [GTMOAuth2WindowController authForGoogleFromKeychainForName:userEmail
                                                                                            clientID:kBBOAuthGoogleClientID
                                                                                        clientSecret:kBBOAuthGoogleClientSecret];
         auth.userEmail = userEmail;
