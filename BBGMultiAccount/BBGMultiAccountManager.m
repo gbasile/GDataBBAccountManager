@@ -13,7 +13,6 @@
 #import "BBGMultiAccountFileManager.h"
 #import "BBAccount.h"
 #import "NSError+convenience.h"
-#import "BBGMultiAccountConfig.h"
 
 #define defaultBBAccountIndex 0
 
@@ -40,21 +39,25 @@
 @synthesize dataManager = _dataManager;
 
 #pragma mark - Register
-+ (void)register 
++ (void)registerWithClientId:(NSString *)clientID
+                clientSecret:(NSString *)clientSecret
+                       scope:(NSString *)scope
 {
-    [self instance].clientID = kBBOAuthGoogleClientID;
-	[self instance].clientSecret = kBBOAuthGoogleClientSecret;
-	[self instance].scope = KBBOauthGoogleScope;
-	
-    [self instance].dataManager = [BBGMultiAccountFileManager fileManager];
-	
-	[[self instance] restoreAccountsFromDataManager];
+	return [self registerWithClientId:clientID 
+						 clientSecret:clientSecret
+								scope:scope
+						  dataManager:[BBGMultiAccountFileManager fileManager]];
 }
-+ (void)registerWithDataManager:(id<BBGMultiAccountDataManager>)dataManager
+
++ (void)registerWithClientId:(NSString *)clientID
+                clientSecret:(NSString *)clientSecret
+                       scope:(NSString *)scope 
+				 dataManager:(id<BBGMultiAccountDataManager>)dataManager
 {
-	[self instance].clientID = kBBOAuthGoogleClientID;
-	[self instance].clientSecret = kBBOAuthGoogleClientSecret;
-	[self instance].scope = KBBOauthGoogleScope;
+	[self instance].clientID = clientID;
+	[self instance].clientSecret = clientSecret;
+	[self instance].scope = scope;
+	[self instance].accounts = [NSMutableArray array];
 	
 	if ([dataManager conformsToProtocol:@protocol(BBGMultiAccountDataManager)])
 	{
@@ -67,14 +70,17 @@
 #pragma mark - Add account
 + (void)addAccount
 {
-	[self addAccountWithCompletionBlock:NULL];
+	[self addAccountModalForWindow:nil withCompletionBlock:NULL];
 }
 
-+ (void)addAccountWithCompletionBlock:(void (^)(id<BBAccount> account, NSError *error))block
++ (void)addAccountModalForWindow:(NSWindow *)parentWindowOrNil
 {
-    GTMOAuth2WindowController *theLoginWindowController = [[self instance] loginWindowController];
-    
-    [theLoginWindowController signInSheetModalForWindow:nil completionHandler:^(GTMOAuth2Authentication *auth, NSError *error) {
+    [self addAccountModalForWindow:parentWindowOrNil withCompletionBlock:NULL];
+}
+
++ (void)addAccountModalForWindow:(NSWindow *)parentWindowOrNil withCompletionBlock:(void (^)(id<BBAccount> account, NSError *error))block;
+{
+    [[[self instance] loginWindowController] signInSheetModalForWindow:parentWindowOrNil completionHandler:^(GTMOAuth2Authentication *auth, NSError *error) {
 		if (error != nil) 
 		{
 			if ([error code] == kGTMOAuth2ErrorWindowClosed) 
@@ -110,23 +116,14 @@
 			}
 		}
 		
-        [[[self instance] mutableArrayValueForKey: @"accounts"] addObject: newAccount];		
-		[[self instance] persistAccountsIntoDataManager];
-        
 		if (block != NULL) 
 		{
 			block(newAccount, nil);
 		}	
+		
+		[[[self instance] mutableArrayValueForKey: @"accounts"] addObject: newAccount];		
+		[[self instance] persistAccountsIntoDataManager];
     }];
-    
-    // Resize login window so the user has not to scroll
-    NSRect frame = [[theLoginWindowController window] frame]; 
-    frame.size.height += 40;
-    frame.size.width += 123;
-    [[theLoginWindowController window] setFrame:frame
-                                        display:YES
-                                        animate:NO];
-    [[theLoginWindowController window] center];
 }
 
 #pragma mark - Accounts
@@ -172,12 +169,12 @@
 		}
 	}
 	
-   	[[self instance] persistAccountsIntoDataManager];
-    
 	if (block != NULL) 
 	{
 		block(YES, error);
 	}
+	
+	[[self instance] persistAccountsIntoDataManager];	
 }
 
 #pragma mark - Default Account
@@ -205,20 +202,17 @@
 	
 	[[instance mutableArrayValueForKey:@"accounts"] exchangeObjectAtIndex:theIndex withObjectAtIndex:defaultBBAccountIndex];
 	
-   	[[self instance] persistAccountsIntoDataManager];
 	if (block != NULL)
 	{
 		block(YES, nil);
 	}
+	
+	[[self instance] persistAccountsIntoDataManager];
 }
 
 + (id<BBAccount>) defaultAccount
 {
-    if ([self instance].accounts.count) {
-        return [[self instance].accounts objectAtIndex:0];
-    } else {
-        return nil;
-    }
+	return [[self instance].accounts objectAtIndex:0];
 }
 
 #pragma mark - Exchange position
@@ -274,13 +268,15 @@
 {
 	if ([self.dataManager conformsToProtocol:@protocol(BBGMultiAccountDataManager)]) 
 	{
-		NSError *theError;
-		if (![self.dataManager persistAccounts:self.accounts error:&theError]) 
-		{
-			@throw [NSException exceptionWithName:BBDataManagerPersistenceException
-										   reason:@"Impossible to persist accounts into Data Manager"
-										 userInfo:[theError userInfo]];
-		}
+		dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+			NSError *theError;
+			if (![self.dataManager persistAccounts:self.accounts error:&theError]) 
+			{
+				@throw [NSException exceptionWithName:BBDataManagerPersistenceException
+											   reason:@"Impossible to persist accounts into Data Manager"
+											 userInfo:[theError userInfo]];
+			}
+		});
 	}
 }
 
@@ -288,15 +284,17 @@
 {
 	if ([self.dataManager conformsToProtocol:@protocol(BBGMultiAccountDataManager)]) 
 	{
-        NSError *error = nil;
-        NSArray *restoredAccounts = [self.dataManager restoreAccountsWithError:&error];
-        if (restoredAccounts == nil && error != nil) {
-            @throw [NSException exceptionWithName:BBDataManagerRestoreException 
-                                           reason:@"Impossible to restore existing accounts from Data Manager"
-                                         userInfo:[error userInfo]];
-        }
-        
-        [self setAccounts:[NSMutableArray arrayWithArray:restoredAccounts]];
+		dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
+			NSError *error = nil;
+			NSArray *restoredAccounts = [self.dataManager restoreAccountsWithError:&error];
+			if (restoredAccounts == nil && error != nil) {
+				@throw [NSException exceptionWithName:BBDataManagerRestoreException 
+											   reason:@"Impossible to restore existing accounts from Data Manager"
+											 userInfo:[error userInfo]];
+			}
+			
+			[self setAccounts:[NSMutableArray arrayWithArray:restoredAccounts]];
+		});
 	}
 }
 
@@ -309,18 +307,10 @@
     
     dispatch_once(&dispatchOncePredicate, ^{
         myInstance = [[self alloc] init];
+        myInstance.accounts = [NSMutableArray array];
     });
     
     return myInstance;
-}
-
-- (id) init
-{
-    self = [super init];
-    if (self) {
-        self.accounts = [NSMutableArray array];
-    }
-    return self;
 }
 
 - (GTMOAuth2WindowController *)loginWindowController
@@ -331,6 +321,14 @@
 																						 clientSecret:self.clientSecret
 																					 keychainItemName:nil 
 																					   resourceBundle:frameworkBundle];
+	// Resize login window so the user has not to scroll
+//	NSRect frame = [[loginWindowController window] frame];
+//	frame.size.height += 50;
+//	[[loginWindowController window] setFrame:frame
+//									 display:YES
+//									 animate:YES];
+//	[[loginWindowController window] center];
+	
     return loginWindowController;
 }
 

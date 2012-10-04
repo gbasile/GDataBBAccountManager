@@ -70,7 +70,7 @@
 	if (![fileManager fileExistsAtPath:[supportApplicationDirectoryURL path]]) 
 	{
 		NSError *theError = nil;
-		if (![fileManager createDirectoryAtURL:supportApplicationDirectoryURL withIntermediateDirectories:YES attributes:nil error:&theError]) 
+        if (![fileManager createDirectoryAtPath:[supportApplicationDirectoryURL path] withIntermediateDirectories:YES attributes:nil error:&theError])
 		{
 			return nil;
 		}

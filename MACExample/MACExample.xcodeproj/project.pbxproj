@@ -80,6 +80,7 @@
 		36DDBC0D156B7E6E005C59DC /* BBGMultiAccountFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBGMultiAccountFileManager.m; sourceTree = "<group>"; };
 		5B2F99DA157A04B500008420 /* NSError+convenience.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSError+convenience.h"; sourceTree = "<group>"; };
 		5B2F99DB157A04B500008420 /* NSError+convenience.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSError+convenience.m"; sourceTree = "<group>"; };
+		5B454C56161DAE6100F2628A /* BBMultiAccountConfig.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; path = BBMultiAccountConfig.h; sourceTree = "<group>"; };
 		5B8E741A1566A395003080C6 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		5BA07951156B849C00654A0B /* BBGMultiAccountManagerErrors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBGMultiAccountManagerErrors.h; sourceTree = "<group>"; };
 		5BA07962156B89BA00654A0B /* BBGMultiAccountFileManagerErrors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBGMultiAccountFileManagerErrors.h; sourceTree = "<group>"; };
@@ -102,7 +103,6 @@
 		5BF11F0615559166007C3E2D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5BF11F0815559166007C3E2D /* GMultiAccountManagerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GMultiAccountManagerTests.h; sourceTree = "<group>"; };
 		5BF11F0915559166007C3E2D /* GMultiAccountManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GMultiAccountManagerTests.m; sourceTree = "<group>"; };
-		B849C695159F48FE0037AEA3 /* BBGMultiAccountConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBGMultiAccountConfig.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -270,10 +270,10 @@
 			isa = PBXGroup;
 			children = (
 				36DDBC0B156B7E6E005C59DC /* Data Manager */,
+				5B454C56161DAE6100F2628A /* BBMultiAccountConfig.h */,
 				36DDBC07156B7E6E005C59DC /* BBAccount.h */,
 				36DDBC08156B7E6E005C59DC /* BBAccount.m */,
 				5BA07951156B849C00654A0B /* BBGMultiAccountManagerErrors.h */,
-				B849C695159F48FE0037AEA3 /* BBGMultiAccountConfig.h */,
 				36DDBC09156B7E6E005C59DC /* BBGMultiAccountManager.h */,
 				36DDBC0A156B7E6E005C59DC /* BBGMultiAccountManager.m */,
 			);
@@ -326,7 +326,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = BB;
-				LastUpgradeCheck = 0430;
+				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = Archy;
 			};
 			buildConfigurationList = 5BF11ED515559166007C3E2D /* Build configuration list for PBXProject "MACExample" */;
@@ -519,6 +519,7 @@
 		5BF11F0E15559167007C3E2D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GMultiAccountManager/MACExample-Prefix.pch";
 				INFOPLIST_FILE = "GMultiAccountManager/MACExample-Info.plist";
@@ -530,6 +531,7 @@
 		5BF11F0F15559167007C3E2D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GMultiAccountManager/MACExample-Prefix.pch";
 				INFOPLIST_FILE = "GMultiAccountManager/MACExample-Info.plist";
@@ -542,6 +544,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GMultiAccountManager.app/Contents/MacOS/GMultiAccountManager";
+				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GMultiAccountManager/GMultiAccountManager-Prefix.pch";
@@ -556,6 +559,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GMultiAccountManager.app/Contents/MacOS/GMultiAccountManager";
+				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GMultiAccountManager/GMultiAccountManager-Prefix.pch";
