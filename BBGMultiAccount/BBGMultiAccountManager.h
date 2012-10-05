@@ -33,23 +33,19 @@
 @end
 
 @interface BBGMultiAccountManager : NSObject <BBGMultiAccountManager>
-+ (BBGMultiAccountManager *)instance;
 
-+ (void)registerWithClientId:(NSString *)clientID
-                clientSecret:(NSString *)clientSecret
-                       scope:(NSString *)scope;
+//! A shared instance of the account manager
++ (BBGMultiAccountManager *)instance;
 
 //!	Mandatory! Set the Google Parameters necessary 
 //!	to login against your application. 
-//!	@param clientID		Your unique Google API identificator
-//!	@param clientSecret Your secret Google API code
-//!	@param scope		The scope of the service you want to authorize
-//!	@see https://code.google.com/apis/console for Google API Console
-//!	@see https://developers.google.com/google-apps/documents-list/?hl=es-ES#authorizing_requests_with_oauth_20 for scope description
-+ (void)registerWithClientId:(NSString *)clientID
-                clientSecret:(NSString *)clientSecret
-                       scope:(NSString *)scope 
-				 dataManager:(id<BBGMultiAccountDataManager>)dataManagerOrNil;
+//! Remember to config BBGMultiAccountConfig.h with your data
++ (void)register;
+
+//!	Mandatory! Set the Google Parameters necessary 
+//! @param dataManager  The Manager will store/restore the accounts data.
+//! Remember to config BBGMultiAccountConfig.h with your data
++ (void)registerWithDataManager:(id<BBGMultiAccountDataManager>)dataManagerOrNil;
 
 //!	Start the procedures to authenticate your application
 //!	against the scopes
@@ -58,15 +54,13 @@
 //!	Start the procedures to authenticate your application
 //!	against the scopes
 //! @param parentWindowOrNil    The window when show the modal login
-+ (void)addAccountModalForWindow:(NSWindow *)parentWindowOrNil;
++ (void)addAccountWithModalWindow:(NSWindow *)parentWindowOrNil;
 
-//!	Start the procedures to authenticate your application
-//!	against the scopes
-//! @param parentWindowOrNil    The window when show the modal login
-//!	@param block                Completion block
-+ (void)addAccountModalForWindow:(NSWindow *)parentWindowOrNil withCompletionBlock:(void (^)(id<BBAccount> account, NSError *error))block;
-
-
+//!	Start the procedures to authenticate your application showing login window
+//! as sheet for provided window
+//! @param window A modal window (can be nil).
+//!	@param block	Completion block
++ (void)addAccountWithModalWindow:(NSWindow *)window completionBlock:(void (^)(id<BBAccount> account, NSError *error))block;
 
 //!	Return the list of existing account
 //!	@param block	Completion block

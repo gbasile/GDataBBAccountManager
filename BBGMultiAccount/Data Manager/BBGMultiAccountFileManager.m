@@ -63,20 +63,21 @@
 	NSFileManager *fileManager = [[[NSFileManager alloc] init] autorelease];
     NSURL *supportDirectoryURL = [[fileManager URLsForDirectory:NSApplicationSupportDirectory inDomains:NSUserDomainMask] lastObject];
 	NSString *projectName = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleExecutable"];
-	if (projectName == nil) {
+	if (projectName == nil)
+	{
 		projectName = @"BBGMultiAccountManager";
 	}
 	NSURL *supportApplicationDirectoryURL = [supportDirectoryURL URLByAppendingPathComponent:projectName];
 	if (![fileManager fileExistsAtPath:[supportApplicationDirectoryURL path]]) 
 	{
 		NSError *theError = nil;
-        if (![fileManager createDirectoryAtPath:[supportApplicationDirectoryURL path] withIntermediateDirectories:YES attributes:nil error:&theError])
+		if (![fileManager createDirectoryAtPath:[supportApplicationDirectoryURL path] withIntermediateDirectories:YES attributes:nil error:&theError])
 		{
 			return nil;
 		}
 	}
 	
-	return [supportApplicationDirectoryURL URLByAppendingPathComponent:@"GBBAccounts"];
+	return [supportApplicationDirectoryURL URLByAppendingPathComponent:@"GBBAccounts.sic"];
 }
 
 @end

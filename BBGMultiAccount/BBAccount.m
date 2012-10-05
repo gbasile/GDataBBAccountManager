@@ -9,7 +9,7 @@
 #import "BBAccount.h"
 #import "GTMOAuth2Authentication.h"
 #import "GTMOAuth2WindowController.h"
-#import "BBMultiAccountConfig.h"
+#import "BBGMultiAccountConfig.h"
 
 @implementation BBAccount
 @synthesize authToken, identifier;

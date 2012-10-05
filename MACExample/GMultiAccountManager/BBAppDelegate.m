@@ -10,7 +10,6 @@
 
 #import "BBGMultiAccountManager.h"
 #import "BBAccount.h"
-#import "BBMultiAccountConfig.h"
 
 @implementation BBAppDelegate
 @synthesize accountsArrayController = _accountsArrayController;
@@ -24,14 +23,12 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    [BBGMultiAccountManager registerWithClientId:kBBOAuthGoogleClientID
-                                    clientSecret:kBBOAuthGoogleClientSecret
-                                           scope:KBBOauthGoogleScope];
+    [BBGMultiAccountManager register];
 }
 
 
 - (IBAction)addAccount:(id)sender {
-	[BBGMultiAccountManager addAccountModalForWindow:[self window] withCompletionBlock:^(id<BBAccount> account, NSError *error) {
+	[BBGMultiAccountManager addAccountWithModalWindow:[self window] completionBlock:^(id<BBAccount> account, NSError *error) {
 		if (error != nil) 
 		{
 			[self.window presentError:error];

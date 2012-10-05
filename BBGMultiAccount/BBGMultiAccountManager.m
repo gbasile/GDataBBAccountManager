@@ -9,10 +9,10 @@
 #import "BBGMultiAccountManager.h"
 
 #import "BBGMultiAccountManagerErrors.h"
-#import "GTMOAuth2WindowController.h"
 #import "BBGMultiAccountFileManager.h"
 #import "BBAccount.h"
-#import "NSError+convenience.h"
+#import "BBGMultiAccountConfig.h"
+#import "GTMOAuth2WindowController.h"
 
 #define defaultBBAccountIndex 0
 
@@ -39,25 +39,21 @@
 @synthesize dataManager = _dataManager;
 
 #pragma mark - Register
-+ (void)registerWithClientId:(NSString *)clientID
-                clientSecret:(NSString *)clientSecret
-                       scope:(NSString *)scope
++ (void)register 
 {
-	return [self registerWithClientId:clientID 
-						 clientSecret:clientSecret
-								scope:scope
-						  dataManager:[BBGMultiAccountFileManager fileManager]];
+    [self instance].clientID = kBBOAuthGoogleClientID;
+	[self instance].clientSecret = kBBOAuthGoogleClientSecret;
+	[self instance].scope = KBBOauthGoogleScope;
+	
+    [self instance].dataManager = [BBGMultiAccountFileManager fileManager];
+	
+	[[self instance] restoreAccountsFromDataManager];
 }
-
-+ (void)registerWithClientId:(NSString *)clientID
-                clientSecret:(NSString *)clientSecret
-                       scope:(NSString *)scope 
-				 dataManager:(id<BBGMultiAccountDataManager>)dataManager
++ (void)registerWithDataManager:(id<BBGMultiAccountDataManager>)dataManager
 {
-	[self instance].clientID = clientID;
-	[self instance].clientSecret = clientSecret;
-	[self instance].scope = scope;
-	[self instance].accounts = [NSMutableArray array];
+	[self instance].clientID = kBBOAuthGoogleClientID;
+	[self instance].clientSecret = kBBOAuthGoogleClientSecret;
+	[self instance].scope = KBBOauthGoogleScope;
 	
 	if ([dataManager conformsToProtocol:@protocol(BBGMultiAccountDataManager)])
 	{
@@ -70,30 +66,30 @@
 #pragma mark - Add account
 + (void)addAccount
 {
-	[self addAccountModalForWindow:nil withCompletionBlock:NULL];
+	[self addAccountWithModalWindow:nil completionBlock:NULL];
 }
 
-+ (void)addAccountModalForWindow:(NSWindow *)parentWindowOrNil
++ (void)addAccountWithModalWindow:(NSWindow *)parentWindowOrNil
 {
-    [self addAccountModalForWindow:parentWindowOrNil withCompletionBlock:NULL];
+    [self addAccountWithModalWindow:parentWindowOrNil completionBlock:NULL];
 }
 
-+ (void)addAccountModalForWindow:(NSWindow *)parentWindowOrNil withCompletionBlock:(void (^)(id<BBAccount> account, NSError *error))block;
++ (void)addAccountWithModalWindow:(NSWindow *)parentWindowOrNil completionBlock:(void (^)(id<BBAccount> account, NSError *error))block;
 {
     [[[self instance] loginWindowController] signInSheetModalForWindow:parentWindowOrNil completionHandler:^(GTMOAuth2Authentication *auth, NSError *error) {
-		if (error != nil) 
+        if (error != nil)
 		{
-			if ([error code] == kGTMOAuth2ErrorWindowClosed) 
+			if ([error code] == kGTMOAuth2ErrorWindowClosed)
 			{
-				if (block != NULL) 
+				if (block != NULL)
 				{
 					block(nil, nil);
 					return;
-				}	
+				}
 			}
-			else 
+			else
 			{
-				if (block != NULL) 
+				if (block != NULL)
 				{
 					block(nil, error);
 					return;
@@ -103,26 +99,26 @@
 		}
 		
 		BBAccount *newAccount = [BBAccount accountWithAuthToken:auth];
-		if ([[self instance].accounts containsObject:newAccount]) 
+		if ([[self instance].accounts containsObject:newAccount])
 		{
 			NSError *theError = [NSError errorWithDomain:BBAccountManagerErrorDomain
-													code:BBAccountManagerAlreadyPresentError 
+													code:BBAccountManagerAlreadyPresentError
 												userInfo:nil];
 			theError = [NSError errorWithError:theError localizedDescription:@"The account already exist exist"];
-			if (block != NULL) 
+			if (block != NULL)
 			{
 				block(nil, theError);
 				return;
 			}
 		}
 		
-		if (block != NULL) 
+        [[[self instance] mutableArrayValueForKey: @"accounts"] addObject: newAccount];
+		[[self instance] persistAccountsIntoDataManager];
+        
+		if (block != NULL)
 		{
 			block(newAccount, nil);
-		}	
-		
-		[[[self instance] mutableArrayValueForKey: @"accounts"] addObject: newAccount];		
-		[[self instance] persistAccountsIntoDataManager];
+		}
     }];
 }
 
@@ -169,12 +165,12 @@
 		}
 	}
 	
+   	[[self instance] persistAccountsIntoDataManager];
+    
 	if (block != NULL) 
 	{
 		block(YES, error);
 	}
-	
-	[[self instance] persistAccountsIntoDataManager];	
 }
 
 #pragma mark - Default Account
@@ -202,17 +198,20 @@
 	
 	[[instance mutableArrayValueForKey:@"accounts"] exchangeObjectAtIndex:theIndex withObjectAtIndex:defaultBBAccountIndex];
 	
+   	[[self instance] persistAccountsIntoDataManager];
 	if (block != NULL)
 	{
 		block(YES, nil);
 	}
-	
-	[[self instance] persistAccountsIntoDataManager];
 }
 
 + (id<BBAccount>) defaultAccount
 {
-	return [[self instance].accounts objectAtIndex:0];
+    if ([self instance].accounts.count) {
+        return [[self instance].accounts objectAtIndex:0];
+    } else {
+        return nil;
+    }
 }
 
 #pragma mark - Exchange position
@@ -232,7 +231,7 @@
 
 + (BOOL)moveAccount:(id<BBAccount>)theAccount atIndex:(NSUInteger)index
 {
-	if (index >= [[self instance].accounts count]) 
+	if (index > [[self instance].accounts count]) 
 	{
 		return NO;
 	}
@@ -260,6 +259,7 @@
         [[[self instance] mutableArrayValueForKey:@"accounts"] insertObject:obj atIndex:index];
 	}
 	[obj release];
+	[[self instance] persistAccountsIntoDataManager];
     return YES;
 }
 
@@ -268,15 +268,13 @@
 {
 	if ([self.dataManager conformsToProtocol:@protocol(BBGMultiAccountDataManager)]) 
 	{
-		dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-			NSError *theError;
-			if (![self.dataManager persistAccounts:self.accounts error:&theError]) 
-			{
-				@throw [NSException exceptionWithName:BBDataManagerPersistenceException
-											   reason:@"Impossible to persist accounts into Data Manager"
-											 userInfo:[theError userInfo]];
-			}
-		});
+		NSError *theError;
+		if (![self.dataManager persistAccounts:self.accounts error:&theError]) 
+		{
+			@throw [NSException exceptionWithName:BBDataManagerPersistenceException
+										   reason:@"Impossible to persist accounts into Data Manager"
+										 userInfo:[theError userInfo]];
+		}
 	}
 }
 
@@ -284,17 +282,15 @@
 {
 	if ([self.dataManager conformsToProtocol:@protocol(BBGMultiAccountDataManager)]) 
 	{
-		dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
-			NSError *error = nil;
-			NSArray *restoredAccounts = [self.dataManager restoreAccountsWithError:&error];
-			if (restoredAccounts == nil && error != nil) {
-				@throw [NSException exceptionWithName:BBDataManagerRestoreException 
-											   reason:@"Impossible to restore existing accounts from Data Manager"
-											 userInfo:[error userInfo]];
-			}
-			
-			[self setAccounts:[NSMutableArray arrayWithArray:restoredAccounts]];
-		});
+        NSError *error = nil;
+        NSArray *restoredAccounts = [self.dataManager restoreAccountsWithError:&error];
+        if (restoredAccounts == nil && error != nil) {
+            @throw [NSException exceptionWithName:BBDataManagerRestoreException 
+                                           reason:@"Impossible to restore existing accounts from Data Manager"
+                                         userInfo:[error userInfo]];
+        }
+        
+        [self setAccounts:[NSMutableArray arrayWithArray:restoredAccounts]];
 	}
 }
 
@@ -307,10 +303,18 @@
     
     dispatch_once(&dispatchOncePredicate, ^{
         myInstance = [[self alloc] init];
-        myInstance.accounts = [NSMutableArray array];
     });
     
     return myInstance;
+}
+
+- (id) init
+{
+    self = [super init];
+    if (self) {
+        self.accounts = [NSMutableArray array];
+    }
+    return self;
 }
 
 - (GTMOAuth2WindowController *)loginWindowController
@@ -321,14 +325,6 @@
 																						 clientSecret:self.clientSecret
 																					 keychainItemName:nil 
 																					   resourceBundle:frameworkBundle];
-	// Resize login window so the user has not to scroll
-//	NSRect frame = [[loginWindowController window] frame];
-//	frame.size.height += 50;
-//	[[loginWindowController window] setFrame:frame
-//									 display:YES
-//									 animate:YES];
-//	[[loginWindowController window] center];
-	
     return loginWindowController;
 }
 
